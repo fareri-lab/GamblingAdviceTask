@@ -1,0 +1,4 @@
+trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,Loss,Amount,Gain,Gain1,selectBlock,Loss1,AdviceVar,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,date,frameRate,expName,session,participant,
+,,,,,,,,,,,space,1.08446006151,,,,,2019_Jul_10_1238,59.9401024602,Test,001,,
+,,,,,,,,,,,,,left,0.717390350997,,,2019_Jul_10_1238,59.9401024602,Test,001,,
+,,,,,,,,,,,,,,,return,1.05071964115,2019_Jul_10_1238,59.9401024602,Test,001,,
