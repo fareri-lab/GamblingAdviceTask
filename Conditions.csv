@@ -1,0 +1,49 @@
+Gain,Loss,Gain1,Loss1,Amount,selectBlock,AdviceVar
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G10.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L10.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G10.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L10.bmp,25,1,"Advisor 1 says:
+
+""Go with the safe option here!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L20.bmp,50,2,"Advisor 1 says:
+
+""Let's take a risk!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G30.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L30.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G30.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L30.bmp,75,1,"Advisor 1 says:
+
+""I think you should gamble."""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G40.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L40.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_G40.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA50_L40.bmp,100,2,"Advisor 1 says:
+
+""It would probably be best to play it safe."""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L20.bmp,25,1,"Advisor 1 says:
+
+""Go ahead and gamble!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G40.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L40.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G40.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L40.bmp,50,2,"Advisor 1 says:
+
+""Try your luck and gamble!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G60.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L60.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G60.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L60.bmp,75,1,"Advisor 1 says:
+
+""Don't gamble for this one."""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G80.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L80.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_G80.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA100_L80.bmp,100,2,"Advisor 1 says:
+
+""Why not gamble?"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G5.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L5.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G5.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L5.bmp,25,1,"Advisor 1 says:
+
+""Go with the safe option here!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G10.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L10.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G10.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L10.bmp,50,1,"Advisor 1 says:
+
+""Let's take a risk!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G15.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L15.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G15.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L15.bmp,75,2,"Advisor 1 says:
+
+""I think you should gamble."""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L25.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_G20.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA25_L25.bmp,100,2,"Advisor 1 says:
+
+""It would probably be best to play it safe."""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G15.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L15.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G15.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L15.bmp,25,1,"Advisor 1 says:
+
+""Go ahead and gamble!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G35.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L30.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G35.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L30.bmp,50,2,"Advisor 1 says:
+
+""Try your luck and gamble!"""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G45.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L45.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G45.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L45.bmp,75,1,"Advisor 1 says:
+
+""Don't gamble for this one."""
+C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G60.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L60.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_G60.bmp,C:\Users\farerilab\Downloads\GamblingAdviceTask\IA75_L60.bmp,100,2,"Advisor 1 says:
+
+""Why not gamble?"""

@@ -1,0 +1,86 @@
+2.4218 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+3.2201 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000000001A8AA860>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000000001A8F8668>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.2202 	EXP 	window1: recordFrameIntervals = False
+3.3855 	EXP 	window1: recordFrameIntervals = True
+3.5693 	EXP 	window1: recordFrameIntervals = False
+3.8867 	EXP 	Created iSi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='iSi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+3.9098 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([-0.1,  0. ]), rgb=array([255., 255., 255.]), text='RECEIVE  $100', units='height', win=Window(...), wrapWidth=1)
+3.9403 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='20.png', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([0.32, 0.06]), size=array([1.39, 0.73]), texRes=128, units='height', win=Window(...))
+3.9418 	EXP 	Created polygon = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-1.0, fillColor=None, fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=5, name='polygon', opacity=1.0, ori=array(90.), pos=array([-0.15,  0.  ]), size=array([1., 1.]), units='height', vertices=array([[-7.5,  0. ],
+       [ 7.5,  0. ]]), win=Window(...), windingRule=None)
+3.9531 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([-0.45, -0.02]), rgb=array([255., 255., 255.]), text='KEEP\n $80 ', units='height', win=Window(...), wrapWidth=1)
+3.9633 	EXP 	Created gamble = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='gamble', opacity=1.0, ori=0, pos=array([0.32, 0.05]), rgb=array([255., 255., 255.]), text='GAMBLE', units='height', win=Window(...), wrapWidth=1)
+3.9650 	EXP 	Created greenRec = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-4.0, fillColor=array([-1.   ,  0.184, -1.   ]), fillColorSpace='rgb', fillRGB=array([-1.   ,  0.184, -1.   ]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1, name='greenRec', opacity=1.0, ori=array(0.), pos=array([ 0.47, -0.37]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+3.9660 	EXP 	Created redRec = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-5.0, fillColor=array([ 1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([ 1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1, name='redRec', opacity=1.0, ori=array(0.), pos=array([ 0.47, -0.42]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+3.9756 	EXP 	Created keepAll = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='keepAll', opacity=1.0, ori=0, pos=array([ 0.6 , -0.37]), rgb=array([255., 255., 255.]), text='keep all', units='height', win=Window(...), wrapWidth=1)
+3.9803 	EXP 	Created loseAll = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='loseAll', opacity=1.0, ori=0, pos=array([ 0.6 , -0.41]), rgb=array([255., 255., 255.]), text='lose all', units='height', win=Window(...), wrapWidth=1)
+3.9816 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+3.9828 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.0211 	EXP 	iSi: autoDraw = True
+7.0031 	EXP 	iSi: autoDraw = False
+7.0031 	EXP 	text_2: autoDraw = True
+9.0110 	EXP 	text_2: autoDraw = False
+9.0110 	EXP 	image_4: autoDraw = True
+9.0110 	EXP 	polygon: autoDraw = True
+9.0110 	EXP 	text: autoDraw = True
+9.0110 	EXP 	gamble: autoDraw = True
+9.0110 	EXP 	greenRec: autoDraw = True
+9.0110 	EXP 	redRec: autoDraw = True
+9.0110 	EXP 	keepAll: autoDraw = True
+9.0110 	EXP 	loseAll: autoDraw = True
+9.8937 	DATA 	Keypress: escape
+10.0206 	EXP 	window1: mouseVisible = True
+2.4378 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+3.2214 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000000001A88A8D0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000000001A8D86D8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.2215 	EXP 	window1: recordFrameIntervals = False
+3.3866 	EXP 	window1: recordFrameIntervals = True
+3.5704 	EXP 	window1: recordFrameIntervals = False
+3.8900 	EXP 	Created iSi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='iSi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+3.9135 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='RECEIVE  $100', units='height', win=Window(...), wrapWidth=1)
+3.9443 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='20.png', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([0.32, 0.06]), size=array([1.39, 0.73]), texRes=128, units='height', win=Window(...))
+3.9459 	EXP 	Created polygon = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-1.0, fillColor=None, fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=5, name='polygon', opacity=1.0, ori=array(90.), pos=array([-0.15,  0.  ]), size=array([1., 1.]), units='height', vertices=array([[-7.5,  0. ],
+       [ 7.5,  0. ]]), win=Window(...), windingRule=None)
+3.9575 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([-0.45, -0.02]), rgb=array([255., 255., 255.]), text='KEEP\n $80 ', units='height', win=Window(...), wrapWidth=1)
+3.9682 	EXP 	Created gamble = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.12, italic=False, languageStyle='LTR', name='gamble', opacity=1.0, ori=0, pos=array([0.32, 0.05]), rgb=array([255., 255., 255.]), text='GAMBLE', units='height', win=Window(...), wrapWidth=1)
+3.9701 	EXP 	Created greenRec = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-4.0, fillColor=array([-1.   ,  0.184, -1.   ]), fillColorSpace='rgb', fillRGB=array([-1.   ,  0.184, -1.   ]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1, name='greenRec', opacity=1.0, ori=array(0.), pos=array([ 0.47, -0.37]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+3.9711 	EXP 	Created redRec = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-5.0, fillColor=array([ 1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([ 1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1, name='redRec', opacity=1.0, ori=array(0.), pos=array([ 0.47, -0.42]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+3.9798 	EXP 	Created keepAll = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='keepAll', opacity=1.0, ori=0, pos=array([ 0.6 , -0.37]), rgb=array([255., 255., 255.]), text='keep all', units='height', win=Window(...), wrapWidth=1)
+3.9843 	EXP 	Created loseAll = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='loseAll', opacity=1.0, ori=0, pos=array([ 0.6 , -0.41]), rgb=array([255., 255., 255.]), text='lose all', units='height', win=Window(...), wrapWidth=1)
+3.9856 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+3.9868 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.0215 	EXP 	iSi: autoDraw = True
+7.0042 	EXP 	iSi: autoDraw = False
+7.0042 	EXP 	text_2: autoDraw = True
+9.0162 	EXP 	text_2: autoDraw = False
+9.0162 	EXP 	image_4: autoDraw = True
+9.0162 	EXP 	polygon: autoDraw = True
+9.0162 	EXP 	text: autoDraw = True
+9.0162 	EXP 	gamble: autoDraw = True
+9.0162 	EXP 	greenRec: autoDraw = True
+9.0162 	EXP 	redRec: autoDraw = True
+9.0162 	EXP 	keepAll: autoDraw = True
+9.0162 	EXP 	loseAll: autoDraw = True
+12.0283 	EXP 	Imported ConditionsGain.xlsx as conditions, 8 conditions, 3 params
+12.0286 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+12.0290 	EXP 	New trial (rep=0, index=0): OrderedDict([('Gain', 'C:\\Users\\farerilab\\Downloads\\GamblingAdviceTask\\IA50_G40.bmp'), ('selectBlock', 2), ('Loss', 'C:\\Users\\farerilab\\Downloads\\GamblingAdviceTask\\IA50_L40.bmp')])
+12.0360 	EXP 	Imported ConditionsGain.xlsx as conditions, 8 conditions, 3 params
+12.0362 	EXP 	Created sequence: random, trialTypes=8, nReps=0, seed=None
+12.0423 	EXP 	Imported ConditionsGain.xlsx as conditions, 8 conditions, 3 params
+12.0425 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+12.0428 	EXP 	New trial (rep=0, index=0): OrderedDict([('Gain', 'C:\\Users\\farerilab\\Downloads\\GamblingAdviceTask\\IA50_G30.bmp'), ('selectBlock', 1), ('Loss', 'C:\\Users\\farerilab\\Downloads\\GamblingAdviceTask\\IA50_L30.bmp')])
+12.0721 	EXP 	image_4: autoDraw = False
+12.0721 	EXP 	polygon: autoDraw = False
+12.0721 	EXP 	text: autoDraw = False
+12.0721 	EXP 	gamble: autoDraw = False
+12.0721 	EXP 	greenRec: autoDraw = False
+12.0721 	EXP 	redRec: autoDraw = False
+12.0721 	EXP 	keepAll: autoDraw = False
+12.0721 	EXP 	loseAll: autoDraw = False
+12.0721 	EXP 	image_2: opacity = 1.0
+12.0721 	EXP 	image_2: pos = array([0., 0.])
+12.0721 	EXP 	image_2: size = array([1.5, 1. ])
+12.0721 	EXP 	image_2: ori = 0.0
+12.0721 	EXP 	image_2: image = 'C:\\Users\\farerilab\\Downloads\\GamblingAdviceTask\\IA50_L30.bmp'
+12.0721 	EXP 	image_2: autoDraw = True
+13.3417 	DATA 	Keypress: escape
+13.4411 	EXP 	window1: mouseVisible = True

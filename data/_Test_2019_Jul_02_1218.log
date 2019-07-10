@@ -1,0 +1,22 @@
+8.2346 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+11.5044 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000000001A885F28>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000000001A8A0D68>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.5045 	EXP 	window1: recordFrameIntervals = False
+11.6702 	EXP 	window1: recordFrameIntervals = True
+11.8537 	EXP 	window1: recordFrameIntervals = False
+12.5260 	EXP 	Created image_4 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='20.png', interpolate=True, mask=None, maskParams=None, name='image_4', opacity=1.0, ori=0.0, pos=array([0.35, 0.  ]), size=array([1.41, 0.75]), texRes=128, units='height', win=Window(...))
+12.5483 	EXP 	Created polygon = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=-1.0, fillColor=None, fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=5, name='polygon', opacity=1.0, ori=array(90.), pos=array([-0.15,  0.  ]), size=array([1., 1.]), units='height', vertices=array([[-7.5,  0. ],
+       [ 7.5,  0. ]]), win=Window(...), windingRule=None)
+13.3571 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([-0.18,  0.  ]), rgb=array([255., 255., 255.]), text='KEEP\n\n$80 ', units='height', win=Window(...), wrapWidth=1)
+13.3584 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+13.3596 	EXP 	Created image_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image_2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+13.4379 	EXP 	image_4: autoDraw = True
+13.4379 	EXP 	polygon: autoDraw = True
+13.4379 	EXP 	text: autoDraw = True
+16.3995 	EXP 	Imported ConditionsGain.xlsx as conditions, 8 conditions, 3 params
+16.4001 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+16.4007 	EXP 	New trial (rep=0, index=0): OrderedDict([('Gain', 'C:\\Users\\Jojo\\Downloads\\FramingTaskStimuli\\IA100_G20.bmp'), ('selectBlock', 1), ('Loss', 'C:\\Users\\Jojo\\Downloads\\FramingTaskStimuli\\IA50_L10.bmp')])
+16.4101 	EXP 	Imported ConditionsGain.xlsx as conditions, 8 conditions, 3 params
+16.4104 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+16.4108 	EXP 	New trial (rep=0, index=0): OrderedDict([('Gain', 'C:\\Users\\Jojo\\Downloads\\FramingTaskStimuli\\IA50_G30.bmp'), ('selectBlock', 1), ('Loss', 'C:\\Users\\Jojo\\Downloads\\FramingTaskStimuli\\IA100_L60.bmp')])
+16.4116 	ERROR 	Couldn't find image C:\Users\Jojo\Downloads\FramingTaskStimuli\IA50_G30.bmp; check path? (tried: C:\Users\Jojo\Downloads\FramingTaskStimuli\IA50_G30.bmp)
+16.4972 	EXP 	window1: mouseVisible = True
