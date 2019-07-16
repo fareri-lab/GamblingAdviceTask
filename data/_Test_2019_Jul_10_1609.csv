@@ -1,0 +1,7 @@
+Amount,Choice2,AdviceVar,Choice,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,date,frameRate,expName,session,participant,
+,,,,,,,,space,1.21737958052,,,,,,,,,2019_Jul_10_1609,59.8835221241,Test,001,,
+,,,,,,,,,,left,0.417673674199,,,,,,,2019_Jul_10_1609,59.8835221241,Test,001,,
+,,,,,,,,,,,,return,0.650799520543,,,,,2019_Jul_10_1609,59.8835221241,Test,001,,
+IA75.bmp,IA75_L60.bmp,"Advisor 1 says:
+
+"Why not gamble?"",IA75_L60.bmp,0,0,0,15,,,,,,,y,1.48448917085,left,1.00141386408,2019_Jul_10_1609,59.8835221241,Test,001,,

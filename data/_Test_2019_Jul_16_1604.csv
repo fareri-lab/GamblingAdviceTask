@@ -1,0 +1,19 @@
+﻿Choice,Choice2,AdviceVar,Amount,AdviceVar2,AdviceVar1,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instructions.started,instructions.stopped,space.keys,space.rt,space.started,space.stopped,chooseInst.started,chooseInst.stopped,Ad1.started,Ad1.stopped,Ad2.started,Ad2.stopped,key_resp_3.keys,key_resp_3.rt,key_resp_3.started,key_resp_3.stopped,Ad1pic.started,Ad1pic.stopped,Ad2pic.started,Ad2pic.stopped,enter.keys,enter.rt,enter.started,enter.stopped,iSi.started,iSi.stopped,receiveMoneyPicture.started,receiveMoneyPicture.stopped,ISI2.started,ISI2.stopped,ChoicePic.started,ChoicePic.stopped,text_3.started,text_3.stopped,ask.started,ask.stopped,response.keys,response.rt,response.started,response.stopped,Advice.started,Advice.stopped,blank.started,blank.stopped,ChoicePic2.started,ChoicePic2.stopped,resp.keys,resp.started,resp.stopped,checkL1.started,checkL1.stopped,checkR1.started,checkR1.stopped,nGamble,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,5.118575312255416,None,space,1.1157478696259204,5.118575312255416,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_16_1604,Test,3.1.2,59.96048352771534,
+,,,,,,,,,,,,,,,,,,,,6.348385036049876,None,6.348385036049876,None,6.348385036049876,None,right,0.574057319550775,6.348385036049876,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_16_1604,Test,3.1.2,59.96048352771534,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,6.348385036049876,None,6.348385036049876,None,return,1.1020034690736793,6.348385036049876,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_16_1604,Test,3.1.2,59.96048352771534,
+Pictures\IA50_L40.bmp,Pictures\IA50_L40.bmp,"Advisor 1 says:
+
+"That gamble doesn't sound too good, play it safe."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Let's venture and take a risk!"","
+
+"That gamble doesn't sound too good, play it safe."",0,0,0,0,0,0,0,19,,,,,,,,,,,,,,,,,,,,,,,,,7.498931505979272,None,10.616623533976963,12.483873064571526,12.500521417619893,None,14.53429895377485,None,20.170936029375298,21.33616709994385,20.170936029375298,21.33616709994385,y,1.0632300896395463,20.170936029375298,22.48683268885361,21.319480492005823,None,24.453723214159254,None,24.453723214159254,None,None,24.453723214159254,None,None,None,None,None,0,,001,2019_Jul_16_1604,Test,3.1.2,59.96048352771534,
+Pictures\IA50_L20.bmp,Pictures\IA50_L20.bmp,"Advisor 1 says:
+
+"Certainty is boring, take a risk!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"You'd have a lot to lose, don't gamble."","
+
+"Certainty is boring, take a risk!"",0,0,0,0,0,1,1,17,,,,,,,,,,,,,,,,,,,,,,,,,27.2549310742761,None,30.28893751790747,32.256396579701686,32.27306390466401,None,34.27343152510002,None,38.308055334637174,39.97517504735151,38.308055334637174,39.97517504735151,y,1.5738072630192619,38.308055334637174,42.259325102408184,39.95864767936291,None,43.05916853714734,None,43.05916853714734,None,None,43.05916853714734,None,None,None,None,None,0,,001,2019_Jul_16_1604,Test,3.1.2,59.96048352771534,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,45.910414450016106,None,48.94436522186152,50.911831748031545,50.92853763894527,None,52.929116749961395,None,56.96355239508557,59.5309334541671,56.96355239508557,59.5309334541671,y,2.4780091768188868,56.96355239508557,60.91481532048783,59.51429194348748,None,,,,,,,,,,,,,,,,,,,

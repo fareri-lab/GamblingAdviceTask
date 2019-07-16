@@ -1,0 +1,20 @@
+﻿Choice,Choice2,AdviceVar,Amount,AdviceVar2,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instructions.started,instructions.stopped,space.keys,space.rt,space.started,space.stopped,chooseInst.started,chooseInst.stopped,Ad1.started,Ad1.stopped,Ad2.started,Ad2.stopped,key_resp_3.keys,key_resp_3.rt,key_resp_3.started,key_resp_3.stopped,Ad1pic.started,Ad1pic.stopped,Ad2pic.started,Ad2pic.stopped,enter.keys,enter.rt,enter.started,enter.stopped,iSi.started,iSi.stopped,receiveMoneyPicture.started,receiveMoneyPicture.stopped,ISI2.started,ISI2.stopped,ChoicePic.started,ChoicePic.stopped,text_3.started,text_3.stopped,ask.started,ask.stopped,response.keys,response.rt,response.started,response.stopped,Advice.started,Advice.stopped,blank.started,blank.stopped,ChoicePic2.started,ChoicePic2.stopped,resp.keys,resp.started,resp.stopped,checkL1.started,checkL1.stopped,checkR1.started,checkR1.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,5.950602639335557,None,space,1.4613567805790808,5.950602639335557,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_16_1247,Test,3.1.2,59.89458331001975,
+,,,,,,,,,,,,,,,,,,,7.5210425366676645,None,7.5210425366676645,None,7.5210425366676645,None,left,0.33047458178771194,7.5210425366676645,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_16_1247,Test,3.1.2,59.89458331001975,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,7.5210425366676645,None,7.5210425366676645,None,return,0.5464515765925171,7.5210425366676645,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_16_1247,Test,3.1.2,59.89458331001975,
+Pictures\IA25_L15.bmp,Pictures\IA25_L15.bmp,"Advisor 1 says:
+
+"There's not much on the line here, gamble!"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Go all in!"",0,0,0,0,0,0,0,26,,,,,,,,,,,,,,,,,,,,,,,,,8.1027548826969,None,11.267727499332977,13.101493403504719,13.118128071859246,None,15.118626318813767,None,20.772358987858752,22.354042720471625,20.772358987858752,22.354042720471625,y,1.4789985173847526,20.772358987858752,23.104462047223933,22.337357667594915,None,25.48816352452559,None,25.48816352452559,None,None,25.48816352452559,None,None,None,None,None,,001,2019_Jul_16_1247,Test,3.1.2,59.89458331001975,
+Pictures\IA25_L10.bmp,Pictures\IA25_L10.bmp,"Advisor 1 says:
+
+"What's life without a little risk?"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Don't gamble for this one, play it safe."",0,0,0,0,0,1,1,9,,,,,,,,,,,,,,,,,,,,,,,,,28.27267358012614,None,31.307319471772644,33.274152148194844,33.290759758179775,None,35.278255065743,None,39.3120904507814,40.55949463699653,39.3120904507814,40.55949463699653,y,1.1630517844168935,39.3120904507814,43.277080981919426,40.54282326881366,None,43.61009531693708,None,43.61009531693708,None,None,43.61009531693708,None,None,None,None,None,,001,2019_Jul_16_1247,Test,3.1.2,59.89458331001975,
+Pictures\IA100_L80.bmp,Pictures\IA100_L80.bmp,"Advisor 1 says:
+
+"Go all in!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"There's not much on the line here, gamble!"",0,0,0,0,0,2,2,23,,,,,,,,,,,,,,,,,,,,,,,,,46.4946873873414,None,49.52864842269628,51.496174663858255,51.51274868416658,None,53.563415610420634,None,57.54782875356614,58.94806630727544,57.54782875356614,58.94806630727544,y,1.3268714662845014,57.54782875356614,61.49912620171381,58.93353441526415,None,61.99886074992537,None,61.99886074992537,None,None,61.99886074992537,None,None,None,None,None,,001,2019_Jul_16_1247,Test,3.1.2,59.89458331001975,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,64.90010583859112,None,67.93582722212886,69.90154863987118,69.91824551133323,None,71.91882897657342,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,
