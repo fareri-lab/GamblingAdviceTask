@@ -52,7 +52,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="0" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$text2 + &quot; told you to gamble x times.&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You gambled &quot; + $nGamble + &quot;times.&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You won the gambles x% of the time.&quot;" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$text2 + &quot; told you to gamble x times.&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You gambled &quot; + $nGamble + &quot;times.&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You won the gambles x% of the time.&quot;&amp;#10;&amp;#10;&amp;#10;&quot;Please press enter to move on to the next block of trials.&quot;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
