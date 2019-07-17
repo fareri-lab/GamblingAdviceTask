@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on July 17, 2019, at 15:08
+    on July 17, 2019, at 15:27
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -840,13 +840,6 @@ for thisTrial_2 in trials_2:
                 # keyboard checking is just starting
                 win.callOnFlip(response.clock.reset)  # t=0 on next screen flip
                 response.clearEvents(eventType='keyboard')
-            frameRemains = 0 + 4- win.monitorFramePeriod * 0.75  # most of one frame period left
-            if response.status == STARTED and t >= frameRemains:
-                # keep track of stop time/frame for later
-                response.tStop = t  # not accounting for scr refresh
-                response.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(response, 'tStopRefresh')  # time at next scr refresh
-                response.status = FINISHED
             if response.status == STARTED:
                 theseKeys = response.getKeys(keyList=['y', 'n'], waitRelease=False)
                 if len(theseKeys):
@@ -955,7 +948,7 @@ for thisTrial_2 in trials_2:
         
         def gamAd():
             global nGamble
-            nGamble+=1
+            nGamble = nGamble+1
         # keep track of which components have finished
         Choice2GainComponents = [blank, ChoicePic2, resp, checkL1, checkR1]
         for thisComponent in Choice2GainComponents:
@@ -1091,6 +1084,9 @@ for thisTrial_2 in trials_2:
                 #        checkR1.setPhase(0.1, '+')
                 #win.flip()
             
+            def gamAd():
+                global nGamble
+                nGamble = nGamble+1
             
             if resp.keys == 'right':
                 gamAd()
@@ -1163,7 +1159,7 @@ for thisTrial_2 in trials_2:
             #    elif checkR1.autoDraw==True:
              #       checkR1.setPhase(0.1, '+')
             #win.flip()
-        trials.addData('nGamble', nGamble)
+        #trials.addData('nGamble', nGamble)
         # the Routine "Choice2Gain" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()

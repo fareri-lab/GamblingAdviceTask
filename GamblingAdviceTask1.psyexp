@@ -254,14 +254,14 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="nGamble=0&amp;#10;&amp;#10;def gamAd():&amp;#10;    global nGamble&amp;#10;    nGamble+=1" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="nGamble=0&amp;#10;&amp;#10;def gamAd():&amp;#10;    global nGamble&amp;#10;    nGamble = nGamble+1" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="&amp;#10;&amp;#10;if resp.keys == 'right':&amp;#10;    gamAd()" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;def gamAd():&amp;#10;    global nGamble&amp;#10;    nGamble = nGamble+1&amp;#10;&amp;#10;if resp.keys == 'right':&amp;#10;    gamAd()" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="trials.addData('nGamble', nGamble)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="#trials.addData('nGamble', nGamble)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="GambleCount" valType="code"/>
       </CodeComponent>
@@ -518,7 +518,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="4" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="store" updates="constant" val="last key" valType="str"/>
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
