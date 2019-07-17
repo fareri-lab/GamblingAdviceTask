@@ -36,7 +36,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="import random&amp;#10;&amp;#10;nGam = str(nGamble)&amp;#10;&amp;#10;&amp;#10;GamblePercent = [20, 25, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90, 95]&amp;#10;randomGam = random.choice(GamblePercent)&amp;#10;GamblePer = str(randomGam)" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="import random&amp;#10;&amp;#10;nGam = str(nGamble)&amp;#10;#convert to string&amp;#10;&amp;#10;GamblePercent = [20, 25, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90, 95]&amp;#10;randomGam = random.choice(GamblePercent)&amp;#10;GamblePer = str(randomGam)" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="import random&amp;#10;&amp;#10;nGam = str(nGamble)&amp;#10;&amp;#10;GamblePercent = [20, 25, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90, 95]&amp;#10;randomGam = random.choice(GamblePercent)&amp;#10;GamblePer = str(randomGam)" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
