@@ -1,0 +1,228 @@
+﻿Choice,Choice2,AdviceVar,Amount,AdviceVar2,AdviceVar1,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,instructions.started,instructions.stopped,space.keys,space.rt,space.started,space.stopped,chooseInst.started,chooseInst.stopped,Ad1.started,Ad1.stopped,Ad2.started,Ad2.stopped,key_resp_3.keys,key_resp_3.rt,key_resp_3.started,key_resp_3.stopped,Ad1pic.started,Ad1pic.stopped,Ad2pic.started,Ad2pic.stopped,enter.keys,enter.rt,enter.started,enter.stopped,iSi.started,iSi.stopped,receiveMoneyPicture.started,receiveMoneyPicture.stopped,ISI2.started,ISI2.stopped,ChoicePic.started,ChoicePic.stopped,text_3.started,text_3.stopped,ask.started,ask.stopped,response.keys,response.rt,response.started,response.stopped,Advice.started,Advice.stopped,blank.started,blank.stopped,ChoicePic2.started,ChoicePic2.stopped,resp.keys,resp.rt,resp.started,resp.stopped,checkL1.started,checkL1.stopped,checkR1.started,checkR1.stopped,nGamble,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,6.943855156307109,None,space,3.2468428030842915,6.943855156307109,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+,,,,,,,,,,,,,,,,,,,,10.30505279020872,None,10.30505279020872,None,10.30505279020872,None,left,0.9657506532093976,10.30505279020872,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.30505279020872,None,10.30505279020872,None,return,1.8216198126901872,10.30505279020872,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L80.bmp,Pictures\IA100_L80.bmp,"Advisor 1 says:
+
+"Go all in!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"There's not much on the line here, gamble!"","
+
+"Go all in!"",0,0,0,0,0,0,0,23,,,,,,,,,,,,,,,,,,,,,,,,,12.189220324362395,None,15.323534891125746,17.174149442347698,17.190728127898183,None,19.224671124335146,None,24.19260541794938,25.8597148671397,24.19260541794938,25.8597148671397,y,1.581929745938396,24.19260541794938,27.177115597965894,25.84296450097463,None,28.993915291153826,None,28.993915291153826,None,right,1.3244791344332043,28.993915291153826,None,None,None,30.344679285393795,31.77845458223601,88,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_G40.bmp,Pictures\IA50_G40.bmp,"Advisor 1 says:
+
+"It would probably be best to play it safe."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"What's life without a little risk?"","
+
+"It would probably be best to play it safe."",0,0,0,0,0,1,1,3,,,,,,,,,,,,,,,,,,,,,,,,,31.795082719239872,None,34.83477577174199,36.796589900768595,36.813249139348045,None,38.813813632616075,None,42.848204491485376,None,42.848204491485376,None,n,0.6220675507211126,42.848204491485376,None,None,None,43.63168259739177,None,43.63168259739177,None,right,0.8785064285330009,43.63168259739177,None,None,None,44.532188091019634,46.48276242794236,119,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_L30.bmp,Pictures\IA50_L30.bmp,"Advisor 1 says:
+
+"Take a leap, I think you should gamble."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Hold back, stay with the safe choice."","
+
+"Take a leap, I think you should gamble."",0,0,0,0,0,2,2,18,,,,,,,,,,,,,,,,,,,,,,,,,46.499428197857924,None,49.52182660694234,51.50091827349388,51.517593373864656,None,53.517976545059355,None,57.55229960253928,None,57.55229960253928,None,n,0.9896584209054708,57.55229960253928,None,None,None,58.67270741862012,None,58.67270741862012,None,left,0.709206652129069,58.67270741862012,None,59.40322859052685,61.553860589745454,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L20.bmp,Pictures\IA100_L20.bmp,"Advisor 1 says:
+
+"Try to win as much money as you can, gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"I wouldn't gamble for this one. "","
+
+"Try to win as much money as you can, gamble!"",0,0,0,0,0,3,3,20,,,,,,,,,,,,,,,,,,,,,,,,,61.57055590613163,None,64.5915516349487,66.57199621928157,66.5886837602884,None,68.58910985162947,None,72.6402616511914,None,72.6402616511914,None,n,1.2934096109529492,72.6402616511914,None,None,None,74.02853163634427,None,74.02853163634427,None,left,1.8810645316843875,74.02853163634427,None,75.94135241393815,76.94173776221578,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_G20.bmp,Pictures\IA50_G20.bmp,"Advisor 1 says:
+
+"Let's venture and take a risk!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Don't gamble for this one."","
+
+"Let's venture and take a risk!"",0,0,0,0,0,4,4,1,,,,,,,,,,,,,,,,,,,,,,,,,76.95838704830385,None,79.98020354725304,81.959855041845,81.97653885066393,None,83.9769291752018,None,88.01148207319784,None,88.01148207319784,None,n,0.7138821493717842,88.01148207319784,None,None,None,88.82812594762072,None,88.82812594762072,None,right,1.3371051229769364,88.82812594762072,None,None,None,90.19563502073288,91.72936792613473,94,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L10.bmp,Pictures\IA25_L10.bmp,"Advisor 1 says:
+
+"What's life without a little risk?"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Don't gamble for this one, play it safe."","
+
+"What's life without a little risk?"",0,0,0,0,0,5,5,9,,,,,,,,,,,,,,,,,,,,,,,,,91.74606635267264,None,94.76858450277359,96.74754025551374,96.7642060254293,None,98.76453974514152,None,102.79898378768121,None,102.79898378768121,None,n,1.2860002867528237,102.79898378768121,None,None,None,104.1826575845771,None,104.1826575845771,None,right,1.2463986728398595,104.1826575845771,None,None,None,105.45011263428023,107.10058523801854,101,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L20.bmp,Pictures\IA25_L20.bmp,"Advisor 1 says:
+
+"I wouldn't gamble for this one. "",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Why not gamble?"","
+
+"I wouldn't gamble for this one. "",0,0,0,0,0,6,6,11,,,,,,,,,,,,,,,,,,,,,,,,,107.11725847228081,None,110.13664469547803,112.1187305090425,112.1354196050961,None,114.1359654374537,None,118.17028725086129,None,118.17028725086129,None,n,0.6585048921115231,118.17028725086129,None,None,None,118.93699757376453,None,118.93699757376453,None,left,0.6917997320997529,118.93699757376453,None,119.6542685488821,121.83824857173022,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L45.bmp,Pictures\IA75_L45.bmp,"Advisor 1 says:
+
+"Don't gamble for this one, play it safe."",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Go ahead and gamble!"","
+
+"Don't gamble for this one, play it safe."",0,0,0,0,0,7,7,30,,,,,,,,,,,,,,,,,,,,,,,,,121.85488572821487,None,124.87680299617932,126.85640472831437,126.87300207477529,None,128.8736489871808,None,132.90777143961168,None,132.90777143961168,None,n,0.7287592686479911,132.90777143961168,None,None,None,133.7286647199071,None,133.7286647199071,None,right,0.9157433910004329,133.7286647199071,None,None,None,134.67534700784017,136.6426095078059,120,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_L10.bmp,Pictures\IA50_L10.bmp,"Advisor 1 says:
+
+"Play it safe, don’t gamble!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"It would probably be best to play it safe."","
+
+"Play it safe, don’t gamble!"",0,0,0,0,0,8,8,16,,,,,,,,,,,,,,,,,,,,,,,,,136.6592802539526,None,139.6807210460829,141.6607414051541,141.6773303541995,None,143.67783793163835,None,147.71217560686637,None,147.71217560686637,None,n,0.86810326835257,147.71217560686637,None,None,None,148.66239974022028,None,148.66239974022028,None,left,0.6618439554003999,148.66239974022028,None,149.3463435297599,151.58032925974112,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L15.bmp,Pictures\IA25_L15.bmp,"Advisor 1 says:
+
+"There's not much on the line here, gamble!"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Go all in!"","
+
+"There's not much on the line here, gamble!"",0,0,0,0,0,9,9,26,,,,,,,,,,,,,,,,,,,,,,,,,151.5970118244877,None,154.61903919200995,156.59847390872892,156.61508431786206,None,158.6155377785908,None,162.65105637995293,None,162.65105637995293,None,n,1.1129126515879761,162.65105637995293,None,None,None,163.85185892457957,None,163.85185892457957,None,right,1.0560487398761325,163.85185892457957,None,None,None,164.93425939258304,166.76813446322922,112,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L20.bmp,Pictures\IA100_L20.bmp,"Advisor 1 says:
+
+"Go ahead and gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Be cautious, don't gamble for this one."","
+
+"Go ahead and gamble!"",0,0,0,0,0,10,10,4,,,,,,,,,,,,,,,,,,,,,,,,,166.78479090266046,None,169.8049353818351,171.7862660495739,171.8029461261758,None,173.80351590673672,None,177.82127303030575,180.03850435095956,177.82127303030575,180.03850435095956,y,2.1424553995893802,177.82127303030575,181.78917124611326,180.0218507106474,None,183.0584273870336,None,183.0584273870336,None,right,0.6250654299219605,183.0584273870336,None,None,None,183.70644234563224,185.97377392213093,138,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_G10.bmp,Pictures\IA50_G10.bmp,"Advisor 1 says:
+
+"Go with the safe option here!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Try your luck and gamble!"","
+
+"Go with the safe option here!"",0,0,0,0,0,11,11,0,,,,,,,,,,,,,,,,,,,,,,,,,185.9903065773833,None,189.02464238650282,190.9919163940358,191.00855292845517,None,193.00915940885898,None,197.03092334617395,None,197.03092334617395,None,n,0.620459600148024,197.03092334617395,None,None,None,197.74642868584488,None,197.74642868584488,None,left,0.9847907160583418,197.74642868584488,None,198.7608153335459,200.66136996765272,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L60.bmp,Pictures\IA75_L60.bmp,"Advisor 1 says:
+
+"Make it exciting, take a chance!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Let's stay with the certain option."","
+
+"Make it exciting, take a chance!"",0,0,0,0,0,12,12,15,,,,,,,,,,,,,,,,,,,,,,,,,200.67808612206136,None,203.69985565767274,205.6795687333506,205.69620371272322,None,207.69680926005822,None,211.73138050796115,None,211.73138050796115,None,n,0.4236949708429165,211.73138050796115,None,None,None,212.26446618995396,None,212.26446618995396,None,left,1.1305913992109708,212.26446618995396,None,213.4151765650895,215.1656863973767,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L30.bmp,Pictures\IA75_L30.bmp,"Advisor 1 says:
+
+"Be bold, gamble!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Dont be afraid to take the risk!"","
+
+"Be bold, gamble!"",0,0,0,0,0,13,13,13,,,,,,,,,,,,,,,,,,,,,,,,,215.18241623649374,None,218.21653402369702,220.1838024329336,220.20051205603522,None,222.1881995712174,None,226.2354907343688,None,226.2354907343688,None,n,0.6952840396552347,226.2354907343688,None,None,None,227.03543618225376,None,227.03543618225376,None,left,0.59941162072937,227.03543618225376,None,227.65259279694874,229.93670366404695,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L5.bmp,Pictures\IA25_L5.bmp,"Advisor 1 says:
+
+"It would be smarter to choose the safe option."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Certainty is boring, take a risk!"","
+
+"It would be smarter to choose the safe option."",0,0,0,0,0,14,14,24,,,,,,,,,,,,,,,,,,,,,,,,,229.9533666348143,None,232.97694783614133,234.95482996309875,234.97149977620575,None,236.97190129733644,None,241.00912364205578,None,241.00912364205578,None,n,1.417319151427364,241.00912364205578,None,None,None,242.5399920939817,None,242.5399920939817,None,left,0.8064683776465245,242.5399920939817,None,243.37398566154297,245.44125397750759,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L40.bmp,Pictures\IA100_L40.bmp,"Advisor 1 says:
+
+"Think of the payoff, gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"I think you should take a gamble."","
+
+"Think of the payoff, gamble!"",0,0,0,0,0,15,15,21,,,,,,,,,,,,,,,,,,,,,,,,,245.45792690076632,None,248.47939288514317,250.45936161561986,250.47606004218687,None,252.4764628073608,None,256.51073081506183,None,256.51073081506183,None,n,0.49943317408906296,256.51073081506183,None,None,None,257.0973236176069,None,257.0973236176069,None,right,0.7929286253347527,257.0973236176069,None,None,None,257.91157827031566,260.0121855904581,128,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L20.bmp,Pictures\IA25_L20.bmp,"Advisor 1 says:
+
+"Don't be tempted to gamble."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Take a leap, I think you should gamble."","
+
+"Don't be tempted to gamble."",0,0,0,0,0,16,16,27,,,,,,,,,,,,,,,,,,,,,,,,,260.0288684662082,None,263.052057476918,265.0303100234305,265.0470184024598,None,267.0475816516846,None,271.06906318684923,None,271.06906318684923,None,n,0.6288268523348961,271.06906318684923,None,None,None,271.7870672256977,None,271.7870672256977,None,right,0.7749024732911494,271.7870672256977,None,None,None,272.5825645287405,274.6998441500764,129,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L10.bmp,Pictures\IA25_L10.bmp,"Advisor 1 says:
+
+"Dont be afraid to take the risk!"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Be bold, gamble!"","
+
+"Dont be afraid to take the risk!"",0,0,0,0,0,17,17,25,,,,,,,,,,,,,,,,,,,,,,,,,274.71651987248333,None,277.73884208276286,279.71797542541754,279.73463995126076,None,281.735091545881,None,285.7695897051308,None,285.7695897051308,None,n,1.0323092315811664,285.7695897051308,None,None,None,286.90326948909205,None,286.90326948909205,None,right,0.8264617032546084,286.90326948909205,None,None,None,287.75369245471666,289.80424865943496,125,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L60.bmp,Pictures\IA100_L60.bmp,"Advisor 1 says:
+
+"Be cautious, don't gamble for this one."",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Why not take the gamble?"","
+
+"Be cautious, don't gamble for this one."",0,0,0,0,0,18,18,6,,,,,,,,,,,,,,,,,,,,,,,,,289.82097165621235,None,292.85516408714466,294.82243187437416,294.8391194153519,None,296.8396624485613,None,300.8737889441836,None,300.8737889441836,None,n,0.807706841675099,300.8737889441836,None,None,None,301.79075742556597,None,301.79075742556597,None,left,0.8186664087115787,301.79075742556597,None,302.64140618851525,304.6920059354161,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_L20.bmp,Pictures\IA50_L20.bmp,"Advisor 1 says:
+
+"Certainty is boring, take a risk!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"You'd have a lot to lose, don't gamble."","
+
+"Certainty is boring, take a risk!"",0,0,0,0,0,19,19,17,,,,,,,,,,,,,,,,,,,,,,,,,304.70868632305064,None,307.73167099652346,309.7101443641004,309.72670501074754,None,311.72725644137245,None,315.7282292980817,None,315.7282292980817,None,n,0.5048333376471419,315.7282292980817,None,None,None,316.3284184577642,None,316.3284184577642,None,left,0.8166298787109554,316.3284184577642,None,317.16226647005533,319.2462758216716,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L15.bmp,Pictures\IA75_L15.bmp,"Advisor 1 says:
+
+"Trust me, gamble!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Play it safe, don’t gamble!"","
+
+"Trust me, gamble!"",0,0,0,0,0,20,20,28,,,,,,,,,,,,,,,,,,,,,,,,,319.2629440797027,None,322.28548026870703,324.26442389184376,324.28111329893,None,326.2814479516819,None,330.3028414694418,None,330.3028414694418,None,n,0.6180405209888704,330.3028414694418,None,None,None,331.0327962820011,None,331.0327962820011,None,right,0.6960814835911151,331.0327962820011,None,None,None,331.74991734759533,333.93392318475526,133,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_G30.bmp,Pictures\IA50_G30.bmp,"Advisor 1 says:
+
+"I think you should gamble."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Don't be tempted to gamble."","
+
+"I think you should gamble."",0,0,0,0,0,21,21,2,,,,,,,,,,,,,,,,,,,,,,,,,333.9506119698053,None,336.9718761050608,338.95208525061025,338.96872116302256,None,340.9693133366818,None,344.98846256599063,None,344.98846256599063,None,n,0.9480715945537668,344.98846256599063,None,None,None,346.03714987810235,None,346.03714987810235,None,right,0.3954609764041379,346.03714987810235,None,None,None,346.4542712236289,348.93833089756663,151,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L60.bmp,Pictures\IA100_L60.bmp,"Advisor 1 says:
+
+"You'd have a lot to lose, don't gamble."",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Make it exciting, take a chance!"","
+
+"You'd have a lot to lose, don't gamble."",0,0,0,0,0,22,22,22,,,,,,,,,,,,,,,,,,,,,,,,,348.95497707347386,None,351.97647851365036,353.95649140834576,353.9730853336514,None,355.97356087647495,None,360.02478794180206,None,360.02478794180206,None,n,0.4634673323307652,360.02478794180206,None,None,None,360.57556232393836,None,360.57556232393836,None,right,0.5927593084634282,360.57556232393836,None,None,None,361.1918263239204,363.49262939725304,140,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L45.bmp,Pictures\IA75_L45.bmp,"Advisor 1 says:
+
+"Don't gamble for this one."",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Trust me, gamble!"","
+
+"Don't gamble for this one."",0,0,0,0,0,23,23,14,,,,,,,,,,,,,,,,,,,,,,,,,363.50928832479985,None,366.5309903700254,368.5107625386736,368.5273623732792,None,370.52782423139433,None,374.56217496926547,None,374.56217496926547,None,n,0.5339810958539601,374.56217496926547,None,None,None,375.195836247789,None,375.195836247789,None,right,0.788124989689095,375.195836247789,None,None,None,376.0129659285594,378.0968947271176,127,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L30.bmp,Pictures\IA75_L30.bmp,"Advisor 1 says:
+
+"Hold back, stay with the safe choice."",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Try to win as much money as you can, gamble!"","
+
+"Hold back, stay with the safe choice."",0,0,0,0,0,24,24,29,,,,,,,,,,,,,,,,,,,,,,,,,378.1135891104641,None,381.13469960403745,383.1150309786899,383.1316021998646,None,385.1321153755707,None,389.1664368779748,None,389.1664368779748,None,n,0.8734297212213278,389.1664368779748,None,None,None,390.1345145497762,None,390.1345145497762,None,left,0.8252882414672058,390.1345145497762,None,390.98387446414563,393.051268119365,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L40.bmp,Pictures\IA100_L40.bmp,"Advisor 1 says:
+
+"Try your luck and gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Go with the safe option here!"","
+
+"Try your luck and gamble!"",0,0,0,0,0,25,25,5,,,,,,,,,,,,,,,,,,,,,,,,,393.0679820966907,None,396.08846122864634,398.0694276971044,398.0860797823407,None,400.0866946601309,None,404.1208634538925,None,404.1208634538925,None,n,1.0786356244061608,404.1208634538925,None,None,None,405.2899725777388,None,405.2899725777388,None,right,0.9656060309789609,405.2899725777388,None,None,None,406.27182264148723,408.2053514584841,118,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA100_L80.bmp,Pictures\IA100_L80.bmp,"Advisor 1 says:
+
+"Why not gamble?"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"That gamble doesn't sound too good, play it safe."","
+
+"Why not gamble?"",0,0,0,0,0,26,26,7,,,,,,,,,,,,,,,,,,,,,,,,,408.2220676129218,None,411.24092479859246,413.2239116242854,413.2405805043527,None,415.2411366002052,None,419.25879295472987,None,419.25879295472987,None,n,0.9404865465767216,419.25879295472987,None,None,None,420.2922961751465,None,420.2922961751465,None,left,0.7548761800280772,420.2922961751465,None,421.076171758963,423.21017437710543,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA50_L40.bmp,Pictures\IA50_L40.bmp,"Advisor 1 says:
+
+"That gamble doesn't sound too good, play it safe."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Let's venture and take a risk!"","
+
+"That gamble doesn't sound too good, play it safe."",0,0,0,0,0,27,27,19,,,,,,,,,,,,,,,,,,,,,,,,,423.22683610380045,None,426.2482498375757,428.2283187150897,428.2449857290485,None,430.24555208842503,None,434.2797239923384,None,434.2797239923384,None,n,0.6472871821315493,434.2797239923384,None,None,None,435.0135002533207,None,435.0135002533207,None,left,0.6093802921241149,435.0135002533207,None,435.64704832216376,437.9311622994428,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L60.bmp,Pictures\IA75_L60.bmp,"Advisor 1 says:
+
+"Why not take the gamble?"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"It would be smarter to choose the safe option."","
+
+"Why not take the gamble?"",0,0,0,0,0,28,28,31,,,,,,,,,,,,,,,,,,,,,,,,,437.947856060724,None,440.9672136704903,442.9492957518669,442.9659630768583,None,444.96654592003324,None,449.0009731677419,None,449.0009731677419,None,n,0.39768598187947646,449.0009731677419,None,None,None,449.50083243320114,None,449.50083243320114,None,left,0.7778453027131036,449.50083243320114,None,450.3014496747055,452.40208623031504,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L15.bmp,Pictures\IA25_L15.bmp,"Advisor 1 says:
+
+"I think you should take a gamble."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Think of the payoff, gamble!"","
+
+"I think you should take a gamble."",0,0,0,0,0,29,29,10,,,,,,,,,,,,,,,,,,,,,,,,,452.4187566654582,None,455.4403905982326,457.42020879717893,457.43690535763744,None,459.4374231985712,None,463.47159292537253,None,463.47159292537253,None,n,0.6948451966454741,463.47159292537253,None,None,None,464.27187613616115,None,464.27187613616115,None,left,0.574586357048247,464.27187613616115,None,464.87242669594707,467.1730863910925,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA75_L15.bmp,Pictures\IA75_L15.bmp,"Advisor 1 says:
+
+"Take a chance!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"I don't think you should gamble."","
+
+"Take a chance!"",0,0,0,0,0,30,30,12,,,,,,,,,,,,,,,,,,,,,,,,,467.1897359881841,None,470.21109529424575,472.19119371823035,472.2078059934429,None,474.2082905557181,None,478.2285298946663,None,478.2285298946663,None,n,0.6895638410642277,478.2285298946663,None,None,None,479.0261629416782,None,479.0261629416782,None,left,0.8600047336658463,479.0261629416782,None,479.9101830544241,481.92742264809203,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
+Pictures\IA25_L5.bmp,Pictures\IA25_L5.bmp,"Advisor 1 says:
+
+"Let's stay with the certain option."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Take a chance!"","
+
+"Let's stay with the certain option."",0,0,0,0,0,31,31,8,,,,,,,,,,,,,,,,,,,,,,,,,481.94404487579595,None,484.96551583643304,486.94557942668325,486.9622532829817,None,488.9625969552144,None,493.01360195540474,None,493.01360195540474,None,n,0.624321480630897,493.01360195540474,None,None,None,493.7334969689837,None,493.7334969689837,None,left,0.7443411492567975,493.7334969689837,None,494.4977931889298,496.6484161686967,None,None,0,,001,2019_Jul_17_1151,Test,3.1.2,59.89603378913837,
