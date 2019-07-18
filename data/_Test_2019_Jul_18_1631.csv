@@ -1,0 +1,226 @@
+﻿Choice,Choice2,AdviceVar,Amount,AdviceVar2,AdviceVar1,GambleAdvice,Not_GamblePercent,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,,space,4.153292800008785,,,,,,,,,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L40.bmp,Pictures\IA100_L40.bmp,"Advisor 1 says:
+
+"Think of the payoff, gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"I think you should take a gamble."","
+
+"Think of the payoff, gamble!"",1,40,0,0,0,0,0,0,0,21,,,right,0.6044518999988213,return,0.9210346000036225,n,1.4542361999920104,left,0.7420386000012513,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L15.bmp,Pictures\IA75_L15.bmp,"Advisor 1 says:
+
+"Take a chance!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"I don't think you should gamble."","
+
+"Take a chance!"",1,80,0,0,0,0,0,1,1,12,,,,,,,n,0.5518425999907777,right,0.712783800001489,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L20.bmp,Pictures\IA100_L20.bmp,"Advisor 1 says:
+
+"Go ahead and gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Be cautious, don't gamble for this one."","
+
+"Go ahead and gamble!"",1,40,0,0,0,0,0,2,2,4,,,,,,,n,1.1878560000041034,right,0.7280092999862973,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_L30.bmp,Pictures\IA50_L30.bmp,"Advisor 1 says:
+
+"Take a leap, I think you should gamble."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Hold back, stay with the safe choice."","
+
+"Take a leap, I think you should gamble."",1,25,0,0,0,0,0,3,3,18,,,,,,,n,1.0351603000017349,right,0.5436754999973346,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L80.bmp,Pictures\IA100_L80.bmp,"Advisor 1 says:
+
+"Go all in!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"There's not much on the line here, gamble!"","
+
+"Go all in!"",1,50,0,0,0,0,0,4,4,23,,,,,,,n,0.5323203000007197,right,0.46810669999103993,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L30.bmp,Pictures\IA75_L30.bmp,"Advisor 1 says:
+
+"Hold back, stay with the safe choice."",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Try to win as much money as you can, gamble!"","
+
+"Hold back, stay with the safe choice."",0,80,0,0,0,0,0,5,5,29,,,,,,,n,1.4163211999984924,right,0.5226483999867924,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L20.bmp,Pictures\IA100_L20.bmp,"Advisor 1 says:
+
+"Try to win as much money as you can, gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"I wouldn't gamble for this one. "","
+
+"Try to win as much money as you can, gamble!"",1,35,0,0,0,0,0,6,6,20,,,,,,,n,1.0404132999829017,right,0.5661146999918856,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L15.bmp,Pictures\IA25_L15.bmp,"Advisor 1 says:
+
+"There's not much on the line here, gamble!"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Go all in!"","
+
+"There's not much on the line here, gamble!"",1,65,0,0,0,0,0,7,7,26,,,,,,,n,1.4041890999942552,left,0.6474351000215393,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L15.bmp,Pictures\IA25_L15.bmp,"Advisor 1 says:
+
+"I think you should take a gamble."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Think of the payoff, gamble!"","
+
+"I think you should take a gamble."",1,70,0,0,0,0,0,8,8,10,,,,,,,n,1.037696399987908,right,0.5669086999841966,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L80.bmp,Pictures\IA100_L80.bmp,"Advisor 1 says:
+
+"Why not gamble?"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"That gamble doesn't sound too good, play it safe."","
+
+"Why not gamble?"",1,55,0,0,0,0,0,9,9,7,,,,,,,n,0.4463732000149321,left,0.6231088000058662,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L45.bmp,Pictures\IA75_L45.bmp,"Advisor 1 says:
+
+"Don't gamble for this one, play it safe."",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Go ahead and gamble!"","
+
+"Don't gamble for this one, play it safe."",0,85,0,0,0,0,0,10,10,30,,,,,,,n,0.5874003000208177,left,0.8027716999931727,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L45.bmp,Pictures\IA75_L45.bmp,"Advisor 1 says:
+
+"Don't gamble for this one."",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Trust me, gamble!"","
+
+"Don't gamble for this one."",0,90,0,0,0,0,0,11,11,14,,,,,,,n,1.2281540000112727,right,0.5406696999853011,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L5.bmp,Pictures\IA25_L5.bmp,"Advisor 1 says:
+
+"Let's stay with the certain option."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Take a chance!"","
+
+"Let's stay with the certain option."",0,60,0,0,0,0,0,12,12,8,,,,,,,n,0.4477457000175491,left,0.583500400010962,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L60.bmp,Pictures\IA75_L60.bmp,"Advisor 1 says:
+
+"Make it exciting, take a chance!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Let's stay with the certain option."","
+
+"Make it exciting, take a chance!"",1,95,0,0,0,0,0,13,13,15,,,,,,,n,0.6294836000015493,left,0.4324483000091277,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L40.bmp,Pictures\IA100_L40.bmp,"Advisor 1 says:
+
+"Try your luck and gamble!"",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Go with the safe option here!"","
+
+"Try your luck and gamble!"",1,45,0,0,0,0,0,14,14,5,,,,,,,n,0.3314770999713801,right,0.8333782999834511,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_L20.bmp,Pictures\IA50_L20.bmp,"Advisor 1 says:
+
+"Certainty is boring, take a risk!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"You'd have a lot to lose, don't gamble."","
+
+"Certainty is boring, take a risk!"",1,20,0,0,0,0,0,15,15,17,,,,,,,n,0.8395497000019532,right,0.7029281999857631,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_G20.bmp,Pictures\IA50_G20.bmp,"Advisor 1 says:
+
+"Let's venture and take a risk!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Don't gamble for this one."","
+
+"Let's venture and take a risk!"",1,25,0,0,0,0,0,16,16,1,,,,,,,n,1.3795616000134032,right,0.7669343999878038,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L20.bmp,Pictures\IA25_L20.bmp,"Advisor 1 says:
+
+"Don't be tempted to gamble."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Take a leap, I think you should gamble."","
+
+"Don't be tempted to gamble."",0,70,0,0,0,0,0,17,17,27,,,,,,,n,0.3772977000044193,left,0.7338399000000209,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L20.bmp,Pictures\IA25_L20.bmp,"Advisor 1 says:
+
+"I wouldn't gamble for this one. "",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Why not gamble?"","
+
+"I wouldn't gamble for this one. "",0,75,0,0,0,0,0,18,18,11,,,,,,,n,1.4938634999853093,left,0.4342927999969106,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_G40.bmp,Pictures\IA50_G40.bmp,"Advisor 1 says:
+
+"It would probably be best to play it safe."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"What's life without a little risk?"","
+
+"It would probably be best to play it safe."",0,35,0,0,0,0,0,19,19,3,,,,,,,n,0.5886547999980394,left,0.6124580999894533,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L30.bmp,Pictures\IA75_L30.bmp,"Advisor 1 says:
+
+"Be bold, gamble!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Dont be afraid to take the risk!"","
+
+"Be bold, gamble!"",1,85,0,0,0,0,0,20,20,13,,,,,,,n,1.4106674999929965,left,0.31907399999909103,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_G10.bmp,Pictures\IA50_G10.bmp,"Advisor 1 says:
+
+"Go with the safe option here!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Try your luck and gamble!"","
+
+"Go with the safe option here!"",0,20,0,0,0,0,0,21,21,0,,,,,,,n,0.5581093000073452,left,0.907900599995628,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L60.bmp,Pictures\IA100_L60.bmp,"Advisor 1 says:
+
+"Be cautious, don't gamble for this one."",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Why not take the gamble?"","
+
+"Be cautious, don't gamble for this one."",0,50,0,0,0,0,0,22,22,6,,,,,,,n,0.4417399999802001,left,0.6657863000000361,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_L10.bmp,Pictures\IA50_L10.bmp,"Advisor 1 says:
+
+"Play it safe, don’t gamble!"",Pictures\IA50.bmp,"Advisor 2 says:
+
+"It would probably be best to play it safe."","
+
+"Play it safe, don’t gamble!"",0,100,0,0,0,0,0,23,23,16,,,,,,,n,0.5993804000027012,left,0.6544339999963995,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_L40.bmp,Pictures\IA50_L40.bmp,"Advisor 1 says:
+
+"That gamble doesn't sound too good, play it safe."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Let's venture and take a risk!"","
+
+"That gamble doesn't sound too good, play it safe."",0,30,0,0,0,0,0,24,24,19,,,,,,,n,0.3855889000114985,left,1.346979999972973,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L15.bmp,Pictures\IA75_L15.bmp,"Advisor 1 says:
+
+"Trust me, gamble!"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"Play it safe, don’t gamble!"","
+
+"Trust me, gamble!"",1,75,0,0,0,0,0,25,25,28,,,,,,,n,0.8319844000216108,left,0.4852926000021398,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L10.bmp,Pictures\IA25_L10.bmp,"Advisor 1 says:
+
+"What's life without a little risk?"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Don't gamble for this one, play it safe."","
+
+"What's life without a little risk?"",1,65,0,0,0,0,0,26,26,9,,,,,,,n,0.6090475000091828,right,0.4930344999884255,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L10.bmp,Pictures\IA25_L10.bmp,"Advisor 1 says:
+
+"Dont be afraid to take the risk!"",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Be bold, gamble!"","
+
+"Dont be afraid to take the risk!"",1,60,0,0,0,0,0,27,27,25,,,,,,,n,1.2091024999972433,left,0.6189216000202578,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA100_L60.bmp,Pictures\IA100_L60.bmp,"Advisor 1 says:
+
+"You'd have a lot to lose, don't gamble."",Pictures\IA100.bmp,"Advisor 2 says:
+
+"Make it exciting, take a chance!"","
+
+"You'd have a lot to lose, don't gamble."",0,45,0,0,0,0,0,28,28,22,,,,,,,n,0.4166049000050407,left,0.6377708000072744,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA50_G30.bmp,Pictures\IA50_G30.bmp,"Advisor 1 says:
+
+"I think you should gamble."",Pictures\IA50.bmp,"Advisor 2 says:
+
+"Don't be tempted to gamble."","
+
+"I think you should gamble."",1,30,0,0,0,0,0,29,29,2,,,,,,,n,1.2103512000176124,left,0.4542657000129111,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA75_L60.bmp,Pictures\IA75_L60.bmp,"Advisor 1 says:
+
+"Why not take the gamble?"",Pictures\IA75.bmp,"Advisor 2 says:
+
+"It would be smarter to choose the safe option."","
+
+"Why not take the gamble?"",1,90,0,0,0,0,0,30,30,31,,,,,,,n,0.5747986999922432,left,0.7776524000219069,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
+Pictures\IA25_L5.bmp,Pictures\IA25_L5.bmp,"Advisor 1 says:
+
+"It would be smarter to choose the safe option."",Pictures\IA25.bmp,"Advisor 2 says:
+
+"Certainty is boring, take a risk!"","
+
+"It would be smarter to choose the safe option."",0,55,0,0,0,0,0,31,31,24,,,,,,,n,0.7827282000216655,right,0.8368497000192292,,001,2019_Jul_18_1631,Test,3.0.7,59.975374119370386,
