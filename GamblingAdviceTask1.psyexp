@@ -251,10 +251,10 @@
         <Param name="name" updates="None" val="code_4" valType="code"/>
       </CodeComponent>
       <CodeComponent name="GambleCount">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="nGamble=0" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="nGamble=0&amp;#10;&amp;#10;#def gamAd():&amp;#10;#    global nGamble&amp;#10;#    nGamble = nGamble+1" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;&amp;#10;#def gamAd():&amp;#10;#    global nGamble&amp;#10;#    nGamble = nGamble+1" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="&amp;#10;#def gamAd():&amp;#10;#    global nGamble&amp;#10;#    nGamble = nGamble+1&amp;#10;&amp;#10;if resp.keys == 'right':&amp;#10;    nGamble += 1" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -684,6 +684,22 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
     </Routine>
+    <Routine name="Repeat20">
+      <CodeComponent name="rep20">
+        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;choice(32, size=20)" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="name" updates="None" val="rep20" valType="code"/>
+      </CodeComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="inst"/>
@@ -706,10 +722,11 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="nReps" updates="None" val="$choice(32, size=20, Replace=False)" valType="code"/>
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
+    <Routine name="Repeat20"/>
     <Routine name="ISI"/>
     <Routine name="Receive_money"/>
     <Routine name="trial"/>
