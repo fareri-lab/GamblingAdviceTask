@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.7),
-    on July 18, 2019, at 20:52
+    on July 19, 2019, at 08:15
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -124,7 +124,7 @@ import numpy.random
 
 from numpy.random import choice
 
-choice(32, size=20, Replace=False)
+#choice(32, size=20)
 
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
@@ -523,7 +523,7 @@ for thisTrial_2 in trials_2:
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler(nReps=1, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('Book1.xlsx'),
+        trialList=data.importConditions('Book1.xlsx', selection=choice(32, size=20, replace=False)),
         seed=None, name='trials')
     thisExp.addLoop(trials)  # add the loop to the experiment
     thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
