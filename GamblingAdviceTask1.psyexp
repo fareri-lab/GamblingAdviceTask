@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.1.2">
+<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.0.7">
   <Settings>
     <Param name="Completed URL" updates="None" val="" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
@@ -266,7 +266,7 @@
         <Param name="name" updates="None" val="code_4" valType="code"/>
       </CodeComponent>
       <CodeComponent name="GambleCount">
-        <Param name="Begin Experiment" updates="constant" val="nGamble=0&amp;#10;gamAd=0&amp;#10;gamFollow=0" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="nGamble=0&amp;#10;gamFollow=0&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -276,7 +276,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="#trials.addData('nGamble', nGamble)&amp;#10;if resp.keys == 'right':&amp;#10;    nGamble += 1&amp;#10;&amp;#10;#if response.keys == 'y' and gamAdvice == 'risk' :&amp;#10;#    gamAd += 1&amp;#10;#if response.keys == 'y' and gamAdvice == '1':&amp;#10;#    gamAd += 1&amp;#10;    &amp;#10;#if response.keys == 'y':&amp;#10;#    gamAd+=gamAdvice&amp;#10;&amp;#10;&amp;#10;&amp;#10;'''&amp;#10;if GambleAdvice == '1' and resp.keys == 'right'&amp;#10;    gamFollow += 1&amp;#10;&amp;#10;&amp;#10;print(gam)&amp;#10;'''&amp;#10;&amp;#10;#print(gamAd)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="#trials.addData('nGamble', nGamble)&amp;#10;if resp.keys == 'right':&amp;#10;    nGamble += 1&amp;#10;&amp;#10;'''&amp;#10;&amp;#10;for thisTrial in trials:&amp;#10;    if sheet.cell_value(row, 5) == 'risk':&amp;#10;        gamAd+=1&amp;#10;'''&amp;#10;    &amp;#10;#if response.keys == 'y' and gamAdvice == '1':&amp;#10;#    gamAd += 1&amp;#10;    &amp;#10;#if response.keys == 'y':&amp;#10;#    gamAd+=gamAdvice&amp;#10;&amp;#10;&amp;#10;&amp;#10;'''&amp;#10;if GambleAdvice == '1' and resp.keys == 'right'&amp;#10;    gamFollow += 1&amp;#10;&amp;#10;&amp;#10;print(gam)&amp;#10;'''&amp;#10;&amp;#10;print(gamAd)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="GambleCount" valType="code"/>
       </CodeComponent>
@@ -472,19 +472,19 @@
       </CodeComponent>
     </Routine>
     <Routine name="askAd">
-      <TextComponent name="text_3">
-        <Param name="color" updates="constant" val="white" valType="str"/>
+      <TextComponent name="yesNo">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.09" valType="code"/>
-        <Param name="name" updates="None" val="text_3" valType="code"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.09" valType="code"/>
+        <Param name="name" updates="None" val="yesNo" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, -0.2)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, -0.2)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -492,23 +492,23 @@
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="Advice.status==STARTED" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Y                 N" valType="str"/>
+        <Param name="text" updates="set every repeat" val="Y                 N" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
       <TextComponent name="ask">
-        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.05" valType="code"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.05" valType="code"/>
         <Param name="name" updates="None" val="ask" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0.11)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0.11)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -516,7 +516,7 @@
         <Param name="stopType" updates="None" val="condition" valType="str"/>
         <Param name="stopVal" updates="constant" val="Advice.status==STARTED" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Would you like to hear advice from your financial advisor?" valType="str"/>
+        <Param name="text" updates="set every repeat" val="Would you like to hear advice from your financial advisor?" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -538,8 +538,8 @@
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
-      <CodeComponent name="code">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+      <CodeComponent name="conditionalAdvice">
+        <Param name="Begin Experiment" updates="constant" val="gamAd=0" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -549,9 +549,9 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True&amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False " valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True&amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code" valType="code"/>
+        <Param name="name" updates="None" val="conditionalAdvice" valType="code"/>
       </CodeComponent>
       <TextComponent name="Advice">
         <Param name="color" updates="set every repeat" val="white" valType="str"/>
@@ -577,6 +577,41 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
+      <TextComponent name="adviceCode">
+        <Param name="color" updates="set every repeat" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="adviceCode" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="response.keys=='y'" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
+        <Param name="text" updates="set every repeat" val="$GambleAdviceNum" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="adviceType">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAd += 1" valType="extendedCode"/>
+        <Param name="name" updates="None" val="adviceType" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="ISI">
       <TextComponent name="iSi">
@@ -701,7 +736,7 @@
     </Routine>
     <Routine name="Repeat20">
       <CodeComponent name="rep20">
-        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;import pandas as pd&amp;#10;&amp;#10;xl = pd.read_excel('Book1.xlsx', converters={'GambleAdviceNum':int})&amp;#10;&amp;#10;gamAdvice = xl['GambleAdviceNum']&amp;#10;&amp;#10;largeDict = xl.to_dict('records')&amp;#10;&amp;#10;dict = pd.read_excel('Book1.xlsx', index_col=3).to_dict()&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;import pandas as pd&amp;#10;&amp;#10;import xlrd&amp;#10;&amp;#10;book = xlrd.open_workbook('Book1.xlsx')&amp;#10;sheet = book.sheet_by_index(0)&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;#xl = pd.read_excel('Book1.xlsx') &amp;#10;&amp;#10;#converters={'GambleAdviceNum':int})&amp;#10;&amp;#10;#gamAdvice = xl['GambleAdviceType']&amp;#10;&amp;#10;#largeDict = xl.to_dict('records')&amp;#10;&amp;#10;#dict = pd.read_excel('Book1.xlsx', index_col=3).to_dict()&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>

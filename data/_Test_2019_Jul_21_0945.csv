@@ -1,0 +1,62 @@
+﻿Choice,Choice2,Amount,AdviceVar1,GambleAdviceNum,GambleAdviceType,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,space,1.4107208999921568,,,,,,,,,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA50_G20.bmp,Pictures\IA50_G20.bmp,Pictures\IA50.bmp,"
+
+"Let's venture and take a risk!"",1,risk,0,0,0,0,0,0,0,18,,,left,1.22073270000692,return,1.7528551000141306,y,0.7828003000031458,right,0.3278590000118129,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA100_G80.bmp,Pictures\IA100_G80.bmp,Pictures\IA100.bmp,"
+
+"Why not gamble?"",1,risk,0,0,0,0,0,1,1,19,,,,,,,y,0.8963318000023719,right,0.7118960000079824,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA100_L80.bmp,Pictures\IA100_L80.bmp,Pictures\IA100.bmp,"
+
+"Go all in!"",1,risk,0,0,0,0,0,2,2,0,,,,,,,y,1.0683714000042528,left,0.7296174000075553,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA25_G10.bmp,Pictures\IA25_G10.bmp,Pictures\IA25.bmp,"
+
+"What's life without a little risk?"",1,risk,0,0,0,0,0,3,3,2,,,,,,,y,1.2070086000021547,left,2.2741075000085402,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA75_G60.bmp,Pictures\IA75_G60.bmp,Pictures\IA75.bmp,"
+
+"Make it exciting, take a chance!"",1,risk,0,0,0,0,0,4,4,17,,,,,,,y,1.130586500003119,left,0.7772180000029039,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA25_L5.bmp,Pictures\IA25_L5.bmp,Pictures\IA25.bmp,"
+
+"It would be smarter to choose the safe option."",0,safe,0,0,0,0,0,5,5,7,,,,,,,y,1.2524762999964878,left,1.1483485999924596,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA75_L15.bmp,Pictures\IA75_L15.bmp,Pictures\IA75.bmp,"
+
+"Trust me, gamble!"",1,risk,0,0,0,0,0,6,6,4,,,,,,,y,0.9104744000069331,right,0.37299930000153836,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA50_G40.bmp,Pictures\IA50_G40.bmp,Pictures\IA50.bmp,"
+
+"It would probably be best to play it safe."",0,safe,0,0,0,0,0,7,7,9,,,,,,,y,1.1947350000118604,left,2.005606800012174,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA100_G60.bmp,Pictures\IA100_G60.bmp,Pictures\IA100.bmp,"
+
+"Be cautious, don't gamble for this one."",0,safe,0,0,0,0,0,8,8,8,,,,,,,y,0.5321785999985877,left,2.1414007999992464,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA75_G30.bmp,Pictures\IA75_G30.bmp,Pictures\IA75.bmp,"
+
+"Be bold, gamble!"",1,risk,0,0,0,0,0,9,9,5,,,,,,,y,0.7708774000057019,right,0.38980889999947976,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA25_G20.bmp,Pictures\IA25_G20.bmp,Pictures\IA25.bmp,"
+
+"I wouldn't gamble for this one. "",0,safe,0,0,0,0,0,10,10,14,,,,,,,y,0.4740243999985978,left,0.3399511000025086,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA25_L10.bmp,Pictures\IA25_L10.bmp,Pictures\IA25.bmp,"
+
+"Dont be afraid to take the risk!"",1,risk,0,0,0,0,0,11,11,13,,,,,,,y,0.5004208000027575,right,0.940453899995191,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA100_L20.bmp,Pictures\IA100_L20.bmp,Pictures\IA100.bmp,"
+
+"Try to win as much money as you can, gamble!"",1,risk,0,0,0,0,0,12,12,11,,,,,,,n,0.5195443000120576,right,0.7250692999950843,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA50_G10.bmp,Pictures\IA50_G10.bmp,Pictures\IA50.bmp,"
+
+"Go with the safe option here!"",0,safe,0,0,0,0,0,13,13,12,,,,,,,y,0.39968849999422673,right,1.0770240999991074,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA75_G15.bmp,Pictures\IA75_G15.bmp,Pictures\IA75.bmp,"
+
+"Take a chance!"",1,risk,0,0,0,0,0,14,14,16,,,,,,,y,1.750378400000045,right,1.7340524000028381,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA100_L40.bmp,Pictures\IA100_L40.bmp,Pictures\IA100.bmp,"
+
+"Think of the payoff, gamble!"",1,risk,0,0,0,0,0,15,15,1,,,,,,,y,0.7898305000126129,right,0.4650040000124136,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA50_L30.bmp,Pictures\IA50_L30.bmp,Pictures\IA50.bmp,"
+
+"Take a leap, I think you should gamble."",1,risk,0,0,0,0,0,16,16,15,,,,,,,y,0.8623415999900317,right,0.6445648999942932,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA25_G5.bmp,Pictures\IA25_G5.bmp,Pictures\IA25.bmp,"
+
+"Let's stay with the certain option."",0,safe,0,0,0,0,0,17,17,3,,,,,,,n,0.3449955999967642,left,0.538355099997716,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA50_G30.bmp,Pictures\IA50_G30.bmp,Pictures\IA50.bmp,"
+
+"I think you should gamble."",1,risk,0,0,0,0,0,18,18,6,,,,,,,y,0.4462132000044221,right,1.0798745000065537,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,
+Pictures\IA75_L60.bmp,Pictures\IA75_L60.bmp,Pictures\IA75.bmp,"
+
+"Why not take the gamble?"",1,risk,0,0,0,0,0,19,19,10,,,,,,,n,0.8132688000041526,left,1.1337160999974003,,001,2019_Jul_21_0945,Test,3.0.7,60.14957997658243,

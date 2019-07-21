@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.7),
-    on July 21, 2019, at 10:05
+    on July 19, 2019, at 19:54
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -43,7 +43,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\Jojo\\Downloads\\GitHub\\GamblingAdviceTask\\GamblingAdviceTask1_lastrun.py',
+    originPath='C:\\Users\\Jojo\\Downloads\\GitHub\\GamblingAdviceTask\\GamblingAdviceTask1.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -126,19 +126,11 @@ from numpy.random import choice
 
 import pandas as pd
 
-import xlrd
-
-book = xlrd.open_workbook('Book1.xlsx')
-sheet = book.sheet_by_index(0)
-
-
-
-
-#xl = pd.read_excel('Book1.xlsx') 
+xl = pd.read_excel('Book1.xlsx') 
 
 #converters={'GambleAdviceNum':int})
 
-#gamAdvice = xl['GambleAdviceType']
+gamAdvice = xl['GambleAdviceType']
 
 #largeDict = xl.to_dict('records')
 
@@ -200,7 +192,6 @@ ask = visual.TextStim(win=win, name='ask',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-gamAd=0
 Advice = visual.TextStim(win=win, name='Advice',
     text='default text',
     font='Arial',
@@ -208,13 +199,6 @@ Advice = visual.TextStim(win=win, name='Advice',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-4.0);
-adviceCode = visual.TextStim(win=win, name='adviceCode',
-    text='default text',
-    font='Arial',
-    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=-5.0);
 
 # Initialize components for Routine "Choice2Gain"
 Choice2GainClock = core.Clock()
@@ -253,9 +237,8 @@ checkR1 = visual.ImageStim(
 from PIL import Image
 from psychopy import visual, core
 nGamble=0
+gamAd=0
 gamFollow=0
-
-
 
 # Initialize components for Routine "Feedback"
 FeedbackClock = core.Clock()
@@ -805,13 +788,8 @@ for thisTrial_2 in trials_2:
         Advice.setText(text + AdviceVar1)
         Advice.setFont('Arial')
         Advice.setHeight(0.08)
-        adviceCode.setColor([-1.000,-1.000,-1.000], colorSpace='rgb')
-        adviceCode.setPos((0, 0))
-        adviceCode.setText(GambleAdviceNum)
-        adviceCode.setFont('Arial')
-        adviceCode.setHeight(0.1)
         # keep track of which components have finished
-        askAdComponents = [text_3, ask, response, Advice, adviceCode]
+        askAdComponents = [text_3, ask, response, Advice]
         for thisComponent in askAdComponents:
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
@@ -878,15 +856,6 @@ for thisTrial_2 in trials_2:
             if Advice.status == STARTED and t >= (Advice.tStart + 3):
                 Advice.setAutoDraw(False)
             
-            # *adviceCode* updates
-            if (response.keys=='y') and adviceCode.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                adviceCode.tStart = t
-                adviceCode.frameNStart = frameN  # exact frame index
-                adviceCode.setAutoDraw(True)
-            if adviceCode.status == STARTED and t >= (adviceCode.tStart + 0.5):
-                adviceCode.setAutoDraw(False)
-            
             # check for quit (typically the Esc key)
             if endExpNow or event.getKeys(keyList=["escape"]):
                 core.quit()
@@ -918,12 +887,6 @@ for thisTrial_2 in trials_2:
             continueRoutine = True
         if response.keys == 'n':
             continueRoutine = False 
-        
-        gambleAdvice = int(GambleAdviceNum)
-        
-        
-        if continueRoutine == True and gambleAdvice == 1:
-            gamAd += 1
         # the Routine "askAd" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -1125,13 +1088,8 @@ for thisTrial_2 in trials_2:
         if resp.keys == 'right':
             nGamble += 1
         
-        '''
-        
-        for thisTrial in trials:
-            if sheet.cell_value(row, 5) == 'risk':
-                gamAd+=1
-        '''
-            
+        if response.keys == 'y' and gamAdvice == 'risk' :
+            gamAd += 1
         #if response.keys == 'y' and gamAdvice == '1':
         #    gamAd += 1
             
@@ -1148,7 +1106,7 @@ for thisTrial_2 in trials_2:
         print(gam)
         '''
         
-        print(gamAd)
+        #print(gamAd)
         # the Routine "Choice2Gain" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
