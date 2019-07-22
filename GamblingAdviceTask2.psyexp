@@ -459,7 +459,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="import pandas as pd&amp;#10;&amp;#10;cond = pd.read_excel('Book1.xlsx')&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="import pandas as pd&amp;#10;&amp;#10;cond = pd.read_excel('Book2.xlsx')&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -472,30 +472,24 @@
       </CodeComponent>
     </Routine>
     <Routine name="askAd">
-      <TextComponent name="yesNo">
-        <Param name="color" updates="set every repeat" val="white" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+      <KeyboardComponent name="response">
+        <Param name="allowedKeys" updates="constant" val="'y','n'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="set every repeat" val="0.09" valType="code"/>
-        <Param name="name" updates="None" val="yesNo" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(0, -0.2)" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="response" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="response.status == STARTED" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="Y                 N" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
+        <Param name="startVal" updates="None" val="0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
       <TextComponent name="ask">
         <Param name="color" updates="set every repeat" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
@@ -513,47 +507,14 @@
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="response.status == STARTED" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="set every repeat" val="Would you like to hear advice from your financial advisor?" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <KeyboardComponent name="response">
-        <Param name="allowedKeys" updates="constant" val="'y','n'" valType="code"/>
-        <Param name="correctAns" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="response" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="4" valType="code"/>
-        <Param name="store" updates="constant" val="last key" valType="str"/>
-        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
-      </KeyboardComponent>
-      <CodeComponent name="conditionalAdvice">
-        <Param name="Begin Experiment" updates="constant" val="gamAdRisk=0&amp;#10;gamAdSafe=0&amp;#10;adFollow=0&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="followAd=[]" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True &amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;&amp;#10;" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True&amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="conditionalAdvice" valType="code"/>
-      </CodeComponent>
-      <TextComponent name="Advice">
+      <TextComponent name="yesNo">
         <Param name="color" updates="set every repeat" val="white" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -561,61 +522,22 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="set every repeat" val="0.08" valType="code"/>
-        <Param name="name" updates="None" val="Advice" valType="code"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.09" valType="code"/>
+        <Param name="name" updates="None" val="yesNo" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, -0.2)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="condition" valType="str"/>
-        <Param name="startVal" updates="None" val="response.keys=='y'" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$text + $AdviceVar1" valType="str"/>
+        <Param name="text" updates="set every repeat" val="Y                 N" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <TextComponent name="adviceCode">
-        <Param name="color" updates="set every repeat" val="$[-1.000,-1.000,-1.000]" valType="str"/>
-        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
-        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="set every repeat" val="0.1" valType="code"/>
-        <Param name="name" updates="None" val="adviceCode" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="condition" valType="str"/>
-        <Param name="startVal" updates="None" val="response.keys=='y'" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="0.5" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$GambleAdviceNum" valType="str"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
-      </TextComponent>
-      <CodeComponent name="adviceType">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'&amp;#10;        &amp;#10;    &amp;#10;    &amp;#10;    &amp;#10;if continueRoutine == True and gambleAdvice == 0:&amp;#10;    gamAdSafe += 1" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="adviceType" valType="code"/>
-      </CodeComponent>
     </Routine>
     <Routine name="ISI">
       <TextComponent name="iSi">
@@ -740,7 +662,7 @@
     </Routine>
     <Routine name="Repeat20">
       <CodeComponent name="rep20">
-        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;import pandas as pd&amp;#10;&amp;#10;import xlrd&amp;#10;&amp;#10;book = xlrd.open_workbook('Book1.xlsx')&amp;#10;sheet = book.sheet_by_index(0)&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;import pandas as pd&amp;#10;&amp;#10;import xlrd&amp;#10;&amp;#10;book = xlrd.open_workbook('Book2.xlsx')&amp;#10;sheet = book.sheet_by_index(0)&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -753,6 +675,86 @@
         <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="rep20" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="getAd">
+      <CodeComponent name="condAdvice">
+        <Param name="Begin Experiment" updates="constant" val="gamAdRisk=0&amp;#10;gamAdSafe=0&amp;#10;adFollow=0&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="followAd=[]&amp;#10;&amp;#10;&amp;#10;if response.keys == 'y':&amp;#10;    continueRoutine = True&amp;#10;&amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False " valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True&amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="condAdvice" valType="code"/>
+      </CodeComponent>
+      <TextComponent name="giveAdvice">
+        <Param name="color" updates="set every repeat" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.1" valType="code"/>
+        <Param name="name" updates="None" val="giveAdvice" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="continueRoutine == True" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="3" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$text + $AdviceVar1" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <TextComponent name="textForCode">
+        <Param name="color" updates="set every repeat" val="$[-1.000,-1.000,-1.000]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.01" valType="code"/>
+        <Param name="name" updates="None" val="textForCode" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(-.9, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="condition" valType="str"/>
+        <Param name="startVal" updates="None" val="continueRoutine == True" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="$GambleAdviceNum" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <CodeComponent name="counter">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'&amp;#10;        &amp;#10;    &amp;#10;    &amp;#10;    &amp;#10;if continueRoutine == True and gambleAdvice == 0:&amp;#10;    gamAdSafe += 1" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="counter" valType="code"/>
       </CodeComponent>
     </Routine>
   </Routines>
@@ -772,8 +774,8 @@
     <Routine name="preBlock"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="$choice(32, size=20, replace=False)" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('Choice', 'Pictures\\IA50_G10.bmp'), ('Choice2', 'Pictures\\IA50_G10.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Go with the safe option here!&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Try your luck and gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Go with the safe option here!&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA50_G20.bmp'), ('Choice2', 'Pictures\\IA50_G20.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Let\'s venture and take a risk!&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Don\'t gamble for this one.&quot;'), ('AdviceVar1', '\n\n&quot;Let\'s venture and take a risk!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA50_G30.bmp'), ('Choice2', 'Pictures\\IA50_G30.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;I think you should gamble.&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Don\'t be tempted to gamble.&quot;'), ('AdviceVar1', '\n\n&quot;I think you should gamble.&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA50_G40.bmp'), ('Choice2', 'Pictures\\IA50_G40.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;It would probably be best to play it safe.&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;What\'s life without a little risk?&quot;'), ('AdviceVar1', '\n\n&quot;It would probably be best to play it safe.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA100_G20.bmp'), ('Choice2', 'Pictures\\IA100_G20.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Go ahead and gamble!&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Be cautious, don\'t gamble for this one.&quot;'), ('AdviceVar1', '\n\n&quot;Go ahead and gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA100_G40.bmp'), ('Choice2', 'Pictures\\IA100_G40.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Try your luck and gamble!&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Go with the safe option here!&quot;'), ('AdviceVar1', '\n\n&quot;Try your luck and gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA100_G60.bmp'), ('Choice2', 'Pictures\\IA100_G60.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Be cautious, don\'t gamble for this one.&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Why not take the gamble?&quot;'), ('AdviceVar1', '\n\n&quot;Be cautious, don\'t gamble for this one.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA100_G80.bmp'), ('Choice2', 'Pictures\\IA100_G80.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Why not gamble?&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;That gamble doesn\'t sound too good, play it safe.&quot;'), ('AdviceVar1', '\n\n&quot;Why not gamble?&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA25_G5.bmp'), ('Choice2', 'Pictures\\IA25_G5.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Let\'s stay with the certain option.&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Take a chance!&quot;'), ('AdviceVar1', '\n\n&quot;Let\'s stay with the certain option.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA25_G10.bmp'), ('Choice2', 'Pictures\\IA25_G10.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;What\'s life without a little risk?&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Don\'t gamble for this one, play it safe.&quot;'), ('AdviceVar1', '\n\n&quot;What\'s life without a little risk?&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA25_G15.bmp'), ('Choice2', 'Pictures\\IA25_G15.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;I think you should take a gamble.&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Think of the payoff, gamble!&quot;'), ('AdviceVar1', '\n\n&quot;I think you should take a gamble.&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA25_G20.bmp'), ('Choice2', 'Pictures\\IA25_G20.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;I wouldn\'t gamble for this one. &quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Why not gamble?&quot;'), ('AdviceVar1', '\n\n&quot;I wouldn\'t gamble for this one. &quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA75_G15.bmp'), ('Choice2', 'Pictures\\IA75_G15.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Take a chance!&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;I don\'t think you should gamble.&quot;'), ('AdviceVar1', '\n\n&quot;Take a chance!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA75_G30.bmp'), ('Choice2', 'Pictures\\IA75_G30.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Be bold, gamble!&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Dont be afraid to take the risk!&quot;'), ('AdviceVar1', '\n\n&quot;Be bold, gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA75_G45.bmp'), ('Choice2', 'Pictures\\IA75_G45.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Don\'t gamble for this one.&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Trust me, gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Don\'t gamble for this one.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA75_G60.bmp'), ('Choice2', 'Pictures\\IA75_G60.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Make it exciting, take a chance!&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Let\'s stay with the certain option.&quot;'), ('AdviceVar1', '\n\n&quot;Make it exciting, take a chance!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA50_L10.bmp'), ('Choice2', 'Pictures\\IA50_L10.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Play it safe, don’t gamble!&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;It would probably be best to play it safe.&quot;'), ('AdviceVar1', '\n\n&quot;Play it safe, don’t gamble!&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA50_L20.bmp'), ('Choice2', 'Pictures\\IA50_L20.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Certainty is boring, take a risk!&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;You\'d have a lot to lose, don\'t gamble.&quot;'), ('AdviceVar1', '\n\n&quot;Certainty is boring, take a risk!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA50_L30.bmp'), ('Choice2', 'Pictures\\IA50_L30.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Take a leap, I think you should gamble.&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Hold back, stay with the safe choice.&quot;'), ('AdviceVar1', '\n\n&quot;Take a leap, I think you should gamble.&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA50_L40.bmp'), ('Choice2', 'Pictures\\IA50_L40.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;That gamble doesn\'t sound too good, play it safe.&quot;'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Let\'s venture and take a risk!&quot;'), ('AdviceVar1', '\n\n&quot;That gamble doesn\'t sound too good, play it safe.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA100_L20.bmp'), ('Choice2', 'Pictures\\IA100_L20.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Try to win as much money as you can, gamble!&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;I wouldn\'t gamble for this one. &quot;'), ('AdviceVar1', '\n\n&quot;Try to win as much money as you can, gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA100_L40.bmp'), ('Choice2', 'Pictures\\IA100_L40.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Think of the payoff, gamble!&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;I think you should take a gamble.&quot;'), ('AdviceVar1', '\n\n&quot;Think of the payoff, gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA100_L60.bmp'), ('Choice2', 'Pictures\\IA100_L60.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;You\'d have a lot to lose, don\'t gamble.&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Make it exciting, take a chance!&quot;'), ('AdviceVar1', '\n\n&quot;You\'d have a lot to lose, don\'t gamble.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA100_L80.bmp'), ('Choice2', 'Pictures\\IA100_L80.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Go all in!&quot;'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;There\'s not much on the line here, gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Go all in!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA25_L5.bmp'), ('Choice2', 'Pictures\\IA25_L5.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;It would be smarter to choose the safe option.&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Certainty is boring, take a risk!&quot;'), ('AdviceVar1', '\n\n&quot;It would be smarter to choose the safe option.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA25_L10.bmp'), ('Choice2', 'Pictures\\IA25_L10.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Dont be afraid to take the risk!&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Be bold, gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Dont be afraid to take the risk!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA25_L15.bmp'), ('Choice2', 'Pictures\\IA25_L15.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;There\'s not much on the line here, gamble!&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Go all in!&quot;'), ('AdviceVar1', '\n\n&quot;There\'s not much on the line here, gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA25_L20.bmp'), ('Choice2', 'Pictures\\IA25_L20.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Don\'t be tempted to gamble.&quot;'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Take a leap, I think you should gamble.&quot;'), ('AdviceVar1', '\n\n&quot;Don\'t be tempted to gamble.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA75_L15.bmp'), ('Choice2', 'Pictures\\IA75_L15.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Trust me, gamble!&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Play it safe, don’t gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Trust me, gamble!&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)]), OrderedDict([('Choice', 'Pictures\\IA75_L30.bmp'), ('Choice2', 'Pictures\\IA75_L30.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Hold back, stay with the safe choice.&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Try to win as much money as you can, gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Hold back, stay with the safe choice.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA75_L45.bmp'), ('Choice2', 'Pictures\\IA75_L45.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Don\'t gamble for this one, play it safe.&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;Go ahead and gamble!&quot;'), ('AdviceVar1', '\n\n&quot;Don\'t gamble for this one, play it safe.&quot;'), ('GambleAdvice', 'safe'), ('GambleAdviceNum', 0)]), OrderedDict([('Choice', 'Pictures\\IA75_L60.bmp'), ('Choice2', 'Pictures\\IA75_L60.bmp'), ('AdviceVar', 'Advisor 1 says:\n\n&quot;Why not take the gamble?&quot;'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar2', 'Advisor 2 says:\n\n&quot;It would be smarter to choose the safe option.&quot;'), ('AdviceVar1', '\n\n&quot;Why not take the gamble?&quot;'), ('GambleAdvice', 'risk'), ('GambleAdviceNum', 1)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="Book1.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('Choice', 'Pictures\\IA50_G10.bmp'), ('Choice2', 'Pictures\\IA50_G10.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;Go with the safe option here!&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA50_G20.bmp'), ('Choice2', 'Pictures\\IA50_G20.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;Let\'s venture and take a risk!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA50_G30.bmp'), ('Choice2', 'Pictures\\IA50_G30.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;I think you should gamble.&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA50_G40.bmp'), ('Choice2', 'Pictures\\IA50_G40.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;It would probably be best to play it safe.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA100_G20.bmp'), ('Choice2', 'Pictures\\IA100_G20.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Go ahead and gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA100_G40.bmp'), ('Choice2', 'Pictures\\IA100_G40.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Try your luck and gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA100_G60.bmp'), ('Choice2', 'Pictures\\IA100_G60.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Be cautious, don\'t gamble for this one.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA100_G80.bmp'), ('Choice2', 'Pictures\\IA100_G80.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Why not gamble?&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA25_G5.bmp'), ('Choice2', 'Pictures\\IA25_G5.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;Let\'s stay with the certain option.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA25_G10.bmp'), ('Choice2', 'Pictures\\IA25_G10.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;What\'s life without a little risk?&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA25_G15.bmp'), ('Choice2', 'Pictures\\IA25_G15.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;I think you should take a gamble.&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA25_G20.bmp'), ('Choice2', 'Pictures\\IA25_G20.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;I wouldn\'t gamble for this one. &quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA75_G15.bmp'), ('Choice2', 'Pictures\\IA75_G15.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Take a chance!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA75_G30.bmp'), ('Choice2', 'Pictures\\IA75_G30.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Be bold, gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA75_G45.bmp'), ('Choice2', 'Pictures\\IA75_G45.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Don\'t gamble for this one.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA75_G60.bmp'), ('Choice2', 'Pictures\\IA75_G60.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Make it exciting, take a chance!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA50_L10.bmp'), ('Choice2', 'Pictures\\IA50_L10.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;Play it safe, don’t gamble!&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA50_L20.bmp'), ('Choice2', 'Pictures\\IA50_L20.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;Certainty is boring, take a risk!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA50_L30.bmp'), ('Choice2', 'Pictures\\IA50_L30.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;Take a leap, I think you should gamble.&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA50_L40.bmp'), ('Choice2', 'Pictures\\IA50_L40.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n&quot;That gamble doesn\'t sound too good, play it safe.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA100_L20.bmp'), ('Choice2', 'Pictures\\IA100_L20.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Try to win as much money as you can, gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA100_L40.bmp'), ('Choice2', 'Pictures\\IA100_L40.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Think of the payoff, gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA100_L60.bmp'), ('Choice2', 'Pictures\\IA100_L60.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;You\'d have a lot to lose, don\'t gamble.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA100_L80.bmp'), ('Choice2', 'Pictures\\IA100_L80.bmp'), ('Amount', 'Pictures\\IA100.bmp'), ('AdviceVar1', '\n\n&quot;Go all in!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA25_L5.bmp'), ('Choice2', 'Pictures\\IA25_L5.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;It would be smarter to choose the safe option.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA25_L10.bmp'), ('Choice2', 'Pictures\\IA25_L10.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;Dont be afraid to take the risk!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA25_L15.bmp'), ('Choice2', 'Pictures\\IA25_L15.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;There\'s not much on the line here, gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA25_L20.bmp'), ('Choice2', 'Pictures\\IA25_L20.bmp'), ('Amount', 'Pictures\\IA25.bmp'), ('AdviceVar1', '\n\n&quot;Don\'t be tempted to gamble.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA75_L15.bmp'), ('Choice2', 'Pictures\\IA75_L15.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Trust me, gamble!&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')]), OrderedDict([('Choice', 'Pictures\\IA75_L30.bmp'), ('Choice2', 'Pictures\\IA75_L30.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Hold back, stay with the safe choice.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA75_L45.bmp'), ('Choice2', 'Pictures\\IA75_L45.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Don\'t gamble for this one, play it safe.&quot;'), ('GambleAdviceNum', 0), ('GambleAdviceType', 'safe')]), OrderedDict([('Choice', 'Pictures\\IA75_L60.bmp'), ('Choice2', 'Pictures\\IA75_L60.bmp'), ('Amount', 'Pictures\\IA75.bmp'), ('AdviceVar1', '\n\n&quot;Why not take the gamble?&quot;'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="Book2.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
@@ -786,6 +788,7 @@
     <Routine name="Receive_money"/>
     <Routine name="trial"/>
     <Routine name="askAd"/>
+    <Routine name="getAd"/>
     <Routine name="Choice2Gain"/>
     <LoopTerminator name="trials"/>
     <Routine name="Feedback"/>
