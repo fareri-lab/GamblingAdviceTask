@@ -1,0 +1,8 @@
+﻿Choice,Choice2,Amount,AdviceVar1,GambleAdviceNum,GambleAdviceType,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,space,1.4821781999780796,,,,,,,,,,001,2019_Jul_22_1909,Test,3.0.7,59.67146087679423,
+Pictures\IA25_G15.bmp,Pictures\IA25_G15.bmp,Pictures\IA25.bmp,"
+
+"I think you should take a gamble."",1,risk,0,0,0,0,0,0,0,4,,,right,0.9645763000007719,return,1.8957655999984127,y,1.3048239000199828,right,0.59192219999386,,001,2019_Jul_22_1909,Test,3.0.7,59.67146087679423,
+Pictures\IA110_55_L95p.bmp,Pictures\IA110_55_L95p.bmp,Pictures\IA110.bmp,"
+
+"Trust me, gamble!"",1,risk,0,0,0,0,0,1,1,19,,,,,,,y,0.6603251000051387,right,0.3173279000038747,,001,2019_Jul_22_1909,Test,3.0.7,59.67146087679423,
