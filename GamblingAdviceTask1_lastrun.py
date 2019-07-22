@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on July 22, 2019, at 14:07
+    on July 22, 2019, at 15:56
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -121,9 +121,6 @@ Ad2pic = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-5.0)
-
-# Initialize components for Routine "Repeat20"
-Repeat20Clock = core.Clock()
 import numpy.random
 
 from numpy.random import choice
@@ -196,8 +193,7 @@ ask = visual.TextStim(win=win, name='ask',
 # Initialize components for Routine "getAd"
 getAdClock = core.Clock()
 gamAdRisk=0
-gamAdSafe=0
-adFollow=0
+
 
 getAdv = visual.TextStim(win=win, name='getAdv',
     text='default text',
@@ -251,7 +247,7 @@ checkR1 = visual.ImageStim(
 from PIL import Image
 from psychopy import visual, core
 nGamble=0
-
+adFollow=0
 
 
 
@@ -409,7 +405,7 @@ for thisTrial_2 in trials_2:
     border_left = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (-0.4, -0.09), opacity = 1, lineWidth = 5.0)
     
     enter = keyboard.Keyboard()
-    import pandas as pd
+    
     
     cond = pd.read_excel('Book1.xlsx')
     
@@ -604,53 +600,6 @@ for thisTrial_2 in trials_2:
         if thisTrial != None:
             for paramName in thisTrial:
                 exec('{} = thisTrial[paramName]'.format(paramName))
-        
-        # ------Prepare to start Routine "Repeat20"-------
-        t = 0
-        Repeat20Clock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
-        # update component parameters for each repeat
-        # keep track of which components have finished
-        Repeat20Components = []
-        for thisComponent in Repeat20Components:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        
-        # -------Start Routine "Repeat20"-------
-        while continueRoutine:
-            # get current time
-            t = Repeat20Clock.getTime()
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            
-            # check for quit (typically the Esc key)
-            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in Repeat20Components:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # -------Ending Routine "Repeat20"-------
-        for thisComponent in Repeat20Components:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        # the Routine "Repeat20" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
         
         # ------Prepare to start Routine "ISI"-------
         t = 0
@@ -888,9 +837,9 @@ for thisTrial_2 in trials_2:
         yesNo.setHeight(0.09)
         ask.setColor('white', colorSpace='rgb')
         ask.setPos((0, 0.11))
-        ask.setText('Would you like to hear advice from your financial advisor?')
+        ask.setText('Would you like to hear advice from your financial advisor? \n')
         ask.setFont('Arial')
-        ask.setHeight(0.05)
+        ask.setHeight(0.06)
         # keep track of which components have finished
         askAdComponents = [response, yesNo, ask]
         for thisComponent in askAdComponents:
@@ -1008,12 +957,15 @@ for thisTrial_2 in trials_2:
         frameN = -1
         continueRoutine = True
         # update component parameters for each repeat
-        followAd=[]
+        followAd = []
+        
         
         if response.keys == 'y':
             continueRoutine = True 
         if response.keys == 'n':
             continueRoutine = False 
+        if response.keys == None:
+            continueRoutine = False
         
         
         getAdv.setColor('white', colorSpace='rgb')
@@ -1046,6 +998,8 @@ for thisTrial_2 in trials_2:
                 continueRoutine = True 
             if response.keys == 'n':
                 continueRoutine = False 
+            if response.keys == None:
+                continueRoutine = False
             
             
             
@@ -1098,22 +1052,27 @@ for thisTrial_2 in trials_2:
         for thisComponent in getAdComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        trials.addData('getAdv.started', getAdv.tStartRefresh)
-        trials.addData('getAdv.stopped', getAdv.tStopRefresh)
-        trials.addData('textForCode.started', textForCode.tStartRefresh)
-        trials.addData('textForCode.stopped', textForCode.tStopRefresh)
         gambleAdvice = int(GambleAdviceNum)
         
         
         if continueRoutine == True and gambleAdvice == 1:
             gamAdRisk += 1
             followAd = 'risk'
-                
-            
-            
-            
-        if continueRoutine == True and gambleAdvice == 0:
-            gamAdSafe += 1
+        trials.addData('getAdv.started', getAdv.tStartRefresh)
+        trials.addData('getAdv.stopped', getAdv.tStopRefresh)
+        trials.addData('textForCode.started', textForCode.tStartRefresh)
+        trials.addData('textForCode.stopped', textForCode.tStopRefresh)
+        '''
+        gambleAdvice = int(GambleAdviceNum)
+        
+        
+        if continueRoutine == True and gambleAdvice == 1:
+            gamAdRisk += 1
+            followAd = 'risk'
+        
+        '''
+        
+        print(gamAdRisk)
         # the Routine "getAd" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -1330,13 +1289,9 @@ for thisTrial_2 in trials_2:
         if followAd == 'risk' and resp.keys == 'right':
             adFollow += 1
             
-            
-        '''
-        if followAd == 'safe' and resp.keys == 'left':
-            adFollow += 1
-        '''
         
-        print(gamAdRisk)
+        
+        
         # the Routine "Choice2Gain" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
@@ -1364,7 +1319,7 @@ for thisTrial_2 in trials_2:
     endText.setPos((-0.08, 0))
     endText.setText(text2 + " told you to gamble " + gamAdvRisk + " times. \n \n" 
 
-"You followed their advice to gamble" + advFollow + " times. \n \n"
+"You followed their advice to gamble " + advFollow + " times. \n \n"
 
 
 "You gambled " + nGam + " times. \n \n"

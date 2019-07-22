@@ -1,0 +1,262 @@
+2.0563 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+2.9675 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([-1., -1., -1.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000000001C3348D0>, gamma=None, kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000000001C381710>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+2.9676 	EXP 	window1: recordFrameIntervals = False
+3.1323 	EXP 	window1: recordFrameIntervals = True
+3.3164 	EXP 	window1: recordFrameIntervals = False
+3.6676 	EXP 	Created instructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+4.7818 	EXP 	Created chooseInst = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='chooseInst', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.7858 	EXP 	Created Ad1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='Ad1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.7895 	EXP 	Created Ad2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='Ad2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.7912 	EXP 	Created Ad1pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='Ad1pic', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.8016 	EXP 	Created Ad2pic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='avatar_2.png', interpolate=True, mask=None, maskParams=None, name='Ad2pic', opacity=1.0, ori=0.0, pos=array([ 0.4 , -0.06]), size=array([0.3, 0.3]), texRes=128, units='height', win=Window(...))
+4.8154 	EXP 	Created iSi = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, languageStyle='LTR', name='iSi', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+4.8167 	EXP 	Created receiveMoneyPicture = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='receiveMoneyPicture', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.8206 	EXP 	Created ISI2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='ISI2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8218 	EXP 	Created ChoicePic = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='ChoicePic', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.8256 	EXP 	Created yesNo = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='yesNo', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8295 	EXP 	Created ask = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='ask', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8333 	EXP 	Created getAdv = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='getAdv', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8370 	EXP 	Created textForCode = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='textForCode', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8410 	EXP 	Created blank = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='blank', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8423 	EXP 	Created ChoicePic2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='ChoicePic2', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.8433 	EXP 	Created checkL1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='checkL1', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.8444 	EXP 	Created checkR1 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='checkR1', opacity=1.0, ori=1.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+4.8481 	EXP 	Created endText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='endText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+4.8834 	EXP 	instructions: autoDraw = True
+5.5871 	DATA 	Keypress: space
+5.6037 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+5.6045 	EXP 	New trial (rep=0, index=0): None
+8.1625 	EXP 	Created unnamed Circle = Circle(__class__=<class 'psychopy.visual.circle.Circle'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor='green', lineColorSpace='named', lineRGB=array([  0., 128.,   0.]), lineWidth=5.0, name='unnamed Circle', opacity=1.0, ori=array(0.), pos=array([ 0.4 , -0.09]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+8.1652 	EXP 	Created unnamed Circle = Circle(__class__=<class 'psychopy.visual.circle.Circle'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0, fillColor=None, fillColorSpace='rgb', fillRGB=None, interpolate=True, lineColor='green', lineColorSpace='named', lineRGB=array([  0., 128.,   0.]), lineWidth=5.0, name='unnamed Circle', opacity=1.0, ori=array(0.), pos=array([-0.4 , -0.09]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+8.2502 	EXP 	instructions: autoDraw = False
+8.2502 	EXP 	chooseInst: color = 'white (named)'
+8.2502 	EXP 	chooseInst: pos = array([0. , 0.4])
+8.2502 	EXP 	chooseInst: text = 'Please choose which person you would want to receive financial advice from, and then press enter.'
+8.2502 	EXP 	chooseInst: font = 'Arial'
+8.2502 	EXP 	chooseInst: height = 0.04
+8.2502 	EXP 	Ad1: color = 'white (named)'
+8.2502 	EXP 	Ad1: pos = array([-0.4 , -0.05])
+8.2502 	EXP 	Ad1: text = '\n  Advisor 1: (Left Arrow)\n\n\n\n\n\n\n\n\nAdelphi University MBA student,\ninterning at Chase Bank '
+8.2502 	EXP 	Ad1: font = 'Arial'
+8.2502 	EXP 	Ad1: height = 0.04
+8.2502 	EXP 	Ad2: color = 'white (named)'
+8.2502 	EXP 	Ad2: pos = array([ 0.4 , -0.05])
+8.2502 	EXP 	Ad2: text = '\nAdvisor 2: (Right arrow)\n\n\n\n\n\n\n\n \nAdelphi University\nundergraduate biology major'
+8.2502 	EXP 	Ad2: font = 'Arial'
+8.2502 	EXP 	Ad2: height = 0.04
+8.2502 	EXP 	Ad1pic: opacity = 1.0
+8.2502 	EXP 	Ad1pic: pos = array([-0.4 , -0.06])
+8.2502 	EXP 	Ad1pic: size = array([0.3, 0.3])
+8.2502 	EXP 	Ad1pic: ori = 0.0
+8.2502 	EXP 	Ad1pic: image = 'avatar_1.png'
+8.2502 	EXP 	chooseInst: autoDraw = True
+8.2502 	EXP 	Ad1: autoDraw = True
+8.2502 	EXP 	Ad2: autoDraw = True
+8.2502 	EXP 	Ad1pic: autoDraw = True
+8.2502 	EXP 	Ad2pic: autoDraw = True
+8.2502 	EXP 	chooseInst: text = 'Please choose which person you would want to receive financial advice from, and then press enter.'
+8.2502 	EXP 	Ad1: text = '\n  Advisor 1: (Left Arrow)\n\n\n\n\n\n\n\n\nAdelphi University MBA student,\ninterning at Chase Bank '
+8.2502 	EXP 	Ad2: text = '\nAdvisor 2: (Right arrow)\n\n\n\n\n\n\n\n \nAdelphi University\nundergraduate biology major'
+9.2395 	DATA 	Keypress: left
+9.2507 	EXP 	unnamed Circle: autoDraw = True
+9.2673 	EXP 	unnamed Circle: autoDraw = True
+9.2840 	EXP 	unnamed Circle: autoDraw = True
+9.3006 	EXP 	unnamed Circle: autoDraw = True
+9.3173 	EXP 	unnamed Circle: autoDraw = True
+9.3339 	EXP 	unnamed Circle: autoDraw = True
+9.3506 	EXP 	unnamed Circle: autoDraw = True
+9.3673 	EXP 	unnamed Circle: autoDraw = True
+9.3839 	EXP 	unnamed Circle: autoDraw = True
+9.4006 	EXP 	unnamed Circle: autoDraw = True
+9.4173 	EXP 	unnamed Circle: autoDraw = True
+9.4339 	EXP 	unnamed Circle: autoDraw = True
+9.4506 	EXP 	unnamed Circle: autoDraw = True
+9.4673 	EXP 	unnamed Circle: autoDraw = True
+9.4840 	EXP 	unnamed Circle: autoDraw = True
+9.5006 	EXP 	unnamed Circle: autoDraw = True
+9.5173 	EXP 	unnamed Circle: autoDraw = True
+9.5340 	EXP 	unnamed Circle: autoDraw = True
+9.5506 	EXP 	unnamed Circle: autoDraw = True
+9.5673 	EXP 	unnamed Circle: autoDraw = True
+9.5840 	EXP 	unnamed Circle: autoDraw = True
+9.6008 	EXP 	unnamed Circle: autoDraw = True
+9.6174 	EXP 	unnamed Circle: autoDraw = True
+9.6342 	EXP 	unnamed Circle: autoDraw = True
+9.6507 	EXP 	unnamed Circle: autoDraw = True
+9.6673 	EXP 	unnamed Circle: autoDraw = True
+9.6860 	EXP 	Imported Book1.xlsx as conditions, 20 conditions, 6 params
+9.6863 	EXP 	Created sequence: random, trialTypes=20, nReps=1, seed=None
+9.6865 	EXP 	New trial (rep=0, index=0): OrderedDict([('Choice', 'Pictures\\IA50_G10.bmp'), ('Choice2', 'Pictures\\IA50_G10.bmp'), ('Amount', 'Pictures\\IA50.bmp'), ('AdviceVar1', '\n\n"I think you should gamble."'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')])
+9.6888 	DATA 	Keypress: return
+9.7006 	EXP 	unnamed Circle: autoDraw = True
+9.7006 	EXP 	chooseInst: autoDraw = False
+9.7006 	EXP 	Ad1: autoDraw = False
+9.7006 	EXP 	Ad2: autoDraw = False
+9.7006 	EXP 	Ad1pic: autoDraw = False
+9.7006 	EXP 	Ad2pic: autoDraw = False
+9.7006 	EXP 	unnamed Circle: autoDraw = False
+9.7006 	EXP 	unnamed Circle: autoDraw = False
+9.7006 	EXP 	iSi: autoDraw = True
+11.8224 	EXP 	iSi: autoDraw = False
+11.8224 	EXP 	iSi: autoDraw = False
+11.8224 	EXP 	receiveMoneyPicture: opacity = 1.0
+11.8224 	EXP 	receiveMoneyPicture: pos = array([ 0.  , -0.05])
+11.8224 	EXP 	receiveMoneyPicture: size = array([1.5, 1.1])
+11.8224 	EXP 	receiveMoneyPicture: ori = 0.0
+11.8224 	EXP 	receiveMoneyPicture: image = 'Pictures\\IA50.bmp'
+11.8224 	EXP 	ISI2: color = 'white (named)'
+11.8224 	EXP 	ISI2: pos = array([0., 0.])
+11.8224 	EXP 	ISI2: text = '+'
+11.8224 	EXP 	ISI2: font = 'Arial'
+11.8224 	EXP 	ISI2: height = 0.08
+11.8224 	EXP 	receiveMoneyPicture: autoDraw = True
+13.7022 	EXP 	receiveMoneyPicture: autoDraw = False
+13.7189 	EXP 	ISI2: autoDraw = True
+13.7189 	EXP 	ISI2: text = '+'
+15.2360 	EXP 	ISI2: autoDraw = False
+15.2360 	EXP 	receiveMoneyPicture: autoDraw = False
+15.2360 	EXP 	ISI2: autoDraw = False
+15.2360 	EXP 	ChoicePic: opacity = 1.0
+15.2360 	EXP 	ChoicePic: pos = array([0., 0.])
+15.2360 	EXP 	ChoicePic: size = array([1.3, 0.9])
+15.2360 	EXP 	ChoicePic: ori = 0.0
+15.2360 	EXP 	ChoicePic: image = 'Pictures\\IA50_G10.bmp'
+15.2360 	EXP 	ChoicePic: autoDraw = True
+17.5708 	EXP 	ChoicePic: autoDraw = False
+17.5708 	EXP 	ChoicePic: autoDraw = False
+17.5708 	EXP 	yesNo: color = 'white (named)'
+17.5708 	EXP 	yesNo: pos = array([ 0. , -0.2])
+17.5708 	EXP 	yesNo: text = 'Y                 N'
+17.5708 	EXP 	yesNo: font = 'Arial'
+17.5708 	EXP 	yesNo: height = 0.09
+17.5708 	EXP 	ask: color = 'white (named)'
+17.5708 	EXP 	ask: pos = array([0.  , 0.11])
+17.5708 	EXP 	ask: text = 'Would you like to hear advice from your financial advisor? \n'
+17.5708 	EXP 	ask: font = 'Arial'
+17.5708 	EXP 	ask: height = 0.05
+17.5708 	EXP 	yesNo: autoDraw = True
+17.5708 	EXP 	ask: autoDraw = True
+17.5708 	EXP 	yesNo: text = 'Y                 N'
+17.5708 	EXP 	ask: text = 'Would you like to hear advice from your financial advisor? \n'
+20.4539 	EXP 	yesNo: autoDraw = False
+20.4539 	EXP 	ask: autoDraw = False
+20.4539 	EXP 	getAdv: color = 'white (named)'
+20.4539 	EXP 	getAdv: pos = array([0., 0.])
+20.4539 	EXP 	getAdv: text = 'Advisor 1 says:\n\n"I think you should gamble."'
+20.4539 	EXP 	getAdv: font = 'Arial'
+20.4539 	EXP 	getAdv: height = 0.08
+20.4539 	EXP 	textForCode: color = '[-1. -1. -1.] (rgb)'
+20.4539 	EXP 	textForCode: pos = array([-0.9,  0. ])
+20.4539 	EXP 	textForCode: text = 1
+20.4539 	EXP 	textForCode: font = 'Arial'
+20.4539 	EXP 	textForCode: height = 0.01
+20.4539 	EXP 	getAdv: autoDraw = False
+20.4539 	EXP 	textForCode: autoDraw = False
+20.4539 	EXP 	blank: color = '[-1. -1. -1.] (rgb)'
+20.4539 	EXP 	blank: pos = array([0., 0.])
+20.4539 	EXP 	blank: text = 'I'
+20.4539 	EXP 	blank: font = 'Arial'
+20.4539 	EXP 	blank: height = 0.01
+20.4539 	EXP 	ChoicePic2: opacity = 1.0
+20.4539 	EXP 	ChoicePic2: pos = array([0., 0.])
+20.4539 	EXP 	ChoicePic2: size = array([1.3, 0.9])
+20.4539 	EXP 	ChoicePic2: ori = 0.0
+20.4539 	EXP 	ChoicePic2: image = 'Pictures\\IA50_G10.bmp'
+20.4539 	EXP 	checkL1: color = '[1. 1. 1.] (rgb)'
+20.4539 	EXP 	checkL1: opacity = 1.0
+20.4539 	EXP 	checkL1: pos = array([0., 0.])
+20.4539 	EXP 	checkL1: size = array([2., 1.])
+20.4539 	EXP 	checkL1: ori = 0.0
+20.4539 	EXP 	checkL1: image = 'check2.png'
+20.4539 	EXP 	checkL1: mask = 'None'
+20.4539 	EXP 	checkR1: color = '[1. 1. 1.] (rgb)'
+20.4539 	EXP 	checkR1: opacity = 1.0
+20.4539 	EXP 	checkR1: pos = array([0., 0.])
+20.4539 	EXP 	checkR1: size = array([2., 1.])
+20.4539 	EXP 	checkR1: ori = 0.0
+20.4539 	EXP 	checkR1: image = 'check3.png'
+20.4539 	EXP 	checkR1: mask = 'None'
+20.4539 	EXP 	blank: autoDraw = True
+20.4539 	EXP 	ChoicePic2: autoDraw = True
+20.4539 	EXP 	blank: text = 'I'
+22.3617 	EXP 	New trial (rep=0, index=1): OrderedDict([('Choice', 'Pictures\\IA110_55_G95p.bmp'), ('Choice2', 'Pictures\\IA110_55_G95p.bmp'), ('Amount', 'Pictures\\IA110.bmp'), ('AdviceVar1', '\n\n"What\'s life without a little risk?"'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')])
+22.3714 	EXP 	blank: autoDraw = False
+22.3714 	EXP 	ChoicePic2: autoDraw = False
+22.3714 	EXP 	blank: autoDraw = False
+22.3714 	EXP 	ChoicePic2: autoDraw = False
+22.3714 	EXP 	iSi: autoDraw = True
+24.4052 	EXP 	iSi: autoDraw = False
+24.4052 	EXP 	iSi: autoDraw = False
+24.4052 	EXP 	receiveMoneyPicture: opacity = 1.0
+24.4052 	EXP 	receiveMoneyPicture: pos = array([ 0.  , -0.05])
+24.4052 	EXP 	receiveMoneyPicture: size = array([1.5, 1.1])
+24.4052 	EXP 	receiveMoneyPicture: ori = 0.0
+24.4052 	EXP 	receiveMoneyPicture: image = 'Pictures\\IA110.bmp'
+24.4052 	EXP 	ISI2: color = 'white (named)'
+24.4052 	EXP 	ISI2: pos = array([0., 0.])
+24.4052 	EXP 	ISI2: text = '+'
+24.4052 	EXP 	ISI2: font = 'Arial'
+24.4052 	EXP 	ISI2: height = 0.08
+24.4052 	EXP 	receiveMoneyPicture: autoDraw = True
+26.3726 	EXP 	receiveMoneyPicture: autoDraw = False
+26.3901 	EXP 	ISI2: autoDraw = True
+26.3901 	EXP 	ISI2: text = '+'
+27.8897 	EXP 	ISI2: autoDraw = False
+27.8897 	EXP 	receiveMoneyPicture: autoDraw = False
+27.8897 	EXP 	ISI2: autoDraw = False
+27.8897 	EXP 	ChoicePic: opacity = 1.0
+27.8897 	EXP 	ChoicePic: pos = array([0., 0.])
+27.8897 	EXP 	ChoicePic: size = array([1.3, 0.9])
+27.8897 	EXP 	ChoicePic: ori = 0.0
+27.8897 	EXP 	ChoicePic: image = 'Pictures\\IA110_55_G95p.bmp'
+27.8897 	EXP 	ChoicePic: autoDraw = True
+29.9087 	EXP 	ChoicePic: autoDraw = False
+29.9087 	EXP 	yesNo: color = 'white (named)'
+29.9087 	EXP 	yesNo: pos = array([ 0. , -0.2])
+29.9087 	EXP 	yesNo: text = 'Y                 N'
+29.9087 	EXP 	yesNo: font = 'Arial'
+29.9087 	EXP 	yesNo: height = 0.09
+29.9087 	EXP 	ask: color = 'white (named)'
+29.9087 	EXP 	ask: pos = array([0.  , 0.11])
+29.9087 	EXP 	ask: text = 'Would you like to hear advice from your financial advisor? \n'
+29.9087 	EXP 	ask: font = 'Arial'
+29.9087 	EXP 	ask: height = 0.05
+29.9087 	EXP 	yesNo: autoDraw = True
+29.9087 	EXP 	ask: autoDraw = True
+29.9087 	EXP 	yesNo: text = 'Y                 N'
+29.9087 	EXP 	ask: text = 'Would you like to hear advice from your financial advisor? \n'
+33.0259 	EXP 	yesNo: autoDraw = False
+33.0259 	EXP 	ask: autoDraw = False
+33.0259 	EXP 	getAdv: color = 'white (named)'
+33.0259 	EXP 	getAdv: pos = array([0., 0.])
+33.0259 	EXP 	getAdv: text = 'Advisor 1 says:\n\n"What\'s life without a little risk?"'
+33.0259 	EXP 	getAdv: font = 'Arial'
+33.0259 	EXP 	getAdv: height = 0.08
+33.0259 	EXP 	textForCode: color = '[-1. -1. -1.] (rgb)'
+33.0259 	EXP 	textForCode: pos = array([-0.9,  0. ])
+33.0259 	EXP 	textForCode: text = 1
+33.0259 	EXP 	textForCode: font = 'Arial'
+33.0259 	EXP 	textForCode: height = 0.01
+33.0259 	EXP 	getAdv: autoDraw = False
+33.0259 	EXP 	textForCode: autoDraw = False
+33.0259 	EXP 	blank: color = '[-1. -1. -1.] (rgb)'
+33.0259 	EXP 	blank: pos = array([0., 0.])
+33.0259 	EXP 	blank: text = 'I'
+33.0259 	EXP 	blank: font = 'Arial'
+33.0259 	EXP 	blank: height = 0.01
+33.0259 	EXP 	ChoicePic2: opacity = 1.0
+33.0259 	EXP 	ChoicePic2: pos = array([0., 0.])
+33.0259 	EXP 	ChoicePic2: size = array([1.3, 0.9])
+33.0259 	EXP 	ChoicePic2: ori = 0.0
+33.0259 	EXP 	ChoicePic2: image = 'Pictures\\IA110_55_G95p.bmp'
+33.0259 	EXP 	blank: autoDraw = True
+33.0259 	EXP 	ChoicePic2: autoDraw = True
+33.0259 	EXP 	blank: text = 'I'
+34.9470 	EXP 	New trial (rep=0, index=2): OrderedDict([('Choice', 'Pictures\\IA110_55_L95p.bmp'), ('Choice2', 'Pictures\\IA110_55_L95p.bmp'), ('Amount', 'Pictures\\IA110.bmp'), ('AdviceVar1', '\n\n"Go all in!"'), ('GambleAdviceNum', 1), ('GambleAdviceType', 'risk')])
+34.9585 	EXP 	blank: autoDraw = False
+34.9585 	EXP 	ChoicePic2: autoDraw = False
+34.9585 	EXP 	blank: autoDraw = False
+34.9585 	EXP 	ChoicePic2: autoDraw = False
+34.9585 	EXP 	iSi: autoDraw = True
+36.2960 	DATA 	Keypress: escape
+36.4133 	EXP 	window1: mouseVisible = True

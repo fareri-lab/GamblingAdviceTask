@@ -67,7 +67,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$text2 + &quot; told you to gamble &quot; + $gamAdvRisk + &quot; times. \n \n&quot; &amp;#10;&amp;#10;&quot;You followed their advice to gamble&quot; + $advFollow + &quot; times. \n \n&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You gambled &quot; + $nGam + &quot; times. \n \n&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You won the gambles &quot; + $GamblePer + &quot;% of the time. \n \n&quot;&amp;#10;&amp;#10;&amp;#10;&quot;Please press enter to move on to the next block of trials. \n&quot;" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$text2 + &quot; told you to gamble &quot; + $gamAdvRisk + &quot; times. \n \n&quot; &amp;#10;&amp;#10;&quot;You followed their advice to gamble &quot; + $advFollow + &quot; times. \n \n&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You gambled &quot; + $nGam + &quot; times. \n \n&quot;&amp;#10;&amp;#10;&amp;#10;&quot;You won the gambles &quot; + $GamblePer + &quot;% of the time. \n \n&quot;&amp;#10;&amp;#10;&amp;#10;&quot;Please press enter to move on to the next block of trials. \n&quot;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -266,7 +266,7 @@
         <Param name="name" updates="None" val="code_4" valType="code"/>
       </CodeComponent>
       <CodeComponent name="GambleCount">
-        <Param name="Begin Experiment" updates="constant" val="nGamble=0&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="nGamble=0&amp;#10;adFollow=0&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -276,7 +276,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="#trials.addData('nGamble', nGamble)&amp;#10;if resp.keys == 'right':&amp;#10;    nGamble += 1&amp;#10;&amp;#10;&amp;#10;if followAd == 'risk' and resp.keys == 'right':&amp;#10;    adFollow += 1&amp;#10;    &amp;#10;    &amp;#10;'''&amp;#10;if followAd == 'safe' and resp.keys == 'left':&amp;#10;    adFollow += 1&amp;#10;'''&amp;#10;&amp;#10;print(gamAdRisk)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="#trials.addData('nGamble', nGamble)&amp;#10;if resp.keys == 'right':&amp;#10;    nGamble += 1&amp;#10;&amp;#10;&amp;#10;if followAd == 'risk' and resp.keys == 'right':&amp;#10;    adFollow += 1&amp;#10;    &amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="GambleCount" valType="code"/>
       </CodeComponent>
@@ -456,10 +456,10 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
       <CodeComponent name="readAdvisors">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;import pandas as pd&amp;#10;&amp;#10;import xlrd&amp;#10;&amp;#10;book = xlrd.open_workbook('Book1.xlsx')&amp;#10;sheet = book.sheet_by_index(0)&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="import pandas as pd&amp;#10;&amp;#10;cond = pd.read_excel('Book1.xlsx')&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="&amp;#10;&amp;#10;cond = pd.read_excel('Book1.xlsx')&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -473,7 +473,7 @@
     </Routine>
     <Routine name="askAd">
       <KeyboardComponent name="response">
-        <Param name="allowedKeys" updates="constant" val="'y','n'" valType="code"/>
+        <Param name="allowedKeys" updates="set every repeat" val="'y','n'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -522,7 +522,7 @@
         <Param name="flip" updates="constant" val="" valType="str"/>
         <Param name="font" updates="set every repeat" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="set every repeat" val="0.05" valType="code"/>
+        <Param name="letterHeight" updates="set every repeat" val="0.06" valType="code"/>
         <Param name="name" updates="None" val="ask" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -534,7 +534,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="3" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="Would you like to hear advice from your financial advisor?" valType="str"/>
+        <Param name="text" updates="set every repeat" val="Would you like to hear advice from your financial advisor? &amp;#10;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -662,7 +662,7 @@
     </Routine>
     <Routine name="Repeat20">
       <CodeComponent name="rep20">
-        <Param name="Begin Experiment" updates="constant" val="import numpy.random&amp;#10;&amp;#10;from numpy.random import choice&amp;#10;&amp;#10;import pandas as pd&amp;#10;&amp;#10;import xlrd&amp;#10;&amp;#10;book = xlrd.open_workbook('Book1.xlsx')&amp;#10;sheet = book.sheet_by_index(0)&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -679,17 +679,17 @@
     </Routine>
     <Routine name="getAd">
       <CodeComponent name="condAdv">
-        <Param name="Begin Experiment" updates="constant" val="gamAdRisk=0&amp;#10;gamAdSafe=0&amp;#10;adFollow=0&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="gamAdRisk=0&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="followAd=[]&amp;#10;&amp;#10;if response.keys == 'y':&amp;#10;    continueRoutine = True &amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="followAd = []&amp;#10;&amp;#10;&amp;#10;if response.keys == 'y':&amp;#10;    continueRoutine = True &amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;if response.keys == None:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True &amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="if response.keys == 'y':&amp;#10;    continueRoutine = True &amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;if response.keys == None:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="condAdv" valType="code"/>
       </CodeComponent>
@@ -752,7 +752,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'&amp;#10;        &amp;#10;    &amp;#10;    &amp;#10;    &amp;#10;if continueRoutine == True and gambleAdvice == 0:&amp;#10;    gamAdSafe += 1" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="'''&amp;#10;gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'&amp;#10;&amp;#10;'''&amp;#10;&amp;#10;print(gamAdRisk)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="adviceCode" valType="code"/>
       </CodeComponent>
@@ -783,7 +783,6 @@
       <Param name="name" updates="None" val="trials" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="Repeat20"/>
     <Routine name="ISI"/>
     <Routine name="Receive_money"/>
     <Routine name="trial"/>
