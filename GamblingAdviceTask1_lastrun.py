@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.7),
-    on July 21, 2019, at 10:05
+    on July 21, 2019, at 20:02
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -133,18 +133,6 @@ sheet = book.sheet_by_index(0)
 
 
 
-
-#xl = pd.read_excel('Book1.xlsx') 
-
-#converters={'GambleAdviceNum':int})
-
-#gamAdvice = xl['GambleAdviceType']
-
-#largeDict = xl.to_dict('records')
-
-#dict = pd.read_excel('Book1.xlsx', index_col=3).to_dict()
-
-
 # Initialize components for Routine "ISI"
 ISIClock = core.Clock()
 iSi = visual.TextStim(win=win, name='iSi',
@@ -186,21 +174,24 @@ ChoicePic = visual.ImageStim(
 
 # Initialize components for Routine "askAd"
 askAdClock = core.Clock()
-text_3 = visual.TextStim(win=win, name='text_3',
-    text='Y                 N',
+yesNo = visual.TextStim(win=win, name='yesNo',
+    text='default text',
     font='Arial',
-    pos=(0, -0.2), height=0.09, wrapWidth=None, ori=0, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 ask = visual.TextStim(win=win, name='ask',
-    text='Would you like to hear advice from your financial advisor?',
+    text='default text',
     font='Arial',
-    pos=(0, 0.11), height=0.05, wrapWidth=None, ori=0, 
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
-gamAd=0
+gamAdRisk=0
+gamAdSafe=0
+adFollow=0
+
 Advice = visual.TextStim(win=win, name='Advice',
     text='default text',
     font='Arial',
@@ -253,7 +244,7 @@ checkR1 = visual.ImageStim(
 from PIL import Image
 from psychopy import visual, core
 nGamble=0
-gamFollow=0
+
 
 
 
@@ -799,7 +790,18 @@ for thisTrial_2 in trials_2:
         frameN = -1
         continueRoutine = True
         # update component parameters for each repeat
+        yesNo.setColor('white', colorSpace='rgb')
+        yesNo.setPos((0, -0.2))
+        yesNo.setText('Y                 N')
+        yesNo.setFont('Arial')
+        yesNo.setHeight(0.09)
+        ask.setColor('white', colorSpace='rgb')
+        ask.setPos((0, 0.11))
+        ask.setText('Would you like to hear advice from your financial advisor?')
+        ask.setFont('Arial')
+        ask.setHeight(0.05)
         response = event.BuilderKeyResponse()
+        followAd=[]
         Advice.setColor('white', colorSpace='rgb')
         Advice.setPos((0, 0))
         Advice.setText(text + AdviceVar1)
@@ -811,7 +813,7 @@ for thisTrial_2 in trials_2:
         adviceCode.setFont('Arial')
         adviceCode.setHeight(0.1)
         # keep track of which components have finished
-        askAdComponents = [text_3, ask, response, Advice, adviceCode]
+        askAdComponents = [yesNo, ask, response, Advice, adviceCode]
         for thisComponent in askAdComponents:
             if hasattr(thisComponent, 'status'):
                 thisComponent.status = NOT_STARTED
@@ -823,14 +825,14 @@ for thisTrial_2 in trials_2:
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
             
-            # *text_3* updates
-            if t >= 0.0 and text_3.status == NOT_STARTED:
+            # *yesNo* updates
+            if t >= 0.0 and yesNo.status == NOT_STARTED:
                 # keep track of start time/frame for later
-                text_3.tStart = t
-                text_3.frameNStart = frameN  # exact frame index
-                text_3.setAutoDraw(True)
-            if text_3.status == STARTED and bool(Advice.status==STARTED):
-                text_3.setAutoDraw(False)
+                yesNo.tStart = t
+                yesNo.frameNStart = frameN  # exact frame index
+                yesNo.setAutoDraw(True)
+            if yesNo.status == STARTED and bool(Advice.status==STARTED):
+                yesNo.setAutoDraw(False)
             
             # *ask* updates
             if t >= 0.0 and ask.status == NOT_STARTED:
@@ -923,7 +925,15 @@ for thisTrial_2 in trials_2:
         
         
         if continueRoutine == True and gambleAdvice == 1:
-            gamAd += 1
+            gamAdRisk += 1
+            followAd = 'risk'
+                
+            
+            
+            
+        if continueRoutine == True and gambleAdvice == 0:
+            gamAdSafe += 1
+            followAd = 'safe'
         # the Routine "askAd" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
@@ -1125,30 +1135,21 @@ for thisTrial_2 in trials_2:
         if resp.keys == 'right':
             nGamble += 1
         
-        '''
         
-        for thisTrial in trials:
-            if sheet.cell_value(row, 5) == 'risk':
-                gamAd+=1
-        '''
+        if followAd == 'risk' and resp.keys == 'right':
+            adFollow += 1
             
-        #if response.keys == 'y' and gamAdvice == '1':
-        #    gamAd += 1
             
-        #if response.keys == 'y':
-        #    gamAd+=gamAdvice
+        if followAd == 'safe' and resp.keys == 'left':
+            adFollow += 1
         
         
+        print(gamAdRisk)
+        print(gamAdSafe)
+        print(adFollow)
         
-        '''
-        if GambleAdvice == '1' and resp.keys == 'right'
-            gamFollow += 1
         
-        
-        print(gam)
-        '''
-        
-        print(gamAd)
+        #followAd = None 
         # the Routine "Choice2Gain" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
@@ -1165,15 +1166,18 @@ for thisTrial_2 in trials_2:
     import random
     
     nGam = str(nGamble)
-    gamAdv = str(gamAd)
-    #convert to string
+    gamAdvRisk = str(gamAdRisk)
+    advFollow = str(adFollow)
+    
     
     GamblePercent = [20, 25, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90, 95]
     randomGam = random.choice(GamblePercent)
     GamblePer = str(randomGam)
     endText.setColor('white', colorSpace='rgb')
-    endText.setPos((-0.08, 0))
-    endText.setText(text2 + " told you to gamble " + gamAdv + " times. \n \n" 
+    endText.setPos((-0.09, 0))
+    endText.setText(text2 + " told you to gamble " + gamAdvRisk + " times. \n \n" 
+
+"You followed their advice " + advFollow + " times. \n \n"
 
 
 "You gambled " + nGam + " times. \n \n"
@@ -1184,7 +1188,7 @@ for thisTrial_2 in trials_2:
 
 "Please press enter to move on to the next block of trials. \n")
     endText.setFont('Arial')
-    endText.setHeight(0.06)
+    endText.setHeight(0.05)
     key_resp_2 = event.BuilderKeyResponse()
     # keep track of which components have finished
     FeedbackComponents = [endText, key_resp_2]
@@ -1200,7 +1204,7 @@ for thisTrial_2 in trials_2:
         # update/draw components on each frame
         import random
         
-        #nGam = str(nGamble)
+        
         
         GamblePercent = [20, 25, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90, 95]
         randomGam = random.choice(GamblePercent)
@@ -1262,7 +1266,11 @@ for thisTrial_2 in trials_2:
     if key_resp_2.keys != None:  # we had a response
         trials_2.addData('key_resp_2.rt', key_resp_2.rt)
     nGamble=0
-    gamAd=0
+    gamAdRisk=0
+    gamAdSafe=0
+    adFollow=0
+    
+    
     # the Routine "Feedback" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
