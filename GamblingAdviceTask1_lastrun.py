@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.7),
-    on July 21, 2019, at 20:02
+    on July 21, 2019, at 21:01
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -71,7 +71,7 @@ else:
 # Initialize components for Routine "inst"
 instClock = core.Clock()
 instructions = visual.TextStim(win=win, name='instructions',
-    text='\nWelcome to the experiment!\n\nOn the following page you will be instructed to choose an advisor. \n\nPress the space bar when you are ready to proceed.',
+    text='\nWelcome to the study!\n\nOn the following page you will be instructed to choose an advisor. \n\nPress the space bar when you are ready to proceed.',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -1047,8 +1047,6 @@ for thisTrial_2 in trials_2:
             if resp.keys == 'left':
                 checkL1.autoDraw=True
             
-            #elif resp.keys == 'right':
-             #   checkR1.autoDraw=False
             
             if resp.keys == 'right':
                 checkR1.autoDraw=True
@@ -1058,20 +1056,7 @@ for thisTrial_2 in trials_2:
                 checkR1.autoDraw=False
                 checkL1.autoDraw=False
                 continueRoutine=False
-                #win.flip()
             
-            
-                #elif resp.keys == 'left':
-             #   checkL1.autoDraw=False
-            
-            #clock = core.Clock()
-            #while clock.getTime() < 2.0:
-            #    if 0.5 <= clock.getTime() < 1.0:
-             #       if checkL1.autoDraw==True:
-              #          checkL1.setPhase(0.1, '+') 
-               #     elif checkR1.autoDraw==True:
-                #        checkR1.setPhase(0.1, '+')
-                #win.flip()
             
             # check for quit (typically the Esc key)
             if endExpNow or event.getKeys(keyList=["escape"]):
@@ -1108,8 +1093,6 @@ for thisTrial_2 in trials_2:
         if resp.keys == 'left':
             checkL1.autoDraw=True
         
-        #elif resp.keys == 'right':
-         #   checkR1.autoDraw=False
         
         if resp.keys =='right':
             checkR1.autoDraw=True
@@ -1118,19 +1101,7 @@ for thisTrial_2 in trials_2:
         if blank.status == FINISHED:
             checkR1.autoDraw=False
             checkL1.autoDraw=False
-            #win.flip()
-        #elif resp.keys == 'left':
-         #   checkL1.autoDraw=False
         
-        
-        #clock = core.Clock()
-        #while clock.getTime() < 2.0:
-         #   if 0.5 <= clock.getTime() < 1.0:
-          #      if checkL1.autoDraw==True:
-           #         checkL1.setPhase (0.1, '+')
-            #    elif checkR1.autoDraw==True:
-             #       checkR1.setPhase(0.1, '+')
-            #win.flip()
         #trials.addData('nGamble', nGamble)
         if resp.keys == 'right':
             nGamble += 1
@@ -1145,8 +1116,8 @@ for thisTrial_2 in trials_2:
         
         
         print(gamAdRisk)
-        print(gamAdSafe)
-        print(adFollow)
+        #print(gamAdSafe)
+        #print(adFollow)
         
         
         #followAd = None 
@@ -1174,7 +1145,7 @@ for thisTrial_2 in trials_2:
     randomGam = random.choice(GamblePercent)
     GamblePer = str(randomGam)
     endText.setColor('white', colorSpace='rgb')
-    endText.setPos((-0.09, 0))
+    endText.setPos((-0.08, 0))
     endText.setText(text2 + " told you to gamble " + gamAdvRisk + " times. \n \n" 
 
 "You followed their advice " + advFollow + " times. \n \n"
@@ -1184,6 +1155,8 @@ for thisTrial_2 in trials_2:
 
 
 "You won the gambles " + GamblePer + "% of the time. \n \n"
+
+"Your average earnings is . \n \n"
 
 
 "Please press enter to move on to the next block of trials. \n")
@@ -1203,7 +1176,6 @@ for thisTrial_2 in trials_2:
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         import random
-        
         
         
         GamblePercent = [20, 25, 30, 35, 40, 45, 50, 60, 65, 70, 75, 80, 85, 90, 95]
