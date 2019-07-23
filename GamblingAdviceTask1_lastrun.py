@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.0.7),
-    on July 22, 2019, at 19:22
+    on July 22, 2019, at 20:50
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -71,7 +71,7 @@ else:
 # Initialize components for Routine "inst"
 instClock = core.Clock()
 instructions = visual.TextStim(win=win, name='instructions',
-    text='\nWelcome to the study!\n\nOn the following page you will be instructed to choose an advisor. \n\nPress the space bar when you are ready to proceed.',
+    text='\nWelcome to the study! \n\nOn the following page you will be instructed to choose an advisor. \n\nPress the space bar when you are ready to proceed.',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -932,6 +932,7 @@ for thisTrial_2 in trials_2:
                 thisComponent.setAutoDraw(False)
         #gambleAdvice = int(GambleAdviceNum)
         
+        
         if response.keys == 'y':
             continueRoutine = True 
         if response.keys == 'n':
@@ -943,16 +944,7 @@ for thisTrial_2 in trials_2:
         if continueRoutine == True and GambleAdviceType == 'risk':
             gamAdRisk += 1
             followAd = 'risk'
-        '''
-        gambleAdvice = int(GambleAdviceNum)
-        
-        
-        if continueRoutine == True and gambleAdvice == 1:
-            gamAdRisk += 1
-            followAd = 'risk'
-        
-        '''
-        
+            
         print(gamAdRisk)
         # the Routine "getAd" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
@@ -1132,7 +1124,7 @@ for thisTrial_2 in trials_2:
             
         
         
-        print(adFollow)
+        
         # the Routine "Choice2Gain" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
@@ -1157,7 +1149,7 @@ for thisTrial_2 in trials_2:
     randomGam = random.choice(GamblePercent)
     GamblePer = str(randomGam)
     endText.setColor('white', colorSpace='rgb')
-    endText.setPos((-0.08, 0))
+    endText.setPos((-0.06, 0))
     endText.setText(text2 + " told you to gamble " + gamAdvRisk + " times. \n \n" 
 
 "You followed their advice to gamble " + advFollow + " times. \n \n"

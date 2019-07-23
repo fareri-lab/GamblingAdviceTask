@@ -59,7 +59,7 @@
         <Param name="name" updates="None" val="endText" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="set every repeat" val="(-0.08, 0)" valType="code"/>
+        <Param name="pos" updates="set every repeat" val="(-0.06, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -586,7 +586,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="&amp;#10;Welcome to the study!&amp;#10;&amp;#10;On the following page you will be instructed to choose an advisor. &amp;#10;&amp;#10;Press the space bar when you are ready to proceed." valType="str"/>
+        <Param name="text" updates="constant" val="&amp;#10;Welcome to the study! &amp;#10;&amp;#10;On the following page you will be instructed to choose an advisor. &amp;#10;&amp;#10;Press the space bar when you are ready to proceed." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -689,7 +689,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="#gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and GambleAdviceType == 'risk':&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="#gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if response.keys == 'y':&amp;#10;    continueRoutine = True &amp;#10;if response.keys == 'n':&amp;#10;    continueRoutine = False &amp;#10;if response.keys == None:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and GambleAdviceType == 'risk':&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'&amp;#10;    &amp;#10;print(gamAdRisk)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="condAdv" valType="code"/>
       </CodeComponent>
@@ -741,21 +741,6 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-      <CodeComponent name="adviceCode">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="'''&amp;#10;gambleAdvice = int(GambleAdviceNum)&amp;#10;&amp;#10;&amp;#10;if continueRoutine == True and gambleAdvice == 1:&amp;#10;    gamAdRisk += 1&amp;#10;    followAd = 'risk'&amp;#10;&amp;#10;'''&amp;#10;&amp;#10;print(gamAdRisk)" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="adviceCode" valType="code"/>
-      </CodeComponent>
     </Routine>
   </Routines>
   <Flow>
