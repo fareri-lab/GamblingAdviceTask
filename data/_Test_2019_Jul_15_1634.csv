@@ -1,0 +1,7 @@
+Amount,Choice2,AdviceVar,Choice,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,date,frameRate,expName,session,participant,
+,,,,,,,,space,1.12747311592,,,,,,,,2019_Jul_15_1634,59.8992041152,Test,001,,
+,,,,,,,,,,left,4.45207190514,,,,,,2019_Jul_15_1634,59.8992041152,Test,001,,
+,,,,,,,,,,,,return,6.83877182007,,,,2019_Jul_15_1634,59.8992041152,Test,001,,
+IA50.bmp,IA50_G10.bmp,"Advisor 1 says:
+
+"Go with the safe option here!"",IA50_G10.bmp,0,0,0,0,,,,,,,y,0.936012983322,None,2019_Jul_15_1634,59.8992041152,Test,001,,
