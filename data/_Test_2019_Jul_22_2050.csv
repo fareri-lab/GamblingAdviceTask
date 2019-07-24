@@ -1,0 +1,14 @@
+﻿Choice,Choice2,Amount,AdviceVar1,GambleAdviceNum,GambleAdviceType,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,space,14.460989199986216,,,,,,,,,,001,2019_Jul_22_2050,Test,3.0.7,59.90710803882146,
+Pictures\IA25_G5.bmp,Pictures\IA25_G5.bmp,Pictures\IA25.bmp,"
+
+"Be cautious, don't gamble for this one."",0,safe,0,0,0,0,0,0,0,7,,,right,0.7374408000032417,return,1.4689392000145745,y,1.4341885999892838,None,,,001,2019_Jul_22_2050,Test,3.0.7,59.90710803882146,
+Pictures\IA50_L40.bmp,Pictures\IA50_L40.bmp,Pictures\IA50.bmp,"
+
+"That gamble doesn't sound too good, play it safe."",0,safe,0,0,0,0,0,1,1,18,,,,,,,y,0.5150857999979053,left,0.8919426000211388,,001,2019_Jul_22_2050,Test,3.0.7,59.90710803882146,
+Pictures\IA80_40_G95p.bmp,Pictures\IA80_40_G95p.bmp,Pictures\IA80.bmp,"
+
+"I think you should not gamble."",0,safe,0,0,0,0,0,2,2,17,,,,,,,y,0.5754071000264958,right,0.38854749998426996,,001,2019_Jul_22_2050,Test,3.0.7,59.90710803882146,
+Pictures\IA20_10_G95p.bmp,Pictures\IA20_10_G95p.bmp,Pictures\IA20.bmp,"
+
+"Make it exciting, take a chance!"",1,risk,0,0,0,0,0,3,3,3,,,,,,,y,0.4105398000101559,right,0.4336757999844849,,001,2019_Jul_22_2050,Test,3.0.7,59.90710803882146,
