@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on November 18, 2019, at 14:01
+    on November 21, 2019, at 11:03
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -75,7 +75,7 @@ defaultKeyboard = keyboard.Keyboard()
 # Initialize components for Routine "welcome"
 welcomeClock = core.Clock()
 text = visual.TextStim(win=win, name='text',
-    text='Welcome to the gambling advice task. Here you will go through trials between recieving money & gambling or choosing the safe option. You may choose if you want to recieve advice from your choosen advisor or not.',
+    text='Welcome to the gambling advice task. Here you will go through trials between recieving money & gambling or choosing the safe option. You may choose if you want to recieve advice from your chosen advisor or not.',
     font='Arial',
     pos=(0, 0), height=0.05, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -258,6 +258,68 @@ from PIL import Image
 from psychopy import visual, core
 nGamble=0
 adFollow=0
+
+
+
+# Initialize components for Routine "endprac"
+endpracClock = core.Clock()
+EndPrac = visual.TextStim(win=win, name='EndPrac',
+    text='End of practice',
+    font='Arial',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "preBlock"
+preBlockClock = core.Clock()
+chooseInst = visual.TextStim(win=win, name='chooseInst',
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+Ad1 = visual.TextStim(win=win, name='Ad1',
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
+Ad2 = visual.TextStim(win=win, name='Ad2',
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-2.0);
+Ad1pic = visual.ImageStim(
+    win=win,
+    name='Ad1pic', 
+    image='sin', mask=None,
+    ori=1.0, pos=[0,0], size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-4.0)
+Ad2pic = visual.ImageStim(
+    win=win,
+    name='Ad2pic', 
+    image='avatar_2.png', mask=None,
+    ori=0, pos=(.4, -0.06), size=(0.3, 0.3),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+import numpy.random
+
+from numpy.random import choice
+
+import pandas as pd
+
+import xlrd
+
+book = xlrd.open_workbook('Book1.xlsx')
+sheet = book.sheet_by_index(0)
 
 
 
@@ -766,23 +828,23 @@ if key_resp_3.keys == 'right':
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-trials_3 = data.TrialHandler(nReps=1, method='random', 
+practice = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('Book1.xlsx'),
-    seed=None, name='trials_3')
-thisExp.addLoop(trials_3)  # add the loop to the experiment
-thisTrial_3 = trials_3.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisTrial_3.rgb)
-if thisTrial_3 != None:
-    for paramName in thisTrial_3:
-        exec('{} = thisTrial_3[paramName]'.format(paramName))
+    trialList=data.importConditions('practice.xlsx'),
+    seed=None, name='practice')
+thisExp.addLoop(practice)  # add the loop to the experiment
+thisPractice = practice.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisPractice.rgb)
+if thisPractice != None:
+    for paramName in thisPractice:
+        exec('{} = thisPractice[paramName]'.format(paramName))
 
-for thisTrial_3 in trials_3:
-    currentLoop = trials_3
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial_3.rgb)
-    if thisTrial_3 != None:
-        for paramName in thisTrial_3:
-            exec('{} = thisTrial_3[paramName]'.format(paramName))
+for thisPractice in practice:
+    currentLoop = practice
+    # abbreviate parameter names if possible (e.g. rgb = thisPractice.rgb)
+    if thisPractice != None:
+        for paramName in thisPractice:
+            exec('{} = thisPractice[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "ISI"-------
     t = 0
@@ -844,8 +906,8 @@ for thisTrial_3 in trials_3:
     for thisComponent in ISIComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials_3.addData('iSi.started', iSi.tStartRefresh)
-    trials_3.addData('iSi.stopped', iSi.tStopRefresh)
+    practice.addData('iSi.started', iSi.tStartRefresh)
+    practice.addData('iSi.stopped', iSi.tStopRefresh)
     
     # ------Prepare to start Routine "Receive_money"-------
     t = 0
@@ -932,10 +994,10 @@ for thisTrial_3 in trials_3:
     for thisComponent in Receive_moneyComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials_3.addData('receiveMoneyPicture.started', receiveMoneyPicture.tStartRefresh)
-    trials_3.addData('receiveMoneyPicture.stopped', receiveMoneyPicture.tStopRefresh)
-    trials_3.addData('ISI2.started', ISI2.tStartRefresh)
-    trials_3.addData('ISI2.stopped', ISI2.tStopRefresh)
+    practice.addData('receiveMoneyPicture.started', receiveMoneyPicture.tStartRefresh)
+    practice.addData('receiveMoneyPicture.stopped', receiveMoneyPicture.tStopRefresh)
+    practice.addData('ISI2.started', ISI2.tStartRefresh)
+    practice.addData('ISI2.stopped', ISI2.tStopRefresh)
     
     # ------Prepare to start Routine "trial"-------
     t = 0
@@ -1002,8 +1064,8 @@ for thisTrial_3 in trials_3:
     for thisComponent in trialComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials_3.addData('ChoicePic.started', ChoicePic.tStartRefresh)
-    trials_3.addData('ChoicePic.stopped', ChoicePic.tStopRefresh)
+    practice.addData('ChoicePic.started', ChoicePic.tStartRefresh)
+    practice.addData('ChoicePic.stopped', ChoicePic.tStopRefresh)
     
     # ------Prepare to start Routine "askAd"-------
     t = 0
@@ -1124,15 +1186,15 @@ for thisTrial_3 in trials_3:
     # check responses
     if response.keys in ['', [], None]:  # No response was made
         response.keys = None
-    trials_3.addData('response.keys',response.keys)
+    practice.addData('response.keys',response.keys)
     if response.keys != None:  # we had a response
-        trials_3.addData('response.rt', response.rt)
-    trials_3.addData('response.started', response.tStartRefresh)
-    trials_3.addData('response.stopped', response.tStopRefresh)
-    trials_3.addData('yesNo.started', yesNo.tStartRefresh)
-    trials_3.addData('yesNo.stopped', yesNo.tStopRefresh)
-    trials_3.addData('ask.started', ask.tStartRefresh)
-    trials_3.addData('ask.stopped', ask.tStopRefresh)
+        practice.addData('response.rt', response.rt)
+    practice.addData('response.started', response.tStartRefresh)
+    practice.addData('response.stopped', response.tStopRefresh)
+    practice.addData('yesNo.started', yesNo.tStartRefresh)
+    practice.addData('yesNo.stopped', yesNo.tStopRefresh)
+    practice.addData('ask.started', ask.tStartRefresh)
+    practice.addData('ask.stopped', ask.tStopRefresh)
     
     # ------Prepare to start Routine "getAd"-------
     t = 0
@@ -1143,9 +1205,9 @@ for thisTrial_3 in trials_3:
     followAd = []
     
     
-    if response.keys == 'y':
+    if response.keys == '1':
         continueRoutine = True 
-    if response.keys == 'n':
+    if response.keys == '2':
         continueRoutine = False 
     if response.keys == None:
         continueRoutine = False
@@ -1177,9 +1239,9 @@ for thisTrial_3 in trials_3:
         t = getAdClock.getTime()
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        if response.keys == 'y':
+        if response.keys == '1':
             continueRoutine = True 
-        if response.keys == 'n':
+        if response.keys == '2':
             continueRoutine = False 
         if response.keys == None:
             continueRoutine = False
@@ -1238,9 +1300,9 @@ for thisTrial_3 in trials_3:
     #gambleAdvice = int(GambleAdviceNum)
     
     
-    if response.keys == 'y':
+    if response.keys == '1':
         continueRoutine = True 
-    if response.keys == 'n':
+    if response.keys == '2':
         continueRoutine = False 
     if response.keys == None:
         continueRoutine = False
@@ -1251,10 +1313,10 @@ for thisTrial_3 in trials_3:
         followAd = 'risk'
         
     print(gamAdRisk)
-    trials_3.addData('getAdv.started', getAdv.tStartRefresh)
-    trials_3.addData('getAdv.stopped', getAdv.tStopRefresh)
-    trials_3.addData('textForCode.started', textForCode.tStartRefresh)
-    trials_3.addData('textForCode.stopped', textForCode.tStopRefresh)
+    practice.addData('getAdv.started', getAdv.tStartRefresh)
+    practice.addData('getAdv.stopped', getAdv.tStopRefresh)
+    practice.addData('textForCode.started', textForCode.tStartRefresh)
+    practice.addData('textForCode.stopped', textForCode.tStopRefresh)
     # the Routine "getAd" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
@@ -1430,22 +1492,22 @@ for thisTrial_3 in trials_3:
     for thisComponent in Choice2GainComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    trials_3.addData('blank.started', blank.tStartRefresh)
-    trials_3.addData('blank.stopped', blank.tStopRefresh)
-    trials_3.addData('ChoicePic2.started', ChoicePic2.tStartRefresh)
-    trials_3.addData('ChoicePic2.stopped', ChoicePic2.tStopRefresh)
+    practice.addData('blank.started', blank.tStartRefresh)
+    practice.addData('blank.stopped', blank.tStopRefresh)
+    practice.addData('ChoicePic2.started', ChoicePic2.tStartRefresh)
+    practice.addData('ChoicePic2.stopped', ChoicePic2.tStopRefresh)
     # check responses
     if resp.keys in ['', [], None]:  # No response was made
         resp.keys = None
-    trials_3.addData('resp.keys',resp.keys)
+    practice.addData('resp.keys',resp.keys)
     if resp.keys != None:  # we had a response
-        trials_3.addData('resp.rt', resp.rt)
-    trials_3.addData('resp.started', resp.tStartRefresh)
-    trials_3.addData('resp.stopped', resp.tStopRefresh)
-    trials_3.addData('checkL1.started', checkL1.tStartRefresh)
-    trials_3.addData('checkL1.stopped', checkL1.tStopRefresh)
-    trials_3.addData('checkR1.started', checkR1.tStartRefresh)
-    trials_3.addData('checkR1.stopped', checkR1.tStopRefresh)
+        practice.addData('resp.rt', resp.rt)
+    practice.addData('resp.started', resp.tStartRefresh)
+    practice.addData('resp.stopped', resp.tStopRefresh)
+    practice.addData('checkL1.started', checkL1.tStartRefresh)
+    practice.addData('checkL1.stopped', checkL1.tStopRefresh)
+    practice.addData('checkR1.started', checkR1.tStartRefresh)
+    practice.addData('checkR1.stopped', checkR1.tStopRefresh)
     checkL1.autoLog=False
     checkR1.autoLog=False
     
@@ -1478,8 +1540,71 @@ for thisTrial_3 in trials_3:
     routineTimer.reset()
     thisExp.nextEntry()
     
-# completed 1 repeats of 'trials_3'
+# completed 1 repeats of 'practice'
 
+
+# ------Prepare to start Routine "endprac"-------
+t = 0
+endpracClock.reset()  # clock
+frameN = -1
+continueRoutine = True
+routineTimer.add(4.000000)
+# update component parameters for each repeat
+# keep track of which components have finished
+endpracComponents = [EndPrac]
+for thisComponent in endpracComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+
+# -------Start Routine "endprac"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = endpracClock.getTime()
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *EndPrac* updates
+    if t >= 0.0 and EndPrac.status == NOT_STARTED:
+        # keep track of start time/frame for later
+        EndPrac.tStart = t  # not accounting for scr refresh
+        EndPrac.frameNStart = frameN  # exact frame index
+        win.timeOnFlip(EndPrac, 'tStartRefresh')  # time at next scr refresh
+        EndPrac.setAutoDraw(True)
+    frameRemains = 0.0 + 4- win.monitorFramePeriod * 0.75  # most of one frame period left
+    if EndPrac.status == STARTED and t >= frameRemains:
+        # keep track of stop time/frame for later
+        EndPrac.tStop = t  # not accounting for scr refresh
+        EndPrac.frameNStop = frameN  # exact frame index
+        win.timeOnFlip(EndPrac, 'tStopRefresh')  # time at next scr refresh
+        EndPrac.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in endpracComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "endprac"-------
+for thisComponent in endpracComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('EndPrac.started', EndPrac.tStartRefresh)
+thisExp.addData('EndPrac.stopped', EndPrac.tStopRefresh)
 
 # set up handler to look after randomisation of conditions etc
 trials_2 = data.TrialHandler(nReps=10, method='random', 
@@ -1518,6 +1643,214 @@ for thisTrial_2 in trials_2:
         if thisTrial != None:
             for paramName in thisTrial:
                 exec('{} = thisTrial[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "preBlock"-------
+        t = 0
+        preBlockClock.reset()  # clock
+        frameN = -1
+        continueRoutine = True
+        # update component parameters for each repeat
+        chooseInst.setColor('white', colorSpace='rgb')
+        chooseInst.setPos((0, 0.4))
+        chooseInst.setText('Please choose which person you would want to receive financial advice from, and then press enter.')
+        chooseInst.setFont('Arial')
+        chooseInst.setHeight(0.04)
+        Ad1.setColor('white', colorSpace='rgb')
+        Ad1.setPos((-0.4, -0.05))
+        Ad1.setText('\n  Advisor 1: (Left Arrow)\n\n\n\n\n\n\n\n\nAdelphi University MBA student,\ninterning at Chase Bank ')
+        Ad1.setFont('Arial')
+        Ad1.setHeight(0.04)
+        Ad2.setColor('white', colorSpace='rgb')
+        Ad2.setPos((0.4, -0.05))
+        Ad2.setText('\nAdvisor 2: (Right arrow)\n\n\n\n\n\n\n\n \nAdelphi University\nundergraduate biology major')
+        Ad2.setFont('Arial')
+        Ad2.setHeight(0.04)
+        key_resp_3 = keyboard.Keyboard()
+        Ad1pic.setOpacity(1)
+        Ad1pic.setPos((-.4, -0.06))
+        Ad1pic.setSize((0.3, 0.3))
+        Ad1pic.setOri(0)
+        Ad1pic.setImage('avatar_1.png')
+        border_right = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (0.4, -0.09), opacity = 1, lineWidth = 5.0)
+        border_left = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (-0.4, -0.09), opacity = 1, lineWidth = 5.0)
+        
+        enter = keyboard.Keyboard()
+        
+        
+        cond = pd.read_excel('Book1.xlsx')
+        
+        # keep track of which components have finished
+        preBlockComponents = [chooseInst, Ad1, Ad2, key_resp_3, Ad1pic, Ad2pic, enter]
+        for thisComponent in preBlockComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        
+        # -------Start Routine "preBlock"-------
+        while continueRoutine:
+            # get current time
+            t = preBlockClock.getTime()
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *chooseInst* updates
+            if t >= 0.0 and chooseInst.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                chooseInst.tStart = t  # not accounting for scr refresh
+                chooseInst.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(chooseInst, 'tStartRefresh')  # time at next scr refresh
+                chooseInst.setAutoDraw(True)
+            
+            # *Ad1* updates
+            if t >= 0.0 and Ad1.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                Ad1.tStart = t  # not accounting for scr refresh
+                Ad1.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(Ad1, 'tStartRefresh')  # time at next scr refresh
+                Ad1.setAutoDraw(True)
+            
+            # *Ad2* updates
+            if t >= 0.0 and Ad2.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                Ad2.tStart = t  # not accounting for scr refresh
+                Ad2.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(Ad2, 'tStartRefresh')  # time at next scr refresh
+                Ad2.setAutoDraw(True)
+            
+            # *key_resp_3* updates
+            if t >= 0.0 and key_resp_3.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                key_resp_3.tStart = t  # not accounting for scr refresh
+                key_resp_3.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+                key_resp_3.status = STARTED
+                # keyboard checking is just starting
+                win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+                key_resp_3.clearEvents(eventType='keyboard')
+            if key_resp_3.status == STARTED:
+                theseKeys = key_resp_3.getKeys(keyList=['left', 'right'], waitRelease=False)
+                if len(theseKeys):
+                    theseKeys = theseKeys[0]  # at least one key was pressed
+                    
+                    # check for quit:
+                    if "escape" == theseKeys:
+                        endExpNow = True
+                    key_resp_3.keys = theseKeys.name  # just the last key pressed
+                    key_resp_3.rt = theseKeys.rt
+            
+            # *Ad1pic* updates
+            if t >= 0.0 and Ad1pic.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                Ad1pic.tStart = t  # not accounting for scr refresh
+                Ad1pic.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(Ad1pic, 'tStartRefresh')  # time at next scr refresh
+                Ad1pic.setAutoDraw(True)
+            
+            # *Ad2pic* updates
+            if t >= 0.0 and Ad2pic.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                Ad2pic.tStart = t  # not accounting for scr refresh
+                Ad2pic.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(Ad2pic, 'tStartRefresh')  # time at next scr refresh
+                Ad2pic.setAutoDraw(True)
+            if key_resp_3.keys == 'left':
+                border_left.autoDraw=True
+            
+            if key_resp_3.keys =='right':
+                border_right.autoDraw=True
+            
+            if chooseInst.status == FINISHED:
+                border_right.autoDraw = False 
+                border_left.autoDraw = False
+            
+            
+            
+            # *enter* updates
+            if t >= 0.0 and enter.status == NOT_STARTED:
+                # keep track of start time/frame for later
+                enter.tStart = t  # not accounting for scr refresh
+                enter.frameNStart = frameN  # exact frame index
+                win.timeOnFlip(enter, 'tStartRefresh')  # time at next scr refresh
+                enter.status = STARTED
+                # keyboard checking is just starting
+                win.callOnFlip(enter.clock.reset)  # t=0 on next screen flip
+                enter.clearEvents(eventType='keyboard')
+            if enter.status == STARTED:
+                theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
+                if len(theseKeys):
+                    theseKeys = theseKeys[0]  # at least one key was pressed
+                    
+                    # check for quit:
+                    if "escape" == theseKeys:
+                        endExpNow = True
+                    enter.keys = theseKeys.name  # just the last key pressed
+                    enter.rt = theseKeys.rt
+                    # a response ends the routine
+                    continueRoutine = False
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in preBlockComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "preBlock"-------
+        for thisComponent in preBlockComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        trials.addData('chooseInst.started', chooseInst.tStartRefresh)
+        trials.addData('chooseInst.stopped', chooseInst.tStopRefresh)
+        trials.addData('Ad1.started', Ad1.tStartRefresh)
+        trials.addData('Ad1.stopped', Ad1.tStopRefresh)
+        trials.addData('Ad2.started', Ad2.tStartRefresh)
+        trials.addData('Ad2.stopped', Ad2.tStopRefresh)
+        # check responses
+        if key_resp_3.keys in ['', [], None]:  # No response was made
+            key_resp_3.keys = None
+        trials.addData('key_resp_3.keys',key_resp_3.keys)
+        if key_resp_3.keys != None:  # we had a response
+            trials.addData('key_resp_3.rt', key_resp_3.rt)
+        trials.addData('key_resp_3.started', key_resp_3.tStartRefresh)
+        trials.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
+        trials.addData('Ad1pic.started', Ad1pic.tStartRefresh)
+        trials.addData('Ad1pic.stopped', Ad1pic.tStopRefresh)
+        trials.addData('Ad2pic.started', Ad2pic.tStartRefresh)
+        trials.addData('Ad2pic.stopped', Ad2pic.tStopRefresh)
+        if chooseInst.status == FINISHED:
+            border_right.autoDraw = False 
+            border_left.autoDraw = False
+        # check responses
+        if enter.keys in ['', [], None]:  # No response was made
+            enter.keys = None
+        trials.addData('enter.keys',enter.keys)
+        if enter.keys != None:  # we had a response
+            trials.addData('enter.rt', enter.rt)
+        trials.addData('enter.started', enter.tStartRefresh)
+        trials.addData('enter.stopped', enter.tStopRefresh)
+        
+        if key_resp_3.keys == 'left':
+            text = 'Advisor 1 says:'
+            text2 = 'Advisor 1'
+            
+        if key_resp_3.keys == 'right':
+            text = 'Advisor 2 says:'
+            text2 = 'Advisor 2'
+        # the Routine "preBlock" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # ------Prepare to start Routine "ISI"-------
         t = 0
@@ -1878,9 +2211,9 @@ for thisTrial_2 in trials_2:
         followAd = []
         
         
-        if response.keys == 'y':
+        if response.keys == '1':
             continueRoutine = True 
-        if response.keys == 'n':
+        if response.keys == '2':
             continueRoutine = False 
         if response.keys == None:
             continueRoutine = False
@@ -1912,9 +2245,9 @@ for thisTrial_2 in trials_2:
             t = getAdClock.getTime()
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            if response.keys == 'y':
+            if response.keys == '1':
                 continueRoutine = True 
-            if response.keys == 'n':
+            if response.keys == '2':
                 continueRoutine = False 
             if response.keys == None:
                 continueRoutine = False
@@ -1973,9 +2306,9 @@ for thisTrial_2 in trials_2:
         #gambleAdvice = int(GambleAdviceNum)
         
         
-        if response.keys == 'y':
+        if response.keys == '1':
             continueRoutine = True 
-        if response.keys == 'n':
+        if response.keys == '2':
             continueRoutine = False 
         if response.keys == None:
             continueRoutine = False
