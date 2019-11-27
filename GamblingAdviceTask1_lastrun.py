@@ -4,7 +4,11 @@
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.5),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     on Tue Nov 26 23:28:18 2019
+=======
+    on Tue Nov 12 11:11:09 2019
+>>>>>>> parent of 73b9562... Merge branch 'master' of https://github.com/fareri-lab/GamblingAdviceTask
 =======
     on Tue Nov 12 11:11:09 2019
 >>>>>>> parent of 73b9562... Merge branch 'master' of https://github.com/fareri-lab/GamblingAdviceTask
@@ -407,6 +411,7 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 trials_3 = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
@@ -630,6 +635,8 @@ for thisTrial_3 in trials_3:
 
 
 # set up handler to look after randomisation of conditions etc
+=======
+>>>>>>> parent of 73b9562... Merge branch 'master' of https://github.com/fareri-lab/GamblingAdviceTask
 =======
 >>>>>>> parent of 73b9562... Merge branch 'master' of https://github.com/fareri-lab/GamblingAdviceTask
 =======
