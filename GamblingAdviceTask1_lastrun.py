@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on November 18, 2019, at 13:16
+This experiment was created using PsychoPy3 Experiment Builder (v3.1.5),
+    on Wed Nov 27 22:36:13 2019
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -28,7 +28,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.1.2'
+psychopyVersion = '3.1.5'
 expName = 'Test'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -44,7 +44,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\ns582\\OneDrive\\Documents\\GitHub\\GamblingAdviceTask\\GamblingAdviceTask1_lastrun.py',
+    originPath='/Users/dfareri/Dropbox/Dominic/Github/fareri-lab/GamblingAdviceTask/gamblingadvicetask1_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -81,6 +81,37 @@ instructions = visual.TextStim(win=win, name='instructions',
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
+
+# Initialize components for Routine "test"
+testClock = core.Clock()
+
+# Initialize components for Routine "ISI"
+ISIClock = core.Clock()
+iSi = visual.TextStim(win=win, name='iSi',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.08, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=0.0);
+
+# Initialize components for Routine "Receive_money"
+Receive_moneyClock = core.Clock()
+receiveMoneyPicture = visual.ImageStim(
+    win=win,
+    name='receiveMoneyPicture', 
+    image='sin', mask=None,
+    ori=1.0, pos=[0,0], size=1.0,
+    color=[1,1,1], colorSpace='rgb', opacity=1.0,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=0.0)
+ISI2 = visual.TextStim(win=win, name='ISI2',
+    text='default text',
+    font='Arial',
+    pos=[0,0], height=1.0, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Initialize components for Routine "preBlock"
 preBlockClock = core.Clock()
@@ -364,6 +395,229 @@ thisExp.addData('space.stopped', space.tStopRefresh)
 thisExp.nextEntry()
 # the Routine "inst" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
+
+# set up handler to look after randomisation of conditions etc
+trials_3 = data.TrialHandler(nReps=0, method='random', 
+    extraInfo=expInfo, originPath=-1,
+    trialList=[None],
+    seed=None, name='trials_3')
+thisExp.addLoop(trials_3)  # add the loop to the experiment
+thisTrial_3 = trials_3.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_3.rgb)
+if thisTrial_3 != None:
+    for paramName in thisTrial_3:
+        exec('{} = thisTrial_3[paramName]'.format(paramName))
+
+for thisTrial_3 in trials_3:
+    currentLoop = trials_3
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_3.rgb)
+    if thisTrial_3 != None:
+        for paramName in thisTrial_3:
+            exec('{} = thisTrial_3[paramName]'.format(paramName))
+    
+    # ------Prepare to start Routine "test"-------
+    t = 0
+    testClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    # keep track of which components have finished
+    testComponents = []
+    for thisComponent in testComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "test"-------
+    while continueRoutine:
+        # get current time
+        t = testClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in testComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "test"-------
+    for thisComponent in testComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # the Routine "test" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # ------Prepare to start Routine "ISI"-------
+    t = 0
+    ISIClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    routineTimer.add(2.000000)
+    # update component parameters for each repeat
+    # keep track of which components have finished
+    ISIComponents = [iSi]
+    for thisComponent in ISIComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "ISI"-------
+    while continueRoutine and routineTimer.getTime() > 0:
+        # get current time
+        t = ISIClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *iSi* updates
+        if t >= 0.0 and iSi.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            iSi.tStart = t  # not accounting for scr refresh
+            iSi.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(iSi, 'tStartRefresh')  # time at next scr refresh
+            iSi.setAutoDraw(True)
+        frameRemains = 0.0 + 2- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if iSi.status == STARTED and t >= frameRemains:
+            # keep track of stop time/frame for later
+            iSi.tStop = t  # not accounting for scr refresh
+            iSi.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(iSi, 'tStopRefresh')  # time at next scr refresh
+            iSi.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in ISIComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "ISI"-------
+    for thisComponent in ISIComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_3.addData('iSi.started', iSi.tStartRefresh)
+    trials_3.addData('iSi.stopped', iSi.tStopRefresh)
+    
+    # ------Prepare to start Routine "Receive_money"-------
+    t = 0
+    Receive_moneyClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    routineTimer.add(3.000000)
+    # update component parameters for each repeat
+    receiveMoneyPicture.setOpacity(1)
+    receiveMoneyPicture.setPos((0, -0.05))
+    receiveMoneyPicture.setSize((1.5, 1.1))
+    receiveMoneyPicture.setOri(0)
+    receiveMoneyPicture.setImage(Amount)
+    ISI2.setColor('white', colorSpace='rgb')
+    ISI2.setPos((0, 0))
+    ISI2.setText('+')
+    ISI2.setFont('Arial')
+    ISI2.setHeight(0.08)
+    # keep track of which components have finished
+    Receive_moneyComponents = [receiveMoneyPicture, ISI2]
+    for thisComponent in Receive_moneyComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "Receive_money"-------
+    while continueRoutine and routineTimer.getTime() > 0:
+        # get current time
+        t = Receive_moneyClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *receiveMoneyPicture* updates
+        if t >= 0.0 and receiveMoneyPicture.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            receiveMoneyPicture.tStart = t  # not accounting for scr refresh
+            receiveMoneyPicture.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(receiveMoneyPicture, 'tStartRefresh')  # time at next scr refresh
+            receiveMoneyPicture.setAutoDraw(True)
+        frameRemains = 0.0 + 1.5- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if receiveMoneyPicture.status == STARTED and t >= frameRemains:
+            # keep track of stop time/frame for later
+            receiveMoneyPicture.tStop = t  # not accounting for scr refresh
+            receiveMoneyPicture.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(receiveMoneyPicture, 'tStopRefresh')  # time at next scr refresh
+            receiveMoneyPicture.setAutoDraw(False)
+        
+        # *ISI2* updates
+        if t >= 1.5 and ISI2.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            ISI2.tStart = t  # not accounting for scr refresh
+            ISI2.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(ISI2, 'tStartRefresh')  # time at next scr refresh
+            ISI2.setAutoDraw(True)
+        frameRemains = 1.5 + 1.5- win.monitorFramePeriod * 0.75  # most of one frame period left
+        if ISI2.status == STARTED and t >= frameRemains:
+            # keep track of stop time/frame for later
+            ISI2.tStop = t  # not accounting for scr refresh
+            ISI2.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(ISI2, 'tStopRefresh')  # time at next scr refresh
+            ISI2.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in Receive_moneyComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "Receive_money"-------
+    for thisComponent in Receive_moneyComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_3.addData('receiveMoneyPicture.started', receiveMoneyPicture.tStartRefresh)
+    trials_3.addData('receiveMoneyPicture.stopped', receiveMoneyPicture.tStopRefresh)
+    trials_3.addData('ISI2.started', ISI2.tStartRefresh)
+    trials_3.addData('ISI2.stopped', ISI2.tStopRefresh)
+    thisExp.nextEntry()
+    
+# completed 0 repeats of 'trials_3'
+
 
 # set up handler to look after randomisation of conditions etc
 trials_2 = data.TrialHandler(nReps=10, method='random', 
