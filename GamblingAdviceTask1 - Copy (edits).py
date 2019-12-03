@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on November 21, 2019, at 11:03
+    on December 03, 2019, at 11:08
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -1625,10 +1625,218 @@ for thisTrial_2 in trials_2:
         for paramName in thisTrial_2:
             exec('{} = thisTrial_2[paramName]'.format(paramName))
     
+    # ------Prepare to start Routine "preBlock"-------
+    t = 0
+    preBlockClock.reset()  # clock
+    frameN = -1
+    continueRoutine = True
+    # update component parameters for each repeat
+    chooseInst.setColor('white', colorSpace='rgb')
+    chooseInst.setPos((0, 0.4))
+    chooseInst.setText('Please choose which person you would want to receive financial advice from, and then press enter.')
+    chooseInst.setFont('Arial')
+    chooseInst.setHeight(0.04)
+    Ad1.setColor('white', colorSpace='rgb')
+    Ad1.setPos((-0.4, -0.05))
+    Ad1.setText('\n  Advisor 1: (Left Arrow)\n\n\n\n\n\n\n\n\nAdelphi University MBA student,\ninterning at Chase Bank ')
+    Ad1.setFont('Arial')
+    Ad1.setHeight(0.04)
+    Ad2.setColor('white', colorSpace='rgb')
+    Ad2.setPos((0.4, -0.05))
+    Ad2.setText('\nAdvisor 2: (Right arrow)\n\n\n\n\n\n\n\n \nAdelphi University\nundergraduate biology major')
+    Ad2.setFont('Arial')
+    Ad2.setHeight(0.04)
+    key_resp_3 = keyboard.Keyboard()
+    Ad1pic.setOpacity(1)
+    Ad1pic.setPos((-.4, -0.06))
+    Ad1pic.setSize((0.3, 0.3))
+    Ad1pic.setOri(0)
+    Ad1pic.setImage('avatar_1.png')
+    border_right = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (0.4, -0.09), opacity = 1, lineWidth = 5.0)
+    border_left = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (-0.4, -0.09), opacity = 1, lineWidth = 5.0)
+    
+    enter = keyboard.Keyboard()
+    
+    
+    cond = pd.read_excel('Book1.xlsx')
+    
+    # keep track of which components have finished
+    preBlockComponents = [chooseInst, Ad1, Ad2, key_resp_3, Ad1pic, Ad2pic, enter]
+    for thisComponent in preBlockComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    
+    # -------Start Routine "preBlock"-------
+    while continueRoutine:
+        # get current time
+        t = preBlockClock.getTime()
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *chooseInst* updates
+        if t >= 0.0 and chooseInst.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            chooseInst.tStart = t  # not accounting for scr refresh
+            chooseInst.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(chooseInst, 'tStartRefresh')  # time at next scr refresh
+            chooseInst.setAutoDraw(True)
+        
+        # *Ad1* updates
+        if t >= 0.0 and Ad1.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            Ad1.tStart = t  # not accounting for scr refresh
+            Ad1.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(Ad1, 'tStartRefresh')  # time at next scr refresh
+            Ad1.setAutoDraw(True)
+        
+        # *Ad2* updates
+        if t >= 0.0 and Ad2.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            Ad2.tStart = t  # not accounting for scr refresh
+            Ad2.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(Ad2, 'tStartRefresh')  # time at next scr refresh
+            Ad2.setAutoDraw(True)
+        
+        # *key_resp_3* updates
+        if t >= 0.0 and key_resp_3.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            key_resp_3.tStart = t  # not accounting for scr refresh
+            key_resp_3.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+            key_resp_3.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+            key_resp_3.clearEvents(eventType='keyboard')
+        if key_resp_3.status == STARTED:
+            theseKeys = key_resp_3.getKeys(keyList=['left', 'right'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                key_resp_3.keys = theseKeys.name  # just the last key pressed
+                key_resp_3.rt = theseKeys.rt
+        
+        # *Ad1pic* updates
+        if t >= 0.0 and Ad1pic.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            Ad1pic.tStart = t  # not accounting for scr refresh
+            Ad1pic.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(Ad1pic, 'tStartRefresh')  # time at next scr refresh
+            Ad1pic.setAutoDraw(True)
+        
+        # *Ad2pic* updates
+        if t >= 0.0 and Ad2pic.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            Ad2pic.tStart = t  # not accounting for scr refresh
+            Ad2pic.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(Ad2pic, 'tStartRefresh')  # time at next scr refresh
+            Ad2pic.setAutoDraw(True)
+        if key_resp_3.keys == 'left':
+            border_left.autoDraw=True
+        
+        if key_resp_3.keys =='right':
+            border_right.autoDraw=True
+        
+        if chooseInst.status == FINISHED:
+            border_right.autoDraw = False 
+            border_left.autoDraw = False
+        
+        
+        
+        # *enter* updates
+        if t >= 0.0 and enter.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            enter.tStart = t  # not accounting for scr refresh
+            enter.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(enter, 'tStartRefresh')  # time at next scr refresh
+            enter.status = STARTED
+            # keyboard checking is just starting
+            win.callOnFlip(enter.clock.reset)  # t=0 on next screen flip
+            enter.clearEvents(eventType='keyboard')
+        if enter.status == STARTED:
+            theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
+            if len(theseKeys):
+                theseKeys = theseKeys[0]  # at least one key was pressed
+                
+                # check for quit:
+                if "escape" == theseKeys:
+                    endExpNow = True
+                enter.keys = theseKeys.name  # just the last key pressed
+                enter.rt = theseKeys.rt
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+            core.quit()
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in preBlockComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # -------Ending Routine "preBlock"-------
+    for thisComponent in preBlockComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    trials_2.addData('chooseInst.started', chooseInst.tStartRefresh)
+    trials_2.addData('chooseInst.stopped', chooseInst.tStopRefresh)
+    trials_2.addData('Ad1.started', Ad1.tStartRefresh)
+    trials_2.addData('Ad1.stopped', Ad1.tStopRefresh)
+    trials_2.addData('Ad2.started', Ad2.tStartRefresh)
+    trials_2.addData('Ad2.stopped', Ad2.tStopRefresh)
+    # check responses
+    if key_resp_3.keys in ['', [], None]:  # No response was made
+        key_resp_3.keys = None
+    trials_2.addData('key_resp_3.keys',key_resp_3.keys)
+    if key_resp_3.keys != None:  # we had a response
+        trials_2.addData('key_resp_3.rt', key_resp_3.rt)
+    trials_2.addData('key_resp_3.started', key_resp_3.tStartRefresh)
+    trials_2.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
+    trials_2.addData('Ad1pic.started', Ad1pic.tStartRefresh)
+    trials_2.addData('Ad1pic.stopped', Ad1pic.tStopRefresh)
+    trials_2.addData('Ad2pic.started', Ad2pic.tStartRefresh)
+    trials_2.addData('Ad2pic.stopped', Ad2pic.tStopRefresh)
+    if chooseInst.status == FINISHED:
+        border_right.autoDraw = False 
+        border_left.autoDraw = False
+    # check responses
+    if enter.keys in ['', [], None]:  # No response was made
+        enter.keys = None
+    trials_2.addData('enter.keys',enter.keys)
+    if enter.keys != None:  # we had a response
+        trials_2.addData('enter.rt', enter.rt)
+    trials_2.addData('enter.started', enter.tStartRefresh)
+    trials_2.addData('enter.stopped', enter.tStopRefresh)
+    
+    if key_resp_3.keys == 'left':
+        text = 'Advisor 1 says:'
+        text2 = 'Advisor 1'
+        
+    if key_resp_3.keys == 'right':
+        text = 'Advisor 2 says:'
+        text2 = 'Advisor 2'
+    # the Routine "preBlock" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     trials = data.TrialHandler(nReps=1, method='random', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('Book1.xlsx', selection=choice(40, size=20, replace=False)),
+        trialList=data.importConditions('Book1.xlsx', selection=Choice (40,size=20,replace=False)),
         seed=None, name='trials')
     thisExp.addLoop(trials)  # add the loop to the experiment
     thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
@@ -1643,214 +1851,6 @@ for thisTrial_2 in trials_2:
         if thisTrial != None:
             for paramName in thisTrial:
                 exec('{} = thisTrial[paramName]'.format(paramName))
-        
-        # ------Prepare to start Routine "preBlock"-------
-        t = 0
-        preBlockClock.reset()  # clock
-        frameN = -1
-        continueRoutine = True
-        # update component parameters for each repeat
-        chooseInst.setColor('white', colorSpace='rgb')
-        chooseInst.setPos((0, 0.4))
-        chooseInst.setText('Please choose which person you would want to receive financial advice from, and then press enter.')
-        chooseInst.setFont('Arial')
-        chooseInst.setHeight(0.04)
-        Ad1.setColor('white', colorSpace='rgb')
-        Ad1.setPos((-0.4, -0.05))
-        Ad1.setText('\n  Advisor 1: (Left Arrow)\n\n\n\n\n\n\n\n\nAdelphi University MBA student,\ninterning at Chase Bank ')
-        Ad1.setFont('Arial')
-        Ad1.setHeight(0.04)
-        Ad2.setColor('white', colorSpace='rgb')
-        Ad2.setPos((0.4, -0.05))
-        Ad2.setText('\nAdvisor 2: (Right arrow)\n\n\n\n\n\n\n\n \nAdelphi University\nundergraduate biology major')
-        Ad2.setFont('Arial')
-        Ad2.setHeight(0.04)
-        key_resp_3 = keyboard.Keyboard()
-        Ad1pic.setOpacity(1)
-        Ad1pic.setPos((-.4, -0.06))
-        Ad1pic.setSize((0.3, 0.3))
-        Ad1pic.setOri(0)
-        Ad1pic.setImage('avatar_1.png')
-        border_right = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (0.4, -0.09), opacity = 1, lineWidth = 5.0)
-        border_left = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',lineColorSpace = 'rgb', fillColor = None, pos = (-0.4, -0.09), opacity = 1, lineWidth = 5.0)
-        
-        enter = keyboard.Keyboard()
-        
-        
-        cond = pd.read_excel('Book1.xlsx')
-        
-        # keep track of which components have finished
-        preBlockComponents = [chooseInst, Ad1, Ad2, key_resp_3, Ad1pic, Ad2pic, enter]
-        for thisComponent in preBlockComponents:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        
-        # -------Start Routine "preBlock"-------
-        while continueRoutine:
-            # get current time
-            t = preBlockClock.getTime()
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            
-            # *chooseInst* updates
-            if t >= 0.0 and chooseInst.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                chooseInst.tStart = t  # not accounting for scr refresh
-                chooseInst.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(chooseInst, 'tStartRefresh')  # time at next scr refresh
-                chooseInst.setAutoDraw(True)
-            
-            # *Ad1* updates
-            if t >= 0.0 and Ad1.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                Ad1.tStart = t  # not accounting for scr refresh
-                Ad1.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(Ad1, 'tStartRefresh')  # time at next scr refresh
-                Ad1.setAutoDraw(True)
-            
-            # *Ad2* updates
-            if t >= 0.0 and Ad2.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                Ad2.tStart = t  # not accounting for scr refresh
-                Ad2.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(Ad2, 'tStartRefresh')  # time at next scr refresh
-                Ad2.setAutoDraw(True)
-            
-            # *key_resp_3* updates
-            if t >= 0.0 and key_resp_3.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                key_resp_3.tStart = t  # not accounting for scr refresh
-                key_resp_3.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
-                key_resp_3.status = STARTED
-                # keyboard checking is just starting
-                win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
-                key_resp_3.clearEvents(eventType='keyboard')
-            if key_resp_3.status == STARTED:
-                theseKeys = key_resp_3.getKeys(keyList=['left', 'right'], waitRelease=False)
-                if len(theseKeys):
-                    theseKeys = theseKeys[0]  # at least one key was pressed
-                    
-                    # check for quit:
-                    if "escape" == theseKeys:
-                        endExpNow = True
-                    key_resp_3.keys = theseKeys.name  # just the last key pressed
-                    key_resp_3.rt = theseKeys.rt
-            
-            # *Ad1pic* updates
-            if t >= 0.0 and Ad1pic.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                Ad1pic.tStart = t  # not accounting for scr refresh
-                Ad1pic.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(Ad1pic, 'tStartRefresh')  # time at next scr refresh
-                Ad1pic.setAutoDraw(True)
-            
-            # *Ad2pic* updates
-            if t >= 0.0 and Ad2pic.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                Ad2pic.tStart = t  # not accounting for scr refresh
-                Ad2pic.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(Ad2pic, 'tStartRefresh')  # time at next scr refresh
-                Ad2pic.setAutoDraw(True)
-            if key_resp_3.keys == 'left':
-                border_left.autoDraw=True
-            
-            if key_resp_3.keys =='right':
-                border_right.autoDraw=True
-            
-            if chooseInst.status == FINISHED:
-                border_right.autoDraw = False 
-                border_left.autoDraw = False
-            
-            
-            
-            # *enter* updates
-            if t >= 0.0 and enter.status == NOT_STARTED:
-                # keep track of start time/frame for later
-                enter.tStart = t  # not accounting for scr refresh
-                enter.frameNStart = frameN  # exact frame index
-                win.timeOnFlip(enter, 'tStartRefresh')  # time at next scr refresh
-                enter.status = STARTED
-                # keyboard checking is just starting
-                win.callOnFlip(enter.clock.reset)  # t=0 on next screen flip
-                enter.clearEvents(eventType='keyboard')
-            if enter.status == STARTED:
-                theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
-                if len(theseKeys):
-                    theseKeys = theseKeys[0]  # at least one key was pressed
-                    
-                    # check for quit:
-                    if "escape" == theseKeys:
-                        endExpNow = True
-                    enter.keys = theseKeys.name  # just the last key pressed
-                    enter.rt = theseKeys.rt
-                    # a response ends the routine
-                    continueRoutine = False
-            
-            # check for quit (typically the Esc key)
-            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in preBlockComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # -------Ending Routine "preBlock"-------
-        for thisComponent in preBlockComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        trials.addData('chooseInst.started', chooseInst.tStartRefresh)
-        trials.addData('chooseInst.stopped', chooseInst.tStopRefresh)
-        trials.addData('Ad1.started', Ad1.tStartRefresh)
-        trials.addData('Ad1.stopped', Ad1.tStopRefresh)
-        trials.addData('Ad2.started', Ad2.tStartRefresh)
-        trials.addData('Ad2.stopped', Ad2.tStopRefresh)
-        # check responses
-        if key_resp_3.keys in ['', [], None]:  # No response was made
-            key_resp_3.keys = None
-        trials.addData('key_resp_3.keys',key_resp_3.keys)
-        if key_resp_3.keys != None:  # we had a response
-            trials.addData('key_resp_3.rt', key_resp_3.rt)
-        trials.addData('key_resp_3.started', key_resp_3.tStartRefresh)
-        trials.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
-        trials.addData('Ad1pic.started', Ad1pic.tStartRefresh)
-        trials.addData('Ad1pic.stopped', Ad1pic.tStopRefresh)
-        trials.addData('Ad2pic.started', Ad2pic.tStartRefresh)
-        trials.addData('Ad2pic.stopped', Ad2pic.tStopRefresh)
-        if chooseInst.status == FINISHED:
-            border_right.autoDraw = False 
-            border_left.autoDraw = False
-        # check responses
-        if enter.keys in ['', [], None]:  # No response was made
-            enter.keys = None
-        trials.addData('enter.keys',enter.keys)
-        if enter.keys != None:  # we had a response
-            trials.addData('enter.rt', enter.rt)
-        trials.addData('enter.started', enter.tStartRefresh)
-        trials.addData('enter.stopped', enter.tStopRefresh)
-        
-        if key_resp_3.keys == 'left':
-            text = 'Advisor 1 says:'
-            text2 = 'Advisor 1'
-            
-        if key_resp_3.keys == 'right':
-            text = 'Advisor 2 says:'
-            text2 = 'Advisor 2'
-        # the Routine "preBlock" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
         
         # ------Prepare to start Routine "ISI"-------
         t = 0
