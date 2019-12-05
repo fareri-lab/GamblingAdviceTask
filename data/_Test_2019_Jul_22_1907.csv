@@ -1,8 +1,0 @@
-﻿Choice,Choice2,Amount,AdviceVar1,GambleAdviceNum,GambleAdviceType,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,participant,session,date,expName,psychopyVersion,frameRate,
-,,,,,,,,,,,,,,space,2.133487800019793,,,,,,,,,,001,2019_Jul_22_1907,Test,3.0.7,60.00776499755194,
-Pictures\IA50_L30.bmp,Pictures\IA50_L30.bmp,Pictures\IA50.bmp,"
-
-"Take a leap, I think you should gamble."",1,risk,0,0,0,0,0,0,0,17,,,right,1.0205675000033807,return,1.4020350000064354,y,1.0156690000148956,left,1.232352399994852,,001,2019_Jul_22_1907,Test,3.0.7,60.00776499755194,
-Pictures\IA50_L30.bmp,Pictures\IA50_L30.bmp,Pictures\IA50.bmp,"
-
-"Certainty is boring, take a risk!"",1,risk,0,0,0,0,0,1,1,12,,,,,,,n,1.380491299991263,right,0.5765062000136822,,001,2019_Jul_22_1907,Test,3.0.7,60.00776499755194,

@@ -1,8 +1,0 @@
-﻿Choice,Choice2,Amount,AdviceVar1,GambleAdviceNum,GambleAdviceType,trials_2.thisRepN,trials_2.thisTrialN,trials_2.thisN,trials_2.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,space.keys,space.rt,key_resp_3.keys,key_resp_3.rt,enter.keys,enter.rt,response.keys,response.rt,resp.keys,resp.rt,participant,session,date,expName,psychopyVersion,frameRate,
-,,,,,,,,,,,,,,space,2.7624404999951366,,,,,,,,,,001,2019_Jul_22_1143,Test,3.0.7,60.0080170762405,
-Pictures\IA75_L45.bmp,Pictures\IA75_L45.bmp,Pictures\IA75.bmp,"
-
-"Don't gamble for this one, play it safe."",0,safe,0,0,0,0,0,0,0,4,,,right,2.2434823000221513,return,4.8403720000060275,y,1.0805161999887787,left,2.169747300009476,,001,2019_Jul_22_1143,Test,3.0.7,60.0080170762405,
-Pictures\IA75_G15.bmp,Pictures\IA75_G15.bmp,Pictures\IA75.bmp,"
-
-"Take a chance!"",1,risk,0,0,0,0,0,1,1,18,,,,,,,n,1.17373320000479,None,,,001,2019_Jul_22_1143,Test,3.0.7,60.0080170762405,
