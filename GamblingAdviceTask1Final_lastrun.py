@@ -1,6 +1,7 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
+<<<<<<< HEAD
 This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
     on December 06, 2019, at 13:17
 If you publish work using this script please cite the PsychoPy publications:
@@ -8,6 +9,16 @@ If you publish work using this script please cite the PsychoPy publications:
         Journal of Neuroscience Methods, 162(1-2), 8-13.
     Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy.
         Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
+=======
+This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
+    on Fri Dec  6 13:03:21 2019
+If you publish work using this script the most relevant publication is:
+
+    Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
+        PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
+        https://doi.org/10.3758/s13428-018-01193-y
+
+>>>>>>> efdb43f3858d5a61fa124e85f9e5eaa6a2433f25
 """
 
 from __future__ import absolute_import, division
