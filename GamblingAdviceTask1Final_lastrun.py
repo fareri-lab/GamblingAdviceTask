@@ -1,24 +1,14 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-<<<<<<< HEAD
-This experiment was created using PsychoPy3 Experiment Builder (v3.1.2),
-    on December 05, 2019, at 10:45
-If you publish work using this script please cite the PsychoPy publications:
-    Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
-        Journal of Neuroscience Methods, 162(1-2), 8-13.
-    Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy.
-        Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
-=======
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Thu Dec  5 10:36:39 2019
+    on Fri Dec  6 11:10:11 2019
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
         PsychoPy2: Experiments in behavior made easy Behav Res 51: 195. 
         https://doi.org/10.3758/s13428-018-01193-y
 
->>>>>>> 89e82e4ddf4423b81c4c876c27c7aed4d48e8dcb
 """
 
 from __future__ import absolute_import, division
@@ -43,11 +33,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-<<<<<<< HEAD
-psychopyVersion = '3.1.2'
-=======
 psychopyVersion = '3.2.4'
->>>>>>> 89e82e4ddf4423b81c4c876c27c7aed4d48e8dcb
 expName = 'Test'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001', 'age': '', 'gender (0=male, 1 = female, 2 = other)': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -63,11 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-<<<<<<< HEAD
-    originPath='C:\\Users\\farerilab\\Documents\\GitHub\\GamblingAdviceTask\\GamblingAdviceTask1Final_lastrun.py',
-=======
     originPath='/Users/farerilab/Documents/GitHub/GamblingAdviceTask/GamblingAdviceTask1Final_lastrun.py',
->>>>>>> 89e82e4ddf4423b81c4c876c27c7aed4d48e8dcb
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
