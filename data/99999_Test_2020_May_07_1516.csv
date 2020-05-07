@@ -1,0 +1,3 @@
+﻿text.started,text.stopped,key_resp_4.keys,key_resp_4.rt,key_resp_4.started,key_resp_4.stopped,instructions.started,instructions.stopped,space.keys,space.rt,space.started,space.stopped,participant,session,age,gender (0=male, 1 = female, 2 = other),date,expName,psychopyVersion,frameRate,
+12.69500548299402,None,space,0.456847535999259,12.69500548299402,None,,,,,,,99999,001,9,0,2020_May_07_1516,Test,2020.1.2,59.82146081173432,
+,,,,,,13.18032899798709,None,space,0.2865654089837335,13.18032899798709,None,99999,001,9,0,2020_May_07_1516,Test,2020.1.2,59.82146081173432,

@@ -7,10 +7,10 @@ edit the file name, then run the script
 from __future__ import print_function
 import os
 from psychopy.tools.filetools import fromFile
-os.chdir('/Users/farerilab/Documents/GitHub/GamblingAdviceTask/data')
+os.chdir('/Users/dfareri/Dropbox/Dominic/Github/fareri-lab/GamblingAdviceTask/data')
 
 # EDIT THE NEXT LINE to be your .psydat file, with the correct path:
-name = '111_Test_2019_Dec_06_1317.psydat'
+name = '101_Test_2019_Dec_03_1004.psydat'
 
 file_psydat = os.path.abspath(name)
 print("psydat: {0}".format(file_psydat))
@@ -23,7 +23,7 @@ if file_psydat.endswith('.psydat'):
     file_csv = file_psydat[:-7]
 else:
     file_csv = file_psydat
-file_csv += '.csv'
+file_csv += '_DF.csv'
 exp.saveAsWideText(file_csv)
 
 print('-> csv: {0}'.format(os.path.abspath(file_csv)))

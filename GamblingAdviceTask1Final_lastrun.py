@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Mon Mar  9 11:13:51 2020
+This experiment was created using PsychoPy3 Experiment Builder (v2020.1.2),
+    on Thu May  7 15:16:45 2020
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -28,12 +28,14 @@ import sys  # to get file system encoding
 
 from psychopy.hardware import keyboard
 
+
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '3.2.4'
+psychopyVersion = '2020.1.2'
 expName = 'Test'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001', 'age': '', 'gender (0=male, 1 = female, 2 = other)': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -49,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/farerilab/Documents/GitHub/GamblingAdviceTask/GamblingAdviceTask1Final_lastrun.py',
+    originPath='/Users/dfareri/Dropbox/Dominic/Github/fareri-lab/GamblingAdviceTask/GamblingAdviceTask1Final_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -483,9 +485,11 @@ globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
 # ------Prepare to start Routine "welcome"-------
+continueRoutine = True
 # update component parameters for each repeat
 key_resp_4.keys = []
 key_resp_4.rt = []
+_key_resp_4_allKeys = []
 # keep track of which components have finished
 welcomeComponents = [text, key_resp_4]
 for thisComponent in welcomeComponents:
@@ -500,7 +504,6 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 welcomeClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
-continueRoutine = True
 
 # -------Run Routine "welcome"-------
 while continueRoutine:
@@ -535,14 +538,10 @@ while continueRoutine:
         win.callOnFlip(key_resp_4.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp_4.status == STARTED and not waitOnFlip:
         theseKeys = key_resp_4.getKeys(keyList=['space'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            key_resp_4.keys = theseKeys.name  # just the last key pressed
-            key_resp_4.rt = theseKeys.rt
+        _key_resp_4_allKeys.extend(theseKeys)
+        if len(_key_resp_4_allKeys):
+            key_resp_4.keys = _key_resp_4_allKeys[-1].name  # just the last key pressed
+            key_resp_4.rt = _key_resp_4_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
@@ -582,9 +581,11 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # ------Prepare to start Routine "inst"-------
+continueRoutine = True
 # update component parameters for each repeat
 space.keys = []
 space.rt = []
+_space_allKeys = []
 # keep track of which components have finished
 instComponents = [instructions, space]
 for thisComponent in instComponents:
@@ -599,7 +600,6 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 instClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
-continueRoutine = True
 
 # -------Run Routine "inst"-------
 while continueRoutine:
@@ -634,14 +634,10 @@ while continueRoutine:
         win.callOnFlip(space.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if space.status == STARTED and not waitOnFlip:
         theseKeys = space.getKeys(keyList=['space'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            space.keys = theseKeys.name  # just the last key pressed
-            space.rt = theseKeys.rt
+        _space_allKeys.extend(theseKeys)
+        if len(_space_allKeys):
+            space.keys = _space_allKeys[-1].name  # just the last key pressed
+            space.rt = _space_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
@@ -681,6 +677,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # ------Prepare to start Routine "preBlock"-------
+continueRoutine = True
 # update component parameters for each repeat
 chooseInst.setColor('white', colorSpace='rgb')
 chooseInst.setPos((0, 0.4))
@@ -699,6 +696,7 @@ Ad2.setFont('Arial')
 Ad2.setHeight(0.04)
 key_resp_3.keys = []
 key_resp_3.rt = []
+_key_resp_3_allKeys = []
 Ad1pic.setOpacity(1)
 Ad1pic.setPos((-.4, -0.06))
 Ad1pic.setSize((0.3, 0.3))
@@ -709,6 +707,7 @@ border_left = visual.Circle(win,radius = 0.38, edges = 90,lineColor='green',line
 
 enter.keys = []
 enter.rt = []
+_enter_allKeys = []
 
 
 cond = pd.read_excel('Book1.xlsx')
@@ -727,7 +726,6 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 preBlockClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
-continueRoutine = True
 
 # -------Run Routine "preBlock"-------
 while continueRoutine:
@@ -780,14 +778,10 @@ while continueRoutine:
         win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp_3.status == STARTED and not waitOnFlip:
         theseKeys = key_resp_3.getKeys(keyList=['left', 'right'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            key_resp_3.keys = theseKeys.name  # just the last key pressed
-            key_resp_3.rt = theseKeys.rt
+        _key_resp_3_allKeys.extend(theseKeys)
+        if len(_key_resp_3_allKeys):
+            key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+            key_resp_3.rt = _key_resp_3_allKeys[-1].rt
     
     # *Ad1pic* updates
     if Ad1pic.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -833,14 +827,10 @@ while continueRoutine:
         win.callOnFlip(enter.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if enter.status == STARTED and not waitOnFlip:
         theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            enter.keys = theseKeys.name  # just the last key pressed
-            enter.rt = theseKeys.rt
+        _enter_allKeys.extend(theseKeys)
+        if len(_enter_allKeys):
+            enter.keys = _enter_allKeys[-1].name  # just the last key pressed
+            enter.rt = _enter_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
@@ -927,6 +917,7 @@ for thisPractice in practice:
             exec('{} = thisPractice[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "ISI"-------
+    continueRoutine = True
     routineTimer.add(2.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
@@ -943,7 +934,6 @@ for thisPractice in practice:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     ISIClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "ISI"-------
     while continueRoutine and routineTimer.getTime() > 0:
@@ -996,6 +986,7 @@ for thisPractice in practice:
     practice.addData('iSi.stopped', iSi.tStopRefresh)
     
     # ------Prepare to start Routine "Receive_money"-------
+    continueRoutine = True
     routineTimer.add(3.000000)
     # update component parameters for each repeat
     receiveMoneyPicture.setOpacity(1)
@@ -1022,7 +1013,6 @@ for thisPractice in practice:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     Receive_moneyClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "Receive_money"-------
     while continueRoutine and routineTimer.getTime() > 0:
@@ -1094,6 +1084,7 @@ for thisPractice in practice:
     practice.addData('ISI2.stopped', ISI2.tStopRefresh)
     
     # ------Prepare to start Routine "trial"-------
+    continueRoutine = True
     routineTimer.add(2.000000)
     # update component parameters for each repeat
     ChoicePic.setOpacity(1)
@@ -1115,7 +1106,6 @@ for thisPractice in practice:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "trial"-------
     while continueRoutine and routineTimer.getTime() > 0:
@@ -1168,10 +1158,12 @@ for thisPractice in practice:
     practice.addData('ChoicePic.stopped', ChoicePic.tStopRefresh)
     
     # ------Prepare to start Routine "askAd"-------
+    continueRoutine = True
     routineTimer.add(3.000000)
     # update component parameters for each repeat
     response.keys = []
     response.rt = []
+    _response_allKeys = []
     yesNo.setColor('white', colorSpace='rgb')
     yesNo.setPos((0, -0.2))
     yesNo.setText('Y=1                 N=2')
@@ -1196,7 +1188,6 @@ for thisPractice in practice:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     askAdClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "askAd"-------
     while continueRoutine and routineTimer.getTime() > 0:
@@ -1230,14 +1221,10 @@ for thisPractice in practice:
                 response.status = FINISHED
         if response.status == STARTED and not waitOnFlip:
             theseKeys = response.getKeys(keyList=['1', '2'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                response.keys = theseKeys.name  # just the last key pressed
-                response.rt = theseKeys.rt
+            _response_allKeys.extend(theseKeys)
+            if len(_response_allKeys):
+                response.keys = _response_allKeys[-1].name  # just the last key pressed
+                response.rt = _response_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
         
@@ -1310,6 +1297,7 @@ for thisPractice in practice:
     practice.addData('ask.stopped', ask.tStopRefresh)
     
     # ------Prepare to start Routine "getAd"-------
+    continueRoutine = True
     # update component parameters for each repeat
     followAd = []
     
@@ -1346,7 +1334,6 @@ for thisPractice in practice:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     getAdClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "getAd"-------
     while continueRoutine:
@@ -1444,6 +1431,7 @@ for thisPractice in practice:
     routineTimer.reset()
     
     # ------Prepare to start Routine "Choice2Gain"-------
+    continueRoutine = True
     # update component parameters for each repeat
     blank.setColor([-1.000,-1.000,-1.000], colorSpace='rgb')
     blank.setPos((0, 0))
@@ -1457,6 +1445,7 @@ for thisPractice in practice:
     ChoicePic2.setImage(Choice2)
     resp.keys = []
     resp.rt = []
+    _resp_allKeys = []
     checkL1.setColor([1,1,1], colorSpace='rgb')
     checkL1.setOpacity(1)
     checkL1.setPos((0, 0))
@@ -1485,7 +1474,6 @@ for thisPractice in practice:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     Choice2GainClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "Choice2Gain"-------
     while continueRoutine:
@@ -1553,14 +1541,10 @@ for thisPractice in practice:
                 resp.status = FINISHED
         if resp.status == STARTED and not waitOnFlip:
             theseKeys = resp.getKeys(keyList=['left', 'right'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                resp.keys = theseKeys.name  # just the last key pressed
-                resp.rt = theseKeys.rt
+            _resp_allKeys.extend(theseKeys)
+            if len(_resp_allKeys):
+                resp.keys = _resp_allKeys[-1].name  # just the last key pressed
+                resp.rt = _resp_allKeys[-1].rt
         
         # *checkL1* updates
         if checkL1.status == NOT_STARTED and resp.keys == 'left':
@@ -1686,9 +1670,11 @@ for thisPractice in practice:
 
 
 # ------Prepare to start Routine "endprac"-------
+continueRoutine = True
 # update component parameters for each repeat
 key_resp.keys = []
 key_resp.rt = []
+_key_resp_allKeys = []
 # keep track of which components have finished
 endpracComponents = [EndPrac, key_resp]
 for thisComponent in endpracComponents:
@@ -1703,7 +1689,6 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 endpracClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
-continueRoutine = True
 
 # -------Run Routine "endprac"-------
 while continueRoutine:
@@ -1738,14 +1723,10 @@ while continueRoutine:
         win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp.status == STARTED and not waitOnFlip:
         theseKeys = key_resp.getKeys(keyList=['space'], waitRelease=False)
-        if len(theseKeys):
-            theseKeys = theseKeys[0]  # at least one key was pressed
-            
-            # check for quit:
-            if "escape" == theseKeys:
-                endExpNow = True
-            key_resp.keys = theseKeys.name  # just the last key pressed
-            key_resp.rt = theseKeys.rt
+        _key_resp_allKeys.extend(theseKeys)
+        if len(_key_resp_allKeys):
+            key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
+            key_resp.rt = _key_resp_allKeys[-1].rt
             # a response ends the routine
             continueRoutine = False
     
@@ -1804,6 +1785,7 @@ for thisTrial_2 in trials_2:
             exec('{} = thisTrial_2[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "preBlock"-------
+    continueRoutine = True
     # update component parameters for each repeat
     chooseInst.setColor('white', colorSpace='rgb')
     chooseInst.setPos((0, 0.4))
@@ -1822,6 +1804,7 @@ for thisTrial_2 in trials_2:
     Ad2.setHeight(0.04)
     key_resp_3.keys = []
     key_resp_3.rt = []
+    _key_resp_3_allKeys = []
     Ad1pic.setOpacity(1)
     Ad1pic.setPos((-.4, -0.06))
     Ad1pic.setSize((0.3, 0.3))
@@ -1832,6 +1815,7 @@ for thisTrial_2 in trials_2:
     
     enter.keys = []
     enter.rt = []
+    _enter_allKeys = []
     
     
     cond = pd.read_excel('Book1.xlsx')
@@ -1850,7 +1834,6 @@ for thisTrial_2 in trials_2:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     preBlockClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "preBlock"-------
     while continueRoutine:
@@ -1903,14 +1886,10 @@ for thisTrial_2 in trials_2:
             win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_3.status == STARTED and not waitOnFlip:
             theseKeys = key_resp_3.getKeys(keyList=['left', 'right'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_3.keys = theseKeys.name  # just the last key pressed
-                key_resp_3.rt = theseKeys.rt
+            _key_resp_3_allKeys.extend(theseKeys)
+            if len(_key_resp_3_allKeys):
+                key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+                key_resp_3.rt = _key_resp_3_allKeys[-1].rt
         
         # *Ad1pic* updates
         if Ad1pic.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1956,14 +1935,10 @@ for thisTrial_2 in trials_2:
             win.callOnFlip(enter.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if enter.status == STARTED and not waitOnFlip:
             theseKeys = enter.getKeys(keyList=['return'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                enter.keys = theseKeys.name  # just the last key pressed
-                enter.rt = theseKeys.rt
+            _enter_allKeys.extend(theseKeys)
+            if len(_enter_allKeys):
+                enter.keys = _enter_allKeys[-1].name  # just the last key pressed
+                enter.rt = _enter_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
         
@@ -2048,6 +2023,7 @@ for thisTrial_2 in trials_2:
                 exec('{} = thisTrial[paramName]'.format(paramName))
         
         # ------Prepare to start Routine "ISI"-------
+        continueRoutine = True
         routineTimer.add(2.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
@@ -2064,7 +2040,6 @@ for thisTrial_2 in trials_2:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         ISIClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
-        continueRoutine = True
         
         # -------Run Routine "ISI"-------
         while continueRoutine and routineTimer.getTime() > 0:
@@ -2117,6 +2092,7 @@ for thisTrial_2 in trials_2:
         trials.addData('iSi.stopped', iSi.tStopRefresh)
         
         # ------Prepare to start Routine "Receive_money"-------
+        continueRoutine = True
         routineTimer.add(3.000000)
         # update component parameters for each repeat
         receiveMoneyPicture.setOpacity(1)
@@ -2143,7 +2119,6 @@ for thisTrial_2 in trials_2:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         Receive_moneyClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
-        continueRoutine = True
         
         # -------Run Routine "Receive_money"-------
         while continueRoutine and routineTimer.getTime() > 0:
@@ -2215,6 +2190,7 @@ for thisTrial_2 in trials_2:
         trials.addData('ISI2.stopped', ISI2.tStopRefresh)
         
         # ------Prepare to start Routine "trial"-------
+        continueRoutine = True
         routineTimer.add(2.000000)
         # update component parameters for each repeat
         ChoicePic.setOpacity(1)
@@ -2236,7 +2212,6 @@ for thisTrial_2 in trials_2:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
-        continueRoutine = True
         
         # -------Run Routine "trial"-------
         while continueRoutine and routineTimer.getTime() > 0:
@@ -2289,10 +2264,12 @@ for thisTrial_2 in trials_2:
         trials.addData('ChoicePic.stopped', ChoicePic.tStopRefresh)
         
         # ------Prepare to start Routine "askAd"-------
+        continueRoutine = True
         routineTimer.add(3.000000)
         # update component parameters for each repeat
         response.keys = []
         response.rt = []
+        _response_allKeys = []
         yesNo.setColor('white', colorSpace='rgb')
         yesNo.setPos((0, -0.2))
         yesNo.setText('Y=1                 N=2')
@@ -2317,7 +2294,6 @@ for thisTrial_2 in trials_2:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         askAdClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
-        continueRoutine = True
         
         # -------Run Routine "askAd"-------
         while continueRoutine and routineTimer.getTime() > 0:
@@ -2351,14 +2327,10 @@ for thisTrial_2 in trials_2:
                     response.status = FINISHED
             if response.status == STARTED and not waitOnFlip:
                 theseKeys = response.getKeys(keyList=['1', '2'], waitRelease=False)
-                if len(theseKeys):
-                    theseKeys = theseKeys[0]  # at least one key was pressed
-                    
-                    # check for quit:
-                    if "escape" == theseKeys:
-                        endExpNow = True
-                    response.keys = theseKeys.name  # just the last key pressed
-                    response.rt = theseKeys.rt
+                _response_allKeys.extend(theseKeys)
+                if len(_response_allKeys):
+                    response.keys = _response_allKeys[-1].name  # just the last key pressed
+                    response.rt = _response_allKeys[-1].rt
                     # a response ends the routine
                     continueRoutine = False
             
@@ -2431,6 +2403,7 @@ for thisTrial_2 in trials_2:
         trials.addData('ask.stopped', ask.tStopRefresh)
         
         # ------Prepare to start Routine "getAd"-------
+        continueRoutine = True
         # update component parameters for each repeat
         followAd = []
         
@@ -2467,7 +2440,6 @@ for thisTrial_2 in trials_2:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         getAdClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
-        continueRoutine = True
         
         # -------Run Routine "getAd"-------
         while continueRoutine:
@@ -2565,6 +2537,7 @@ for thisTrial_2 in trials_2:
         routineTimer.reset()
         
         # ------Prepare to start Routine "Choice2Gain"-------
+        continueRoutine = True
         # update component parameters for each repeat
         blank.setColor([-1.000,-1.000,-1.000], colorSpace='rgb')
         blank.setPos((0, 0))
@@ -2578,6 +2551,7 @@ for thisTrial_2 in trials_2:
         ChoicePic2.setImage(Choice2)
         resp.keys = []
         resp.rt = []
+        _resp_allKeys = []
         checkL1.setColor([1,1,1], colorSpace='rgb')
         checkL1.setOpacity(1)
         checkL1.setPos((0, 0))
@@ -2606,7 +2580,6 @@ for thisTrial_2 in trials_2:
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
         Choice2GainClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
-        continueRoutine = True
         
         # -------Run Routine "Choice2Gain"-------
         while continueRoutine:
@@ -2674,14 +2647,10 @@ for thisTrial_2 in trials_2:
                     resp.status = FINISHED
             if resp.status == STARTED and not waitOnFlip:
                 theseKeys = resp.getKeys(keyList=['left', 'right'], waitRelease=False)
-                if len(theseKeys):
-                    theseKeys = theseKeys[0]  # at least one key was pressed
-                    
-                    # check for quit:
-                    if "escape" == theseKeys:
-                        endExpNow = True
-                    resp.keys = theseKeys.name  # just the last key pressed
-                    resp.rt = theseKeys.rt
+                _resp_allKeys.extend(theseKeys)
+                if len(_resp_allKeys):
+                    resp.keys = _resp_allKeys[-1].name  # just the last key pressed
+                    resp.rt = _resp_allKeys[-1].rt
             
             # *checkL1* updates
             if checkL1.status == NOT_STARTED and resp.keys == 'left':
@@ -2807,6 +2776,7 @@ for thisTrial_2 in trials_2:
     
     
     # ------Prepare to start Routine "Feedback"-------
+    continueRoutine = True
     # update component parameters for each repeat
     import random
     
@@ -2840,6 +2810,7 @@ for thisTrial_2 in trials_2:
     endText.setHeight(0.05)
     key_resp_2.keys = []
     key_resp_2.rt = []
+    _key_resp_2_allKeys = []
     # keep track of which components have finished
     FeedbackComponents = [endText, key_resp_2]
     for thisComponent in FeedbackComponents:
@@ -2854,7 +2825,6 @@ for thisTrial_2 in trials_2:
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     FeedbackClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
-    continueRoutine = True
     
     # -------Run Routine "Feedback"-------
     while continueRoutine:
@@ -2895,14 +2865,10 @@ for thisTrial_2 in trials_2:
             win.callOnFlip(key_resp_2.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_2.status == STARTED and not waitOnFlip:
             theseKeys = key_resp_2.getKeys(keyList=['return'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                key_resp_2.keys = theseKeys.name  # just the last key pressed
-                key_resp_2.rt = theseKeys.rt
+            _key_resp_2_allKeys.extend(theseKeys)
+            if len(_key_resp_2_allKeys):
+                key_resp_2.keys = _key_resp_2_allKeys[-1].name  # just the last key pressed
+                key_resp_2.rt = _key_resp_2_allKeys[-1].rt
                 # a response ends the routine
                 continueRoutine = False
         
@@ -2951,6 +2917,7 @@ for thisTrial_2 in trials_2:
 
 
 # ------Prepare to start Routine "Ending"-------
+continueRoutine = True
 # update component parameters for each repeat
 # keep track of which components have finished
 EndingComponents = [Ending_]
@@ -2966,7 +2933,6 @@ t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 EndingClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
-continueRoutine = True
 
 # -------Run Routine "Ending"-------
 while continueRoutine:
